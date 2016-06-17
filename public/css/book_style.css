@@ -1,0 +1,63 @@
+a {
+  color: #dd4f24;
+}
+.cuerpo {
+  background: #f00;
+  color: #0f440d;
+  font-family: tahoma;
+  font-size: 16px;
+}
+.piep {
+  background: #dd4f24;
+  color: rgba(255,255,255,0.5);
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+.piep h3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.piep h3 strong {
+  display: block;
+}
+.piep h3 .mejor:before,
+.piep h3 .mejor:after {
+  content: " - ";
+}
+#principal {
+  padding: 0.5em;
+}
+#principal #flipbook {
+  display: block;
+}
+#principal .page background blueGray .parr {
+  background-color: #000;
+  text-align: justify;
+  margin: 0.5em;
+}
+#principal .page background blueGray .subt {
+  color: #22bce0;
+img
+}
+#principal .page background blueGray .subt:hover color black .title {
+  color: #f00;
+}
+#principal .page width 250px {
+  height: 250px;
+  float: right;
+  border-radius: 50%;
+}
+#principal .page width 250px:hover {
+  border-radius: 10%;
+}
+#principal .hard {
+  border-color: #c9302c;
+  border-style: solid;
+  border-width: medium;
+  background: #00695c;
+}
+#principal color white {
+  text-align: center;
+  font-size: 40px;
+}

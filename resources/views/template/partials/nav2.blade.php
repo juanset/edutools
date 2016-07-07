@@ -46,7 +46,7 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="#">Accesibilidad<span class="fa arrow"></span></a>
+                        <a href="">Accesibilidad<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a><label id="increase" for="">Aumentar</label></a>
@@ -92,6 +92,9 @@
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="{{ route('Public.inicioB') }}">Libro</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('Public.book') }}">Crear Libro</a>
                             </li>
                             <li>
                                 <a href="{{ route('Public.mostrarB') }}">Mostrar libros</a>

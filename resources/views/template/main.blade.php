@@ -12,8 +12,11 @@
     <title>@yield('title', 'RAIM')</title>
 
     <link href="{{ asset('plugins/toastr-master/build/toastr.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/summenote/summernote.css') }}" rel="stylesheet">
 
+    <script src="{{ asset('plugins/ckeditor/ckeditor.js') }}"></script>
 
+    <script src="{{ asset('plugins/summernote/summernote.js') }}"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('template/bower_components/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">

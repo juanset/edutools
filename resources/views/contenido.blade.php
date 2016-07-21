@@ -20,7 +20,7 @@
             </script>
         </form>
         <h4>Al finalizar dale guardar!<img src="http://tuicono.com/img-tuicono.com/g/guardar/icoguardar-gif.jpg" alt="guardar"></h4>
-        <div id="summernote">HelloSummernote</div>
+        <div id="summernote"><p>Hello Summernote</p></div>
     </section>
     </body>
 

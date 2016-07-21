@@ -12,7 +12,7 @@
     <title>@yield('title', 'RAIM')</title>
 
     <link href="{{ asset('plugins/toastr-master/build/toastr.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('plugins/summenote/summernote.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/summernote/summernote.css') }}" rel="stylesheet">
 
     <script src="{{ asset('plugins/ckeditor/ckeditor.js') }}"></script>
 

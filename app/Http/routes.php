@@ -40,14 +40,17 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'PublicController@mostrarB',
         'as'	=> 'Public.mostrarB'
     ]);
+
     Route::get('/inicioB',[
         'uses' 	=> 'PublicController@inicioB',
         'as'	=> 'Public.inicioB'
     ]);
+
     Route::get('/contenido',[
         'uses' 	=> 'PublicController@contenido',
         'as'	=> 'Public.contenido'
     ]);
+
     Route::get('/editor',[
         'uses' 	=> 'PublicController@editor',
         'as'	=> 'Public.editor'
@@ -57,9 +60,20 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'PublicController@inicioC',
         'as'	=> 'Public.inicioC'
     ]);
+
     Route::get('/mostrarC',[
         'uses' 	=> 'PublicController@mostrarC',
         'as'	=> 'Public.mostrarC'
+    ]);
+
+    Route::get('/mostrarQ',[
+        'uses' 	=> 'PublicController@mostrarQ',
+        'as'	=> 'Public.mostrarQ'
+    ]);
+
+    Route::get('/questionario',[
+        'uses' 	=> 'PublicController@questionario',
+        'as'	=> 'Public.questionario'
     ]);
 
 });

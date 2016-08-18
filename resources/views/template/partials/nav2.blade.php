@@ -108,6 +108,12 @@
                             <li>
                                 <a href="{{ route('Public.mostrarC') }}">Mostrar Contenidos</a>
                             </li>
+                            <li>
+                                <a href="{{ route('Public.questionario') }}">Crear Cuestionarios</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('Public.mostrarQ') }}">Mostrar Cuestionarios</a>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="#">Ver Recursos educativos</a></li>

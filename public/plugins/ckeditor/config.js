@@ -25,3 +25,4 @@ config.toolbarGroups = [
 
 	config.removeButtons = 'NewPage,Print,Templates,PasteText,PasteFromWord,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Strike,Subscript,Superscript,CreateDiv,Blockquote,BidiLtr,BidiRtl,Language,Anchor,Flash';
 };
+config.extraPlugins = 'uploadimage';

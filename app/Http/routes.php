@@ -75,5 +75,8 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'PublicController@questionario',
         'as'	=> 'Public.questionario'
     ]);
-
+    Route::get('/inicioQ',[
+        'uses' 	=> 'PublicController@inicioQ',
+        'as'	=> 'Public.inicioQ'
+    ]);
 });

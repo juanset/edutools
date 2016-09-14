@@ -92,28 +92,41 @@
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="{{ route('Public.inicioB') }}">Libro</a>
+                                <ul>
+                                    <li>
+                                        <a href="{{ route('Public.book') }}">Crear Libro</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('Public.mostrarB') }}">Mostrar libros</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li>
-                                <a href="{{ route('Public.book') }}">Crear Libro</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('Public.mostrarB') }}">Mostrar libros</a>
-                            </li>
+
                             <li>
                                 <a href="{{ route('Public.inicioC') }}">Contenido</a>
+                                <ul>
+                                    <li>
+                                        <a href="{{ route('Public.editor') }}">Editor de Contenidos</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('Public.mostrarC') }}">Mostrar Contenidos</a>
+                                    </li>
+                                </ul>
                             </li>
+
                             <li>
-                                <a href="{{ route('Public.editor') }}">Editor de Contenidos</a>
+                                <a href="{{ route('Public.inicioQ') }}">Questionarios</a>
+                                <ul>
+                                    <li>
+                                        <a href="{{ route('Public.questionario') }}">Crear Cuestionarios</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('Public.mostrarQ') }}">Mostrar Cuestionarios</a>
+                                    </li>
+                                </ul>
+
                             </li>
-                            <li>
-                                <a href="{{ route('Public.mostrarC') }}">Mostrar Contenidos</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('Public.questionario') }}">Crear Cuestionarios</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('Public.mostrarQ') }}">Mostrar Cuestionarios</a>
-                            </li>
+
                         </ul>
                     </li>
                     <li><a href="#">Ver Recursos educativos</a></li>

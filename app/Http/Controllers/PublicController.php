@@ -79,5 +79,10 @@ class PublicController extends Controller
         return view('questionario');
 
     }
+    public function inicioQ()
+    {
 
+        return view('inicioQ');
+
+    }
 }

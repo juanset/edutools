@@ -11,28 +11,37 @@
     <section class="principal">
         <div class="options">
             <h3>Seleccione la pregunta a agregar</h3>
-            <select name="contenido" id="contenido">
-                <option value="titulo">Seleccion</option>
-                <option value="subtitulo">Verdaero - Falso</option>
-                <option value="parrafo">Abierta</option>
-            </select><br>
-            <h4>En Pregunta: </h4>
-            <select name="pagina" id="pagina">
-                <option value="1" id="p1">1</option>
-                <option value="2" id="p2">2</option>
-            </select><br>
-            <input type="file" id="uploadImage" style="display: none"/>
-            <textarea id="texto" type="text" rows="4" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite el contenido a agregar!"></textarea>
-            <button id="agregar">Agregar pregunta</button>
-            <br>
-            <p>Crear Pregunta después de </p> <input id="add_p" type="number" min="2" placeholder="Pregunta despues de"><button id="addpage">Crear</button>
-            <input type="checkbox" id="portada">Pregunta?
-            <br><br>
-            <p>Eliminar la pregunta:</p> <input id="rem_p" type="number" min="1" placeholder="Pregunta a eliminar"><button id="rempage">Eliminar</button>
+            <input type="button" id="vf" value="Verdadero/Falso">
+            <input type="button" id="selmul" value="Selección Multiple">
         </div>
         <br>
+        <div id="qvf"  style="display: none;border: double">
+            Esta es una pregunta de verdadero falso, escribe la pregunta e indica la respuesta correcta <br>
+            <section id="questionVF">
+                <textarea class="con_pre" id="textoVF" type="text" rows="2" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea><br>
+                <input type="checkbox" id="true" name="true" value="true"><label for="true">Verdadero!</label> <br>
+                <input type="checkbox" id="false" name="false" value="false"><label for="false">Falso</label> <br>
+                <input class="guardar" id="guardarVF" type="button" value="Guardar">
+            </section>
+        </div>
+        <div id="qsm" style="display: none; border: double" >
+            Esta es una pregunta de de selección múltiple <br>
+            <section id="questionSM">
+                <textarea class="con_pre" id="textoSM" type="text" rows="2" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea><br>
+                <textarea class="con_pre" id="textoOptSM" type="text" rows="1" cols="25"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la opción a agregar!"></textarea><br>
+            </section>
+            <form id="questionOpciones">
+
+            </form>
+            <input type="button" id="opc" value="Opción"> <br>
+            <!--<input type="button" value="elim"> <br>-->
+            <input class="guardar" id="guardarSM" type="button" value="Guardar">
+        </div>
+    </section>
+    <section id="cuestionario">
 
     </section>
+
 
     <footer class="piep">
         <h3>
@@ -47,6 +56,44 @@
 
 @section('javascript')
     <script type="text/javascript">
+        $(document).ready(function(){
+            $('#vf').on('click', function(event) {
+                $('#qvf').toggle('show');
+                $('#qsm').hide();
+                $('#qop').hide();
+            });
+            $('#selmul').on('click', function(event) {
+                $('#qsm').toggle('show');
+                $('#qvf').hide();
+                $('#qop').hide();
+            });
+            //Guarda pregunta Verdadero Falso
+            $("#guardarVF").click(function(){
+                var contenido = $('textarea[id=textoVF]').val();
+                console.log("Esta pregunta es: "+contenido);
+                $("#cuestionario").append('<p class="q">' + contenido + '</p>'+'<input type="checkbox" id="true" name="true" value="true">'+'<label for="true">'+'Verdadero!'+'</label>'+'<br>'+'<input type="checkbox" id="false" name="false" value="false">'+'<label for="false">'+'Falso'+'</label>'+'<br>');
+                $("#textoVF").val("");
+            });
+
+            //Guarda pregunta seleccion multiple
+            $("#guardarSM").click(function(){
+                var contenido2 = $('textarea[id=textoSM]').val();
+                console.log("Esta pregunta es: "+contenido2);
+                $("#cuestionario").append('<p class="q">' + contenido2 + '</p>');
+                $("#textoSM").val("");
+                $("#questionOpciones").clone().appendTo("#cuestionario");
+                $("#questionOpciones").empty();
+            });
+            //Guarda opcion de seleccion multiple
+            $("#opc").click(function(){
+                var contenido3 = $('textarea[id=textoOptSM]').val();
+                console.log("Esta pregunta es: "+contenido3);
+                $("#questionOpciones").append('<input type="radio">'+contenido3+'<br>');
+                $("#textoOptSM").val("");
+
+            });
+
+        });
 
     </script>
 @endsection

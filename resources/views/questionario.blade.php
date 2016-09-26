@@ -10,7 +10,7 @@
     </header>
     <section class="principal">
         <div class="options">
-            <h3>Seleccione la pregunta a agregar</h3>
+            <h3>Seleccione el tipo de pregunta a agregar</h3>
             <input type="button" id="vf" value="Verdadero/Falso">
             <input type="button" id="selmul" value="Selección Multiple">
         </div>

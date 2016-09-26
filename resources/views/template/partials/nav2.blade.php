@@ -94,6 +94,9 @@
                                 <a href="{{ route('Public.inicioB') }}">Libro</a>
                                 <ul>
                                     <li>
+                                        <a href="{{ route('Public.inicioB') }}">Instrucciones Libro</a>
+                                    </li>
+                                    <li>
                                         <a href="{{ route('Public.book') }}">Crear Libro</a>
                                     </li>
                                     <li>
@@ -106,7 +109,10 @@
                                 <a href="{{ route('Public.inicioC') }}">Contenido</a>
                                 <ul>
                                     <li>
-                                        <a href="{{ route('Public.editor') }}">Editor de Contenidos</a>
+                                        <a href="{{ route('Public.inicioC') }}">Instrucciones de Contenido</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('Public.contenido') }}">Editor de Contenidos</a>
                                     </li>
                                     <li>
                                         <a href="{{ route('Public.mostrarC') }}">Mostrar Contenidos</a>
@@ -117,6 +123,9 @@
                             <li>
                                 <a href="{{ route('Public.inicioQ') }}">Questionarios</a>
                                 <ul>
+                                    <li>
+                                        <a href="{{ route('Public.inicioQ') }}">Instrucciones Questionario</a>
+                                    </li>
                                     <li>
                                         <a href="{{ route('Public.questionario') }}">Crear Cuestionarios</a>
                                     </li>
@@ -130,7 +139,6 @@
                         </ul>
                     </li>
                     <li><a href="#">Ver Recursos educativos</a></li>
-                    <li><a href="#">Buscar libros</a></li>
                 </ul>
             </div>
             <!-- /.sidebar-collapse -->

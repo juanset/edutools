@@ -11,7 +11,7 @@
     <section class="principal">
         <div class="options">
             <h3>Bienvenido</h3>
-           <h4>Acá puedes crear tus recursos educativos en forma de Questionarios, para iniciar es recomendable que tengas definido el tema que quieres poner en el libro, como el contenido que va a tener el libro</h4>
+           <h4>Acá puedes crear tus recursos educativos en forma de Questionarios, para iniciar es recomendable que tengas definido el tema que quieres poner en el cuestionario al igual que una idea del contenido de las preguntas</h4>
         </div>
         <br>
 

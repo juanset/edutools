@@ -16,20 +16,26 @@
         </div>
         <br>
         <div id="qvf"  style="display: none;border: double">
+            <form name="form_vf">
             Esta es una pregunta de verdadero falso, escribe la pregunta e indica la respuesta correcta <br>
-            <section id="questionVF">
-                <textarea class="con_pre" id="textoVF" type="text" rows="2" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea><br>
-                <input type="checkbox" id="true" name="true" value="true"><label for="true">Verdadero!</label> <br>
-                <input type="checkbox" id="false" name="false" value="false"><label for="false">Falso</label> <br>
-                <input class="guardar" id="guardarVF" type="button" value="Guardar">
-            </section>
+                <section id="questionVF">
+                    <form action="">
+                    <textarea class="con_pre" id="textoVF" type="text" rows="2" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea><br>
+                    <input type="radio" id="true" name="tf" value="true"><label for="true">Verdadero!</label> <br>
+                    <input type="radio" id="false" name="tf" value="false"><label for="false">Falso</label> <br>
+                    <input class="guardar" id="guardarVF" type="button" value="Guardar">
+                    </form>
+                </section>
+            </form>
         </div>
         <div id="qsm" style="display: none; border: double" >
             Esta es una pregunta de de selección múltiple <br>
-            <section id="questionSM">
-                <textarea class="con_pre" id="textoSM" type="text" rows="2" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea><br>
-                <textarea class="con_pre" id="textoOptSM" type="text" rows="1" cols="25"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la opción a agregar!"></textarea><br>
-            </section>
+            <form name="form_SM">
+                <section id="artisanquestionSM">
+                    <textarea class="con_pre" id="textoSM" type="text" rows="2" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea><br>
+                    <textarea class="con_pre" id="textoOptSM" type="text" rows="1" cols="25"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la opción a agregar!"></textarea><br>
+                </section>
+            </form>
             <form id="questionOpciones">
 
             </form>
@@ -38,10 +44,9 @@
             <input class="guardar" id="guardarSM" type="button" value="Guardar">
         </div>
     </section>
-    <section id="cuestionario">
+    <section id="cuestionario" style="border-style: groove; border-color: grey;">
 
     </section>
-
 
     <footer class="piep">
         <h3>
@@ -57,6 +62,7 @@
 @section('javascript')
     <script type="text/javascript">
         $(document).ready(function(){
+            var p = 0;
             $('#vf').on('click', function(event) {
                 $('#qvf').toggle('show');
                 $('#qsm').hide();
@@ -69,26 +75,29 @@
             });
             //Guarda pregunta Verdadero Falso
             $("#guardarVF").click(function(){
+                p++;
+                pregunta =  "pre"+p;
                 var contenido = $('textarea[id=textoVF]').val();
                 console.log("Esta pregunta es: "+contenido);
-                $("#cuestionario").append('<p class="q">' + contenido + '</p>'+'<input type="checkbox" id="true" name="true" value="true">'+'<label for="true">'+'Verdadero!'+'</label>'+'<br>'+'<input type="checkbox" id="false" name="false" value="false">'+'<label for="false">'+'Falso'+'</label>'+'<br>');
+                $("#cuestionario").append('<section id="'+pregunta+'" style="border-style: dashed; border-color: #985f0d"><p class="q" >' + contenido + '</p>'+'<input type="radio" id="true'+p+'" name="ft'+p+'" value="true">'+'<label for="true'+p+'">'+'Verdadero!'+'</label>'+'<br>'+'<input type="radio" id="false'+p+'" name="ft'+p+'" value="false">'+'<label for="false'+p+'">'+'Falso'+'</label></section>'+'<br>');
                 $("#textoVF").val("");
             });
-
             //Guarda pregunta seleccion multiple
             $("#guardarSM").click(function(){
+                p++;
+                pregunta =  "pre"+p;
                 var contenido2 = $('textarea[id=textoSM]').val();
                 console.log("Esta pregunta es: "+contenido2);
-                $("#cuestionario").append('<p class="q">' + contenido2 + '</p>');
+                $("#cuestionario").append('<section id="'+pregunta+'" style="border-style: solid; border-color: limegreen"><p class="q">' + contenido2 + '</p></section>');
                 $("#textoSM").val("");
-                $("#questionOpciones").clone().appendTo("#cuestionario");
+                $("#questionOpciones").clone().appendTo("#"+pregunta);
                 $("#questionOpciones").empty();
             });
             //Guarda opcion de seleccion multiple
             $("#opc").click(function(){
                 var contenido3 = $('textarea[id=textoOptSM]').val();
-                console.log("Esta pregunta es: "+contenido3);
-                $("#questionOpciones").append('<input type="radio">'+contenido3+'<br>');
+                console.log("Esta opcion es: "+contenido3);
+                $("#questionOpciones").append('<input type="radio" name="opSm">'+contenido3+'<br>');
                 $("#textoOptSM").val("");
 
             });

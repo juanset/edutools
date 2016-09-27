@@ -21,14 +21,6 @@
 
     </section>
 
-    <footer class="piep">
-        <h3>
-            <strong>Powered By Juanset</strong>
-				<span class="mejor">
-					compuset.co 2016
-				</span>
-        </h3>
-    </footer>
     </body>
 @endsection
 

@@ -94,13 +94,13 @@
                                 <a href="{{ route('Public.inicioB') }}">Libro</a>
                                 <ul>
                                     <li>
-                                        <a href="{{ route('Public.inicioB') }}">Instrucciones Libro</a>
+                                        <a href="{{ route('Public.inicioB') }}">Instrucciones</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.book') }}">Crear Libro</a>
+                                        <a href="{{ route('Public.book') }}">Crear</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.mostrarB') }}">Mostrar libros</a>
+                                        <a href="{{ route('Public.mostrarB') }}">Mostrar</a>
                                     </li>
                                 </ul>
                             </li>
@@ -109,13 +109,13 @@
                                 <a href="{{ route('Public.inicioC') }}">Contenido</a>
                                 <ul>
                                     <li>
-                                        <a href="{{ route('Public.inicioC') }}">Instrucciones de Contenido</a>
+                                        <a href="{{ route('Public.inicioC') }}">Instrucciones</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.contenido') }}">Editor de Contenidos</a>
+                                        <a href="{{ route('Public.contenido') }}">Editor</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.mostrarC') }}">Mostrar Contenidos</a>
+                                        <a href="{{ route('Public.mostrarC') }}">Mostrar</a>
                                     </li>
                                 </ul>
                             </li>
@@ -124,13 +124,13 @@
                                 <a href="{{ route('Public.inicioQ') }}">Questionarios</a>
                                 <ul>
                                     <li>
-                                        <a href="{{ route('Public.inicioQ') }}">Instrucciones Questionario</a>
+                                        <a href="{{ route('Public.inicioQ') }}">Instrucciones</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.questionario') }}">Crear Cuestionarios</a>
+                                        <a href="{{ route('Public.questionario') }}">Crear</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.mostrarQ') }}">Mostrar Cuestionarios</a>
+                                        <a href="{{ route('Public.mostrarQ') }}">Mostrar</a>
                                     </li>
                                 </ul>
 

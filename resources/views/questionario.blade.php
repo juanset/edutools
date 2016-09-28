@@ -21,7 +21,7 @@
                 <section id="questionVF">
                     <form action="">
                     <textarea class="con_pre" id="textoVF" type="text" rows="2" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea><br>
-                    <input type="radio" id="true" name="tf" value="true"><label for="true">Verdadero!</label> <br>
+                    <input type="radio" id="true" name="tf" value="true"><label for="true">Verdadero</label> <br>
                     <input type="radio" id="false" name="tf" value="false"><label for="false">Falso</label> <br>
                     <input class="guardar" id="guardarVF" type="button" value="Guardar">
                     </form>

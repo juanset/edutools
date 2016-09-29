@@ -11,5 +11,25 @@
       <introspection-scope>book_db:pg_catalog,postgres,public</introspection-scope>
       <resolve-scope>book_db:postgres,public</resolve-scope>
     </data-source>
+    <data-source name="PostgreSQL - content_db@localhost" uuid="7c816e36-8b92-4f3e-b954-670d3d5b6952">
+      <database-info product="PostgreSQL" version="9.5.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-scope>content_db:pg_catalog,postgres,public</introspection-scope>
+      <resolve-scope>content_db:postgres,public</resolve-scope>
+    </data-source>
+    <data-source name="PostgreSQL - question_db@localhost" uuid="5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7">
+      <database-info product="PostgreSQL" version="9.5.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-scope>question_db:pg_catalog,postgres,public</introspection-scope>
+      <resolve-scope>question_db:postgres,public</resolve-scope>
+    </data-source>
   </component>
 </project>

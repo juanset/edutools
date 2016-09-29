@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateImageTable extends Migration
+class CreateImageCTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,16 +12,16 @@ class CreateImageTable extends Migration
      */
     public function up()
     {
-        Schema::create('image', function (Blueprint $table) {
+        Schema::connection('pgsql2')->create('image', function (Blueprint $table) {
             $table->increments('id_image');
             $table->timestamps();
             $table->integer('order');
-            $table->string('source');
             $table->string('alternative');
-            $table->integer('page_id')->unsigned();
-            $table->foreign('page_id')
-                ->references('id_page')
-                ->on('page')
+            $table->string('source');
+            $table->integer('content_id')->unsigned();
+            $table->foreign('content_id')
+                ->references('id_content')
+                ->on('content')
                 ->onDelete('cascade');
         });
     }
@@ -33,6 +33,6 @@ class CreateImageTable extends Migration
      */
     public function down()
     {
-        Schema::drop('image');
+        Schema::connection('pgsql2')->drop('image');
     }
 }

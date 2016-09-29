@@ -75,6 +75,28 @@ return [
             'schema'   => 'public',
         ],
 
+        'pgsql2' => [
+            'driver'   => 'pgsql',
+            'host'     => env('DB2_HOST', 'localhost'),
+            'database' => env('DB2_DATABASE', 'forge'),
+            'username' => env('DB2_USERNAME', 'forge'),
+            'password' => env('DB2_PASSWORD', ''),
+            'charset'  => 'utf8',
+            'prefix'   => '',
+            'schema'   => 'public',
+        ],
+
+        'pgsql3' => [
+            'driver'   => 'pgsql',
+            'host'     => env('DB3_HOST', 'localhost'),
+            'database' => env('DB3_DATABASE', 'forge'),
+            'username' => env('DB3_USERNAME', 'forge'),
+            'password' => env('DB3_PASSWORD', ''),
+            'charset'  => 'utf8',
+            'prefix'   => '',
+            'schema'   => 'public',
+        ],
+
         'sqlsrv' => [
             'driver'   => 'sqlsrv',
             'host'     => env('DB_HOST', 'localhost'),

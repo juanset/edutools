@@ -1,5 +1,9 @@
 @extends('template.main')
-
+@section('icon')
+    <a class="navbar-brand" href="{{ url('/Public') }}">
+        <img src="{{ asset('img/libro2.png') }}" width="auto" height="89px" alt="Logo libro" title="Logo libro">
+    </a>
+@endsection
 @section('title','EditorBook')
 
 @section('content')
@@ -11,8 +15,13 @@
     <section class="principal">
         <div class="options">
             <h3>Bienvenido</h3>
-           <h4>Acá puedes crear tus recursos educativos en forma de libro, para iniciar es recomendable que tengas definido el tema que quieres poner en el libro, como el contenido que va a tener el libro</h4>
-
+            <h4>Acá puedes crear tus recursos educativos en forma de libro, para iniciar es recomendable que tengas definido el tema que quieres poner en el libro, como el contenido que va a tener el libro</h4>
+            <br><br>
+            <center>
+                <a class="hvr-bounce-in" href="{{ route('Public.book') }}">
+                    <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo book"><br>Crea tu libro
+                </a>
+            </center>
 
         </div>
         <br>

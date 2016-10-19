@@ -20,6 +20,8 @@
 
     <!-- MetisMenu CSS -->
     <link href="{{ asset('template/bower_components/metisMenu/dist/metisMenu.min.css') }}" rel="stylesheet">
+    <!-- HOVER CSS -->
+    <link href="{{ asset('css/hover.css') }}" rel="stylesheet">
 
     <!-- DataTables CSS -->
     <link href="{{ asset('template/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css') }}" rel="stylesheet">
@@ -53,7 +55,7 @@
     <div class="nav">
 
         @include('template.partials.nav2')
-    
+
     </div>
 
     <div id="page-wrapper">

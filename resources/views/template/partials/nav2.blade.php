@@ -9,9 +9,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url('/Public') }}">
-                <img src="{{ asset('img/logoB.png') }}" width="86px" height="89px" alt="Logo Editor" title="Logo Editor">
-            </a>
+            @yield('icon')
+
         </div>
         <!-- /.navbar-header -->
 

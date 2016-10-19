@@ -1,5 +1,9 @@
 @extends('template.main')
-
+@section('icon')
+    <a class="navbar-brand" href="{{ url('/Public') }}">
+        <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo libro">
+    </a>
+@endsection
 @section('title','EditorBook')
 
 @section('content')

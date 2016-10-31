@@ -51,7 +51,6 @@
     <section id="cuestionario" style="border-style: groove; border-color: grey;">
 
     </section>
-
     </body>
 @endsection
 

@@ -8,7 +8,6 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <introspection-scope>book_db:pg_catalog,postgres,public</introspection-scope>
       <resolve-scope>book_db:postgres,public</resolve-scope>
     </data-source>
     <data-source name="PostgreSQL - content_db@localhost" uuid="7c816e36-8b92-4f3e-b954-670d3d5b6952">
@@ -18,7 +17,6 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <introspection-scope>content_db:pg_catalog,postgres,public</introspection-scope>
       <resolve-scope>content_db:postgres,public</resolve-scope>
     </data-source>
     <data-source name="PostgreSQL - question_db@localhost" uuid="5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7">
@@ -28,7 +26,6 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <introspection-scope>question_db:pg_catalog,postgres,public</introspection-scope>
       <resolve-scope>question_db:postgres,public</resolve-scope>
     </data-source>
   </component>

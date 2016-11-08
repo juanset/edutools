@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('inicio');
+    return view('user.inicio');
 });
+
+Route::resource('log','LogController');
+Route::resource('store','UsersController');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -79,4 +82,15 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'PublicController@inicioQ',
         'as'	=> 'Public.inicioQ'
     ]);
+
 });
+
+Route::get('/flogin', [
+    'uses' => 'UsersController@flogin',
+    'as'	=> 'flogin'
+]);
+
+Route::get('/fregistry', [
+    'uses' => 'UsersController@fregistry',
+    'as'	=> 'fregistry'
+]);

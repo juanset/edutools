@@ -21,16 +21,46 @@
                     @if(Auth::user())
                         Bienvenido {{ Auth::user()->name }}
                     @else
-                        Usuario
+                        @yield('nav2usuario','Usuario')
                     @endif
                     <i class="fa fa-caret-down"></i>
                 </a>
                 @if(Auth::user())
-                    <ul class="dropdown-menu dropdown-user">Holi</ul>
+                    <ul class="dropdown-menu dropdown-user">
+                    @if(Auth::user()->id_rol == 1)
+
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Opciones</a>
+                        </li>
+
+                    @elseif(Auth::user()->id_rol == 2)
+
+                        <li><a href="{{ route('Creador.show', Auth::user()->id)}}"><i class="fa fa-user fa-fw"></i> Perfil</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Opciones</a>
+                        </li>
+                        <li class="divider"></li>
+
+                    @elseif(Auth::user()->id_rol == 3)
+
+                        <li><a href="{{ route('Estudiante.show', Auth::user()->id)}}"><i class="fa fa-user fa-fw"></i> Perfil</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Opciones</a>
+                        </li>
+                    @endif
+                        <li class="divider"></li>
+                        <li>
+                        <a href="{{ url('/logout') }}">
+                            <i class="fa fa-sign-out fa-fw"></i>
+                            Cerrar Sesión
+                        </a>
+                        </li>
+                    </ul>
                 @else
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Iniciar Sesión</a>
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Registrar</a>
+                        <li><a href="{{route('flogin')}}" ><i class="fa fa-user fa-fw"></i> Iniciar sesion</a>
+                        <li><a href="{{ route('fregistry')}}"><i class="fa fa-user fa-fw"></i> Registrar</a>
                         </li>
                     </ul>
                 @endif

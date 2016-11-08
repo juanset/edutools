@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://C:/xampp/htdocs/edutools/resources/views/questionario.blade.php" line="26" />
+    <bookmark url="file://$PROJECT_DIR$/resources/views/questionario.blade.php" line="26" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e97d4de-ddb7-486b-9759-aa4e32712c5f" name="Default" comment="" />
+    <list default="true" id="7e97d4de-ddb7-486b-9759-aa4e32712c5f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Tool_based_on_Symfony_Console_17_06_16_01_26_AM_artisan.xml" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Tool_based_on_Symfony_Console_17_06_16_01_26_AM_artisan.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/inicio.blade.php" afterPath="$PROJECT_DIR$/resources/views/inicio.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/template/partials/nav2.blade.php" afterPath="$PROJECT_DIR$/resources/views/template/partials/nav2.blade.php" />
+    </list>
     <ignored path="book.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -16,7 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <pharConfigPath>C:/xampp/htdocs/edutool/composer.json</pharConfigPath>
+    <pharConfigPath>$PROJECT_DIR$/../edutool/composer.json</pharConfigPath>
     <pharPath>C:\ProgramData\ComposerSetup\bin\composer.phar</pharPath>
     <phpPath>C:\xampp\php\php.exe</phpPath>
   </component>
@@ -37,37 +43,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="questionario.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://C:/xampp/htdocs/edutools/resources/views/questionario.blade.php">
+      <file leaf-file-name="inicio.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/inicio.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-              <folding>
-                <marker date="1477400854317" expanded="true" signature="4487:6642" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="4498:6641" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="4546:4696" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="4572:4695" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="4727:4877" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="4753:4876" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="4960:5623" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="4971:5622" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="5198:5568" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="5233:5276" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="5709:6250" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="5720:6249" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="5984:6028" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="6331:6629" ph="..." />
-                <marker date="1477400854317" expanded="true" signature="6342:6628" ph="..." />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://C:/xampp/htdocs/edutools/.env">
+      <file leaf-file-name="nav2.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/template/partials/nav2.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,60 +95,65 @@
     </commandsHistory>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="C:/xampp/htdocs/edutool" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="C:/xampp/htdocs/edutool/artisan" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/template/bootstrap.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/template/master.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/template/flip.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/public/css/book_style.css" />
-        <option value="C:/xampp/htdocs/edutool/public/css/book_style.styl" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/welcome.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/public/plugins/ckeditor/config.js" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/summer.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/app/Http/routes.php" />
-        <option value="C:/xampp/htdocs/edutool/app/Http/Controllers/PublicController.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/seeds/DatabaseSeeder.php" />
-        <option value="C:/xampp/htdocs/edutool/database/seeds/UserTableSeeder.php" />
-        <option value="C:/xampp/htdocs/edutool/database/factories/ModelFactory.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_27_220128_create_book_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_27_221157_create_book_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/artisan" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/template/bootstrap.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/template/master.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/template/flip.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/public/css/book_style.css" />
+        <option value="$PROJECT_DIR$/../edutool/public/css/book_style.styl" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/public/plugins/ckeditor/config.js" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/summer.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/../edutool/app/Http/Controllers/PublicController.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/seeds/UserTableSeeder.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/factories/ModelFactory.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_27_220128_create_book_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_27_221157_create_book_table.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/aeeea51f-5b2a-4f99-be85-3d365b91e7b4/console.sql" />
-        <option value="C:/xampp/htdocs/edutool/vendor/composer/autoload_classmap.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_27_221505_create_chapter_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_020310_create_subtitle_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_27_225103_create_paragraph_table.php" />
-        <option value="C:/xampp/htdocs/edutool/.env" />
-        <option value="C:/xampp/htdocs/edutool/config/database.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_033523_create_paragraph_c_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_015318_create_image_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_033703_create_subtitle_c_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_033909_create_image_c_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_022102_create_content_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_27_225033_create_page_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_034623_create_question_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_034650_create_true_false_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_034736_create_option_table.php" />
-        <option value="C:/xampp/htdocs/edutool/database/migrations/2016_09_28_034717_create_mutiple_selection_table.php" />
-        <option value="C:/xampp/htdocs/edutool/public/template/dist/css/sb-admin-2.css" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/template/partials/nav2.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/mostrarB.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/contenido.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/editor.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/mostrarC.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/mostrarQ.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/book.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/template/main.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/inicioC.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/inicioQ.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/inicioB.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/inicio.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/questionario.blade.php" />
-        <option value="C:/xampp/htdocs/edutool/resources/views/questionario.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/vendor/composer/autoload_classmap.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_27_221505_create_chapter_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_020310_create_subtitle_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_27_225103_create_paragraph_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/.env" />
+        <option value="$PROJECT_DIR$/../edutool/config/database.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_033523_create_paragraph_c_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_015318_create_image_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_033703_create_subtitle_c_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_033909_create_image_c_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_022102_create_content_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_27_225033_create_page_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_034623_create_question_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_034650_create_true_false_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_034736_create_option_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/database/migrations/2016_09_28_034717_create_mutiple_selection_table.php" />
+        <option value="$PROJECT_DIR$/../edutool/public/template/dist/css/sb-admin-2.css" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/template/partials/nav2.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/mostrarB.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/contenido.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/editor.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/mostrarC.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/mostrarQ.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/book.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/template/main.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/inicioC.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/inicioQ.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/inicioB.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/inicio.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/questionario.blade.php" />
+        <option value="$PROJECT_DIR$/../edutool/resources/views/questionario.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/inicio.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/template/partials/nav2.blade.php" />
       </list>
     </option>
   </component>
@@ -173,70 +168,69 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
-      <path value="C:/xampp/htdocs/edutool/vendor/monolog/monolog" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpunit/php-code-coverage" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpunit/phpunit" />
-      <path value="C:/xampp/htdocs/edutool/vendor/doctrine/instantiator" />
-      <path value="C:/xampp/htdocs/edutool/vendor/nikic/php-parser" />
-      <path value="C:/xampp/htdocs/edutool/vendor/composer" />
-      <path value="C:/xampp/htdocs/edutool/vendor/doctrine/inflector" />
-      <path value="C:/xampp/htdocs/edutool/vendor/jeremeamia/SuperClosure" />
-      <path value="C:/xampp/htdocs/edutool/vendor/paragonie/random_compat" />
-      <path value="C:/xampp/htdocs/edutool/vendor/psr/log" />
-      <path value="C:/xampp/htdocs/edutool/vendor/swiftmailer/swiftmailer" />
-      <path value="C:/xampp/htdocs/edutool/vendor/classpreloader/classpreloader" />
-      <path value="C:/xampp/htdocs/edutool/vendor/sebastian/global-state" />
-      <path value="C:/xampp/htdocs/edutool/vendor/sebastian/comparator" />
-      <path value="C:/xampp/htdocs/edutool/vendor/psy/psysh" />
-      <path value="C:/xampp/htdocs/edutool/vendor/sebastian/environment" />
-      <path value="C:/xampp/htdocs/edutool/vendor/sebastian/exporter" />
-      <path value="C:/xampp/htdocs/edutool/vendor/sebastian/recursion-context" />
-      <path value="C:/xampp/htdocs/edutool/vendor/sebastian/diff" />
-      <path value="C:/xampp/htdocs/edutool/vendor/sebastian/version" />
-      <path value="C:/xampp/htdocs/edutool/vendor/vlucas/phpdotenv" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpspec/prophecy" />
-      <path value="C:/xampp/htdocs/edutool/vendor/fzaninotto/faker" />
-      <path value="C:/xampp/htdocs/edutool/vendor/jakub-onderka/php-console-highlighter" />
-      <path value="C:/xampp/htdocs/edutool/vendor/dnoegel/php-xdg-base-dir" />
-      <path value="C:/xampp/htdocs/edutool/vendor/jakub-onderka/php-console-color" />
-      <path value="C:/xampp/htdocs/edutool/vendor/hamcrest/hamcrest-php" />
-      <path value="C:/xampp/htdocs/edutool/vendor/mockery/mockery" />
-      <path value="C:/xampp/htdocs/edutool/vendor/league/flysystem" />
-      <path value="C:/xampp/htdocs/edutool/vendor/laravel/framework" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/console" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/process" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/debug" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/polyfill-php56" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/polyfill-util" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpdocumentor/reflection-docblock" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/var-dumper" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/http-kernel" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/dom-crawler" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/finder" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/routing" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/css-selector" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/event-dispatcher" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/translation" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/polyfill-mbstring" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/http-foundation" />
-      <path value="C:/xampp/htdocs/edutool/vendor/symfony/yaml" />
-      <path value="C:/xampp/htdocs/edutool/vendor/mtdowling/cron-expression" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpunit/php-file-iterator" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpunit/php-timer" />
-      <path value="C:/xampp/htdocs/edutool/vendor/nesbot/carbon" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpunit/php-text-template" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpunit/php-token-stream" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpunit/phpunit-mock-objects" />
-      <path value="C:/xampp/htdocs/edutool/vendor/webmozart/assert" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpdocumentor/type-resolver" />
-      <path value="C:/xampp/htdocs/edutool/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/composer" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/jeremeamia/SuperClosure" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/classpreloader/classpreloader" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/../edutool/vendor/phpdocumentor/reflection-common" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -321,25 +315,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="edutools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/xampp/htdocs/evaluacion1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lora" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
@@ -505,11 +492,15 @@
       <workItem from="1477399402609" duration="2386000" />
       <workItem from="1477424586668" duration="102000" />
       <workItem from="1477930273755" duration="1597000" />
+      <workItem from="1478284449280" duration="776000" />
+      <workItem from="1478289806767" duration="2598000" />
+      <workItem from="1478540533320" duration="3349000" />
+      <workItem from="1478583910966" duration="1351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174027000" />
+    <option name="totallyTimeSpent" value="182101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,13 +512,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-7" y="0" width="697" height="745" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1651671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.433281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31282052" sideWeight="0.505295" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14674735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30298272" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27986348" sideWeight="0.494705" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32774675" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -536,7 +528,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2769231" sideWeight="0.494705" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24933687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -586,13 +577,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/xampp/htdocs/edutools/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -607,270 +591,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_27_221505_create_chapter_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_221505_create_chapter_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_27_221157_create_book_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_221157_create_book_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="18" column="36" selection-start-line="17" selection-start-column="12" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_020310_create_subtitle_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_020310_create_subtitle_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="19" column="38" selection-start-line="17" selection-start-column="11" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_033523_create_paragraph_c_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_033523_create_paragraph_c_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_27_225103_create_paragraph_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_225103_create_paragraph_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_033703_create_subtitle_c_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_033703_create_subtitle_c_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_015318_create_image_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_015318_create_image_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/42fda656/99da21a2-477b-48b9-932b-2a0e5f73b84f/book_db.public.users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_27_225033_create_page_table.php">
+    <entry file="dbDummy://dbtable:/42fda656/99da21a2-477b-48b9-932b-2a0e5f73b84f/book_db.public.users" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_27_225033_create_page_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_022102_create_content_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_022102_create_content_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_034623_create_question_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_034623_create_question_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_034650_create_true_false_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_034650_create_true_false_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_034736_create_option_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_034736_create_option_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7</OriginalElement>
-          <nodes>
-            <node x="" y="">5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.multiple_selection</node>
-            <node x="" y="">5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.true_false</node>
-            <node x="" y="">5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.option</node>
-            <node x="" y="">5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.question</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.7446236559139785" x="265.0" y="31.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_033909_create_image_c_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_033909_create_image_c_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/database/migrations/2016_09_28_034717_create_mutiple_selection_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_28_034717_create_mutiple_selection_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/public/template/dist/css/sb-admin-2.css">
+    <entry file="file://$PROJECT_DIR$/public/template/dist/css/sb-admin-2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/public/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/public/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/contenido.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/contenido.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/editor.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/mostrarC.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/mostrarC.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="1814" selection-start-line="12" selection-start-column="1814" selection-end-line="12" selection-end-column="1814" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/mostrarQ.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/mostrarQ.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/book.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/book.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/template/partials/nav2.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="98" column="49" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/app/Http/Controllers/PublicController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PublicController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/app/Http/Controllers/Controller.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/mostrarB.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/mostrarB.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="97" selection-start-line="20" selection-start-column="97" selection-end-line="20" selection-end-column="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/template/main.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/template/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="23" column="39" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/inicioQ.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/inicioQ.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/inicioC.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/inicioC.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="33" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/inicioB.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/42fda656/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7/question_db.public.true_false">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="39" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/42fda656/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7/question_db.public.true_false" />
     <entry file="uml://DATABASE/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.SCHEMA:question_db.public">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -909,197 +820,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/99da21a2-477b-48b9-932b-2a0e5f73b84f">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>99da21a2-477b-48b9-932b-2a0e5f73b84f</OriginalElement>
-          <nodes>
-            <node x="0.0" y="821.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.password_resets</node>
-            <node x="861.0" y="0.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.users</node>
-            <node x="236.0" y="821.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.migrations</node>
-            <node x="282.0" y="603.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.subtitle</node>
-            <node x="552.0" y="603.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.paragraph</node>
-            <node x="0.0" y="592.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.image</node>
-            <node x="299.0" y="0.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.book</node>
-            <node x="299.5" y="402.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page</node>
-            <node x="281.5" y="190.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.chapter</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.paragraph" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page">
-              <point x="0.0" y="-81.0" />
-              <point x="684.0" y="567.0" />
-              <point x="478.6666666666667" y="567.0" />
-              <point x="71.66666666666669" y="70.0" />
-            </edge>
-            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.image" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page">
-              <point x="0.0" y="-92.0" />
-              <point x="131.0" y="567.0" />
-              <point x="335.3333333333333" y="567.0" />
-              <point x="-71.66666666666669" y="70.0" />
-            </edge>
-            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.subtitle" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page">
-              <point x="0.0" y="-81.0" />
-              <point x="0.0" y="70.0" />
-            </edge>
-            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.chapter">
-              <point x="0.0" y="-70.0" />
-              <point x="0.0" y="81.0" />
-            </edge>
-            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.chapter" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.book">
-              <point x="0.0" y="-81.0" />
-              <point x="0.0" y="70.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.5662393162393162" x="191.0" y="414.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/42fda656/7c816e36-8b92-4f3e-b954-670d3d5b6952/content_db.public.content">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/42fda656/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7/question_db.public.multiple_selection">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/42fda656/99da21a2-477b-48b9-932b-2a0e5f73b84f/book_db.public.book">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/7c816e36-8b92-4f3e-b954-670d3d5b6952">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>7c816e36-8b92-4f3e-b954-670d3d5b6952</OriginalElement>
-          <nodes>
-            <node x="" y="">7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.paragraph</node>
-            <node x="" y="">7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.subtitle</node>
-            <node x="" y="">7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.image</node>
-            <node x="" y="">7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.content</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="304.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/42fda656/7c816e36-8b92-4f3e-b954-670d3d5b6952/content_db.public.image">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/42fda656/7c816e36-8b92-4f3e-b954-670d3d5b6952/content_db.public.paragraph">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/42fda656/7c816e36-8b92-4f3e-b954-670d3d5b6952/content_db.public.subtitle">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/42fda656/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7/question_db.public.option">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/42fda656/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7/question_db.public.question">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/.env">
+    <entry file="dbDummy://dbtable:/42fda656/7c816e36-8b92-4f3e-b954-670d3d5b6952/content_db.public.content" />
+    <entry file="dbDummy://dbtable:/42fda656/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7/question_db.public.multiple_selection" />
+    <entry file="dbDummy://dbtable:/42fda656/99da21a2-477b-48b9-932b-2a0e5f73b84f/book_db.public.book" />
+    <entry file="dbDummy://dbtable:/42fda656/7c816e36-8b92-4f3e-b954-670d3d5b6952/content_db.public.image" />
+    <entry file="dbDummy://dbtable:/42fda656/7c816e36-8b92-4f3e-b954-670d3d5b6952/content_db.public.paragraph" />
+    <entry file="dbDummy://dbtable:/42fda656/7c816e36-8b92-4f3e-b954-670d3d5b6952/content_db.public.subtitle" />
+    <entry file="dbDummy://dbtable:/42fda656/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7/question_db.public.option" />
+    <entry file="dbDummy://dbtable:/42fda656/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7/question_db.public.question" />
+    <entry file="file://$PROJECT_DIR$/resources/views/questionario.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/inicio.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/edutools/resources/views/questionario.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+        <state relative-caret-position="1003">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
           <folding>
             <marker date="1477400854317" expanded="true" signature="4487:6642" ph="..." />
             <marker date="1477400854317" expanded="true" signature="4498:6641" ph="..." />
@@ -1117,6 +849,192 @@
             <marker date="1477400854317" expanded="true" signature="6331:6629" ph="..." />
             <marker date="1477400854317" expanded="true" signature="6342:6628" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="90" column="39" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raim/inicio_session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/editor.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/inicioB.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/7c816e36-8b92-4f3e-b954-670d3d5b6952">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>7c816e36-8b92-4f3e-b954-670d3d5b6952</OriginalElement>
+          <nodes>
+            <node x="282.0" y="223.0">7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.paragraph</node>
+            <node x="566.0" y="223.0">7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.subtitle</node>
+            <node x="0.0" y="212.0">7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.image</node>
+            <node x="288.0" y="0.0">7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.content</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.image" target="7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.content">
+              <point x="0.0" y="-92.0" />
+              <point x="131.0" y="187.0" />
+              <point x="330.0" y="187.0" />
+              <point x="-84.0" y="81.0" />
+            </edge>
+            <edge source="7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.paragraph" target="7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.content">
+              <point x="0.0" y="-81.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.subtitle" target="7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.content">
+              <point x="0.0" y="-81.0" />
+              <point x="691.0" y="187.0" />
+              <point x="498.0" y="187.0" />
+              <point x="84.0" y="81.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="221.0" y="173.0" />
+          <SelectedNodes>
+            <node>7c816e36-8b92-4f3e-b954-670d3d5b6952.TABLE:content_db.public.content</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/99da21a2-477b-48b9-932b-2a0e5f73b84f">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>99da21a2-477b-48b9-932b-2a0e5f73b84f</OriginalElement>
+          <nodes>
+            <node x="0.0" y="821.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.password_resets</node>
+            <node x="861.0" y="0.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.users</node>
+            <node x="236.0" y="821.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.migrations</node>
+            <node x="566.0" y="603.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.subtitle</node>
+            <node x="282.0" y="603.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.paragraph</node>
+            <node x="0.0" y="592.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.image</node>
+            <node x="306.0" y="0.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.book</node>
+            <node x="306.5" y="402.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page</node>
+            <node x="288.5" y="190.0">99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.chapter</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.paragraph" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page">
+              <point x="0.0" y="-81.0" />
+              <point x="0.0" y="70.0" />
+            </edge>
+            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.image" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page">
+              <point x="0.0" y="-92.0" />
+              <point x="131.0" y="567.0" />
+              <point x="342.3333333333333" y="567.0" />
+              <point x="-71.66666666666669" y="70.0" />
+            </edge>
+            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.subtitle" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page">
+              <point x="0.0" y="-81.0" />
+              <point x="691.0" y="567.0" />
+              <point x="485.6666666666667" y="567.0" />
+              <point x="71.66666666666669" y="70.0" />
+            </edge>
+            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.page" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.chapter">
+              <point x="0.0" y="-70.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.chapter" target="99da21a2-477b-48b9-932b-2a0e5f73b84f.TABLE:book_db.public.book">
+              <point x="0.0" y="-81.0" />
+              <point x="0.0" y="70.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="375.0" y="533.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7</OriginalElement>
+          <nodes>
+            <node x="0.0" y="190.0">5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.multiple_selection</node>
+            <node x="329.0" y="190.0">5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.true_false</node>
+            <node x="32.5" y="402.0">5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.option</node>
+            <node x="189.5" y="0.0">5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.question</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.multiple_selection" target="5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.question">
+              <point x="0.0" y="-81.0" />
+              <point x="154.5" y="165.0" />
+              <point x="248.5" y="165.0" />
+              <point x="-59.0" y="70.0" />
+            </edge>
+            <edge source="5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.option" target="5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.multiple_selection">
+              <point x="0.0" y="-81.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.true_false" target="5c249aa5-35fd-42a4-a6b9-49d72fd2a8e7.TABLE:question_db.public.question">
+              <point x="0.0" y="-81.0" />
+              <point x="460.5" y="165.0" />
+              <point x="366.5" y="165.0" />
+              <point x="59.0" y="70.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9075342465753424" x="296.0" y="282.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/inicio.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/template/partials/nav2.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

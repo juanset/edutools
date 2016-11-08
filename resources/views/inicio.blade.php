@@ -4,7 +4,7 @@
         <img src="{{ asset('img/eduTools3.png') }}" width="auto" height="89px" alt="Logo Editor" title="Logo Editor">
     </a>
 @endsection
-@section('title','Edutool')
+@section('title','Edutools')
 
 @section('content')
 <head>

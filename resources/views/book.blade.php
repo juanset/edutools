@@ -1,9 +1,11 @@
 @extends('template.main')
+
 @section('icon')
     <a class="navbar-brand" href="{{ url('/Public') }}">
         <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo libro">
     </a>
 @endsection
+
 @section('title','EditorBook')
 
 @section('content')
@@ -36,22 +38,25 @@
             <p>Eliminar la página:</p> <input id="rem_p" type="number" min="1" placeholder="pagina a eliminar"><button id="rempage">Eliminar</button>
         </div>
         <br>
-        <div class="form-group">
-            {!! Form::open(['route' => 'store.libro', 'method' => 'POST', 'id' => 'form_libro']) !!}
-            <div class="form-group" id="flipbook">
-                <div class="hard form-group">
-                    <div id="content1"></div>
-                </div>
-                <div class="hard form-group">
-                    <div id="content2"></div>
-                </div>
 
+        <div id="flipbook">
+            <div class="hard">
+                <div id="content1"></div>
             </div>
-            <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
-            <input type="hidden" name="_method" value="POST">
-            <input type="button" class="btn btn-primary" value="Guardar" id="boton01">
-            {!! Form::close() !!}
+            <div class="hard">
+                <div id="content2"></div>
+            </div>
         </div>
+
+        {!! Form::open(['route' => 'store.libro', 'method' => 'POST', 'id' => 'form_libro']) !!}
+        <div class="form-group">
+
+            <input type="hidden" name="_method" value="POST">
+            {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1', 'placeholder' => 'Todo el libro','id' => 'kontenido']) !!}
+            <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
+        </div>
+        <button type="submit" class="btn btn-primary" value="Guardar" id="boton01">Guardar</button>
+        {!! Form::close() !!}
     </section>
 
     </body>
@@ -151,9 +156,11 @@
                 var form = $("#form_libro");
                 var url = form.attr('action');
                 var token = $("#token").val();
-                var data = form.serialize();
-                
-                $.post(url, data, function (result) {
+                $("#kontenido").val(contenido);
+                var contenido2 =$("#kontenido").val();
+                //var data = form.serialize();
+                //alert("Contenido:"+contenido+" form: "+form+" url: "+url+" token: "+token+" DATA: "+data);
+                $.post(url, contenido2, function (result) {
                     alert(result);
                 });
 

@@ -95,7 +95,7 @@ Route::get('/fregistry', [
     'as'	=> 'fregistry'
 ]);
 
-Route::get('/store.libro', [
-    'uses' => 'store@libro',
+Route::post('/store.libro', [
+    'uses' => 'storeController@libro',
     'as'	=> 'store.libro'
 ]);

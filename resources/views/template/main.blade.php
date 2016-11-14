@@ -11,6 +11,7 @@
 
     <title>@yield('title', 'RAIM')</title>
 
+    <link rel="icon" type="image/png" href="{{ asset('img/favicon.ico') }}" />
     <link href="{{ asset('plugins/toastr/toastr.min.css') }}" rel="stylesheet">
 
     <script src="{{ asset('plugins/ckeditor/ckeditor.js') }}"></script>
@@ -72,7 +73,7 @@
 <script src="{{ asset('template/bower_components/jquery/dist/jquery.min.js') }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ asset('template/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('template/bower_components/bootstrap/dist/js/bootstrap.js') }}"></script>
 
 <!-- Metis Menu Plugin JavaScript -->
 <script src="{{ asset('template/bower_components/metisMenu/dist/metisMenu.min.js') }}"></script>

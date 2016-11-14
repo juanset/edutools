@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\User;
-use App\Book;
 use Illuminate\Http\Request;
 use Redirect;
 use Session;
@@ -48,18 +47,7 @@ class UsersController extends Controller
         return view('user.registry');
     }
 
-    public function libro(Requests\LibroRequest $request)
-    {
-        $contenido = $request['contenido'];
-        echo $contenido;
-        if ($request->ajax()){
 
-            return response()->json([
-                "mensaje" => $request->all()
-            ]);
-        }
-        return redirect()->route('public.inicio');
-    }
 
 
 

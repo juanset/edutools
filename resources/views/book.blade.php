@@ -36,14 +36,21 @@
             <p>Eliminar la página:</p> <input id="rem_p" type="number" min="1" placeholder="pagina a eliminar"><button id="rempage">Eliminar</button>
         </div>
         <br>
-        <div id="flipbook">
-            <div class="hard">
-                <div id="content1"></div>
-            </div>
-            <div class="hard">
-                <div id="content2"></div>
-            </div>
+        <div class="form-group">
+            {!! Form::open(['route' => 'store.libro', 'method' => 'POST', 'id' => 'form_libro']) !!}
+            <div class="form-group" id="flipbook">
+                <div class="hard form-group">
+                    <div id="content1"></div>
+                </div>
+                <div class="hard form-group">
+                    <div id="content2"></div>
+                </div>
 
+            </div>
+            <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
+            <input type="hidden" name="_method" value="POST">
+            <input type="button" class="btn btn-primary" value="Guardar" id="boton01">
+            {!! Form::close() !!}
         </div>
     </section>
 
@@ -136,6 +143,20 @@
                 n_pag = $('input[id=rem_p]').val();
                 $("#flipbook").turn("removePage", n_pag);
                 //Falta remover el option del selector de páginas para contenido
+            });
+
+//Guardar el contenido AJAX post
+            $("#boton01").click(function(){
+                var contenido = $("#flipbook").html();
+                var form = $("#form_libro");
+                var url = form.attr('action');
+                var token = $("#token").val();
+                var data = form.serialize();
+                
+                $.post(url, data, function (result) {
+                    alert(result);
+                });
+
             });
 
         });

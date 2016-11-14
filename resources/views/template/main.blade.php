@@ -11,7 +11,7 @@
 
     <title>@yield('title', 'RAIM')</title>
 
-    <link href="{{ asset('plugins/toastr-master/build/toastr.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/toastr/toastr.min.css') }}" rel="stylesheet">
 
     <script src="{{ asset('plugins/ckeditor/ckeditor.js') }}"></script>
 
@@ -98,6 +98,7 @@
 --}}
 <script src="{{ asset('js/modifyStyle.js') }}"></script>
 <script src="{{asset('plugins/turnjs4/lib/turn.js')}}"></script>
+<script src="{{asset('plugins/toastr/toastr.min.js')}}"></script>
 
 <!-- Page-Level Demo Scripts - Tables - Use for reference -->
 <script>

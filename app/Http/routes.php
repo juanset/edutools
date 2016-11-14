@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('user.inicio');
+    return view('inicio');
 });
 
 Route::resource('log','LogController');
@@ -93,4 +93,9 @@ Route::get('/flogin', [
 Route::get('/fregistry', [
     'uses' => 'UsersController@fregistry',
     'as'	=> 'fregistry'
+]);
+
+Route::get('/store.libro', [
+    'uses' => 'store@libro',
+    'as'	=> 'store.libro'
 ]);

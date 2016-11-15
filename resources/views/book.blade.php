@@ -55,7 +55,7 @@
         <div class="form-group">
 
             <input type="hidden" name="_method" value="POST">
-            {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido']) !!}
+            {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
             <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
         </div>
         <button type="submit" class="btn btn-primary" value="Guardar" id="boton01">Guardar</button>

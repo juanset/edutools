@@ -18,14 +18,8 @@ class storeController extends Controller
         Libro::create([
             'contenido' => $request['contenido'],
             ]);
-
-
-        if ($request->ajax()){
-
-            return response()->json([
-                "mensaje" => $request->all()
-            ]);
-        }
+        Session::flash('flash_message','Libro guardado de manera exitosa');
+        return Redirect::to('Public/inicioB');
 
     }
 }

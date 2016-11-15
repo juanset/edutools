@@ -7,7 +7,9 @@
 @endsection
 
 @section('title','EditorBook')
-
+@if(Session::has('flash_message'))
+    <div class="alert alert-success">{{Session::get('flash_message')}}</div>
+@endif
 @section('content')
 
     <body class="cuerpo" >
@@ -52,7 +54,7 @@
         <div class="form-group">
 
             <input type="hidden" name="_method" value="POST">
-            {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1', 'placeholder' => 'Todo el libro','id' => 'kontenido']) !!}
+            {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido']) !!}
             <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
         </div>
         <button type="submit" class="btn btn-primary" value="Guardar" id="boton01">Guardar</button>
@@ -158,8 +160,6 @@
                 var token = $("#token").val();
                 $("#kontenido").val(contenido);
                 var contenido2 =$("#kontenido").val();
-                //var data = form.serialize();
-                //alert("Contenido:"+contenido+" form: "+form+" url: "+url+" token: "+token+" DATA: "+data);
                 $.post(url, contenido2, function (result) {
                     alert(result);
                 });

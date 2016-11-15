@@ -6,6 +6,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Redirect;
 use Session;
+use Auth;
 use App\Http\Requests;
 use App\Http\Requests\UserCreateRequest;
 use Illuminate\Support\Facades\Input;
@@ -27,8 +28,8 @@ class UsersController extends Controller
                 'password' => bcrypt($request['password1'])
             ]
         );
-        Session::flash('user-registry','Usuario creado de manera exitosa');
-        return Redirect::to('/flogin');
+        flash('Welcome Aboard!');
+        return Redirect::to('/flogin')->with('msg', 'Gracias por visitarnos usuario mk creado!.');
 
     }
 
@@ -45,6 +46,11 @@ class UsersController extends Controller
     public function fregistry()
     {
         return view('user.registry');
+    }
+    public function logout()
+    {
+        Auth::logout();
+        return view('/inicio');
     }
 
 

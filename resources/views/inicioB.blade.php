@@ -5,7 +5,9 @@
     </a>
 @endsection
 @section('title','EditorBook')
-
+@if(Session::has('flash_message'))
+    <div class="alert alert-success">{{Session::get('flash_message')}}</div>
+@endif
 @section('content')
 
     <body class="cuerpo" >

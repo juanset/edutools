@@ -99,3 +99,8 @@ Route::post('/store.libro', [
     'uses' => 'storeController@libro',
     'as'	=> 'store.libro'
 ]);
+
+Route::get('/logout', [
+    'uses' => 'UsersController@logout',
+    'as'	=> 'logout'
+]);

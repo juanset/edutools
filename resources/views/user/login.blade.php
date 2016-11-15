@@ -16,11 +16,10 @@
             {!! Form::open(['route' => 'log.store','class' => 'form-horizontal col-lg-offset-1', 'method' => 'POST']) !!}
             <legend>Iniciar Sesión</legend>
             <div class="form-group" >
-
                     {!! Form::text('username',null,['class' => 'form-control col-lg-offset-1', 'placeholder' => 'Username', 'required']) !!}
-                </div>
+            </div>
             <div class="form-group">
-                {!! Form::password('password',['class' => 'form-control col-lg-offset-1', 'placeholder' => '*********', 'required']) !!}
+                {!! Form::password('password',['class' => 'form-control col-lg-offset-1', 'placeholder' => 'password', 'required']) !!}
             </div>
             <div class="form-group">
                 {!! Form::submit('Iniciar sesión', ['class' => 'btn btn-primary  col-lg-offset-1']) !!}

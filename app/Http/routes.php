@@ -82,6 +82,10 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'PublicController@inicioQ',
         'as'	=> 'Public.inicioQ'
     ]);
+    Route::get('/libro/{id}',[
+        'uses' 	=> 'PublicController@libro',
+        'as'	=> 'Public.libro'
+    ]);
 
 });
 

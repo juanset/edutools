@@ -17,9 +17,26 @@
     <section class="principal">
         <div class="options">
             <h3>Tus libros</h3>
-           <h4>Estos son los libros que has creado:</h4>
-        <div style="border-color: #a6b3cd; border-style: solid;width: 100px;height: 100px"></div>
+           <h4 class="page-header">Estos son los libros que has creado:</h4>
 
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Libro</th>
+                        <th>Ver</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($libros as $libro)
+                        <tr>
+                            <td>{{$libro->id}}</td>
+                            <td>Libro{{$libro->id}}</td>
+                            <td><a href="{{route("Public.libro",$libro->id)}}">VER</a></td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
         <br>
 

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Libro;
 use Illuminate\Http\Request;
-
+use Libros;
+use App\Http\Requests\LibroRequest;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -22,21 +24,23 @@ class PublicController extends Controller
 
     public function book()
     {
-
         return view('book');
-
     }
 
     public function mostrarB()
     {
-
-        return view('mostrarB');
+        $libros = Libro::all();
+        return view('mostrarB', compact('libros'));
 
     }
-
+    public function libro($id)
+    {
+        $libros =Libro::where('id',$id)
+        ->get();
+        return view('user.libro',compact('libros'));
+    }
     public function inicioB()
     {
-
         return view('inicioB');
 
     }

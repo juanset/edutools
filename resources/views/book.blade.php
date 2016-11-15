@@ -40,7 +40,7 @@
             <p>Eliminar la página:</p> <input id="rem_p" type="number" min="1" placeholder="pagina a eliminar"><button id="rempage">Eliminar</button>
         </div>
         <br>
-
+<div id="librote">
         <div id="flipbook">
             <div class="hard">
                 <div id="content1"></div>
@@ -49,6 +49,7 @@
                 <div id="content2"></div>
             </div>
         </div>
+</div>
 
         {!! Form::open(['route' => 'store.libro', 'method' => 'POST', 'id' => 'form_libro']) !!}
         <div class="form-group">
@@ -154,7 +155,7 @@
 
 //Guardar el contenido AJAX post
             $("#boton01").click(function(){
-                var contenido = $("#flipbook").html();
+                var contenido = $("#librote").html();
                 var form = $("#form_libro");
                 var url = form.attr('action');
                 var token = $("#token").val();

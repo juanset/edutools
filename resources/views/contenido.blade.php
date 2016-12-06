@@ -17,13 +17,17 @@
     </header>
     <section class="principal">
         <h3>Agrega el contenido que quieras en la página</h3>
-        <form>
+
+        {!! Form::open(['route' => 'store.contenido', 'method' => 'POST', 'id' => 'form_contenido']) !!}
+        <div class="form-group">
             <textarea id="texto" name="texto" type="text" rows="4" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite el contenido a agregar!"></textarea>
-            <script>
-                CKEDITOR.replace( 'texto',{  "extraPlugins": "imagebrowser"} );
-            </script>
-        </form>
-        <h4>Al finalizar dale guardar!<img src="http://tuicono.com/img-tuicono.com/g/guardar/icoguardar-gif.jpg" alt="guardar"></h4>
+
+            <input type="hidden" name="_method" value="POST">
+            {!! Form::textarea('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
+            <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
+        </div>
+        <button type="submit" class="btn btn-primary" value="Guardar" id="boton01">Guardar</button>
+        {!! Form::close() !!}
     </section>
     </body>
 
@@ -31,7 +35,24 @@
 
 @section('javascript')
     <script>
+        CKEDITOR.replace( 'texto',{  "extraPlugins": "imagebrowser"} );
+        $(document).ready(function() {
+            //Guardar el contenido AJAX post
 
+            $("#boton01").click(function () {
+                var editor_data = CKEDITOR.instances.texto.getData();
+                var contenido = editor_data;
+                //alert("Error al guardar, no se pudo obtener el contenido completo."+ editor_data+contenido);
+                var form = $("#form_contenido");
+                var url = form.attr('action');
+                var token = $("#token").val();
+                $("#kontenido").val(contenido);
+                var contenido2 = $("#kontenido").val();
+                $.post(url, contenido2, function (result) {
+                     alert(result);
+                });
+            });
+        });
     </script>
 
 @endsection

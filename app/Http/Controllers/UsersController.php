@@ -29,7 +29,7 @@ class UsersController extends Controller
             ]
         );
         flash('Welcome Aboard!');
-        return Redirect::to('/flogin')->with('msg', 'Gracias por visitarnos usuario mk creado!.');
+        return Redirect::to('/flogin')->with('msg', 'Gracias por visitarnos usuario creado!.');
 
     }
 

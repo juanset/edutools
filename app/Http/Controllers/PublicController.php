@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Contenido;
 use App\Libro;
+use App\Pregunta;
 use Illuminate\Http\Request;
 use Libros;
 use App\Http\Requests\LibroRequest;
@@ -31,7 +33,6 @@ class PublicController extends Controller
     {
         $libros = Libro::all();
         return view('mostrarB', compact('libros'));
-
     }
     public function libro($id)
     {
@@ -67,14 +68,27 @@ class PublicController extends Controller
     public function mostrarC()
     {
 
-        return view('mostrarC');
+        $contenidos = Contenido::all();
+        return view('mostrarC', compact('contenidos'));
 
+    }
+    public function kontenido($id)
+    {
+        $contenidos =Contenido::where('id',$id)
+            ->get();
+        return view('user.kontenido',compact('contenidos'));
     }
     public function mostrarQ()
     {
+        $preguntas = Pregunta::all();
+        return view('mostrarQ', compact('preguntas'));
+    }
 
-        return view('mostrarQ');
-
+    public function cuestionario($id)
+    {
+        $cuestionarios =Pregunta::where('id',$id)
+            ->get();
+        return view('user.cuestionario',compact('cuestionarios'));
     }
 
     public function questionario()

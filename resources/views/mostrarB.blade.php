@@ -4,7 +4,7 @@
         <img src="{{ asset('img/verLibro.png') }}" width="auto" height="89px" alt="Logo Q" title="Logo Q">
     </a>
 @endsection
-@section('title','EditorBook')
+@section('title','Libros Creados')
 
 @section('content')
 
@@ -17,7 +17,7 @@
     <section class="principal">
         <div class="options">
             <h3>Tus libros</h3>
-           <h4 class="page-header">Estos son los libros que has creado:</h4>
+           <h4 class="page-header">Estos son los libros que has creado :D</h4>
 
             <table class="table table-hover table-striped">
                 <thead>

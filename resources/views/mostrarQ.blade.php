@@ -15,9 +15,31 @@
 
 <body class="cuerpo">
 <section class="principal">
-<h2>Estos son los Cuestionarios que has creado:</h2>
- <h4>Selecciona uno para visualizarlo o editar:</h4>
-        <div style="height: 150px; width: 150px; border-color: #3b5998; border-style: solid"></div>
+    <div class="options">
+        <h3>Tus Questionarios</h3>
+        <h4 class="page-header">Estos son los Cuestionarios que has creado :D</h4>
+
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th>id</th>
+                <th>Cuestionario</th>
+                <th>Ver</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach($preguntas as $questionario)
+                <tr>
+                    <td>{{$questionario->id}}</td>
+                    <td>Question{{$questionario->id}}</td>
+                    <td><a href="{{route("Public.cuestionario",$questionario->id)}}">VER</a></td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+    </div>
+    <br>
+
 </section>
 </body>
 @endsection

@@ -1,32 +1,11 @@
 <?php
-
-/*
-|--------------------------------------------------------------------------
-| Routes File
-|--------------------------------------------------------------------------
-|
-| Here is where you will register all of the routes in an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
 Route::get('/', function () {
     return view('inicio');
 });
 
 Route::resource('log','LogController');
 Route::resource('store','UsersController');
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
-|
-*/
+
 Route::group(['prefix' => 'Public'],function(){
 
     Route::get('/',[
@@ -86,7 +65,15 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'PublicController@libro',
         'as'	=> 'Public.libro'
     ]);
+    Route::get('/cuestionario/{id}',[
+        'uses' 	=> 'PublicController@cuestionario',
+        'as'	=> 'Public.cuestionario'
+    ]);
 
+    Route::get('/kontenido/{id}',[
+        'uses' 	=> 'PublicController@kontenido',
+        'as'	=> 'Public.kontenido'
+    ]);
 });
 
 Route::get('/flogin', [
@@ -104,6 +91,16 @@ Route::post('/store.libro', [
     'as'	=> 'store.libro'
 ]);
 
+Route::post('/store.contenido', [
+    'uses' => 'storeController@contenido',
+    'as'	=> 'store.contenido'
+]);
+
+
+Route::post('/store.pregunta', [
+    'uses' => 'storeController@pregunta',
+    'as'	=> 'store.pregunta'
+]);
 Route::get('/logout', [
     'uses' => 'UsersController@logout',
     'as'	=> 'logout'

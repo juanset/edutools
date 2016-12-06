@@ -51,6 +51,15 @@
     <section id="cuestionario" style="border-style: groove; border-color: grey;">
 
     </section>
+
+    {!! Form::open(['route' => 'store.pregunta', 'method' => 'POST', 'id' => 'form_pregunta']) !!}
+    <div class="form-group">
+        <input type="hidden" name="_method" value="POST">
+        {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
+        <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
+    </div>
+    <button type="submit" class="btn btn-primary" value="Guardar" id="boton01">Guardar</button>
+    {!! Form::close() !!}
     </body>
 @endsection
 
@@ -94,6 +103,19 @@
                 console.log("Esta opcion es: "+contenido3);
                 $("#questionOpciones").append('<input type="radio" name="opSm">'+contenido3+'<br>');
                 $("#textoOptSM").val("");
+
+            });
+            //Guardar el contenido AJAX post
+            $("#boton01").click(function () {
+                var contenido = $("#cuestionario").html();
+                var form = $("#form_contenido");
+                var url = form.attr('action');
+                var token = $("#token").val();
+                $("#kontenido").val(contenido);
+                var contenido2 = $("#kontenido").val();
+                $.post(url, contenido2, function (result) {
+                    alert(result);
+                });
 
             });
 

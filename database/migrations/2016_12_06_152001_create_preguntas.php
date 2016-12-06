@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Libros extends Migration
+class CreatePreguntas extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,14 @@ class Libros extends Migration
      */
     public function up()
     {
-        Schema::connection('pgsql')->create('libros', function (Blueprint $table) {
+        Schema::connection('pgsql')->create('preguntas', function (Blueprint $table) {
             $table->increments('id');
             $table->text('contenido');
             $table->timestamps();
 
         });
     }
+
     /**
      * Reverse the migrations.
      *
@@ -26,6 +27,6 @@ class Libros extends Migration
      */
     public function down()
     {
-        Schema::connection('pgsql')->drop('libros');
+        Schema::connection('pgsql')->drop('preguntas');
     }
 }

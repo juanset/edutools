@@ -482,8 +482,8 @@
                 compare(vName, /\.(txt|md|csv|nfo|ini|json|php|js|css)$/i);
         },
         video: function (vType, vName) {
-            return compare(vType, 'video.*') && (compare(vType, /(ogg|mp4|mp?g|webm|3gp)$/i) ||
-                compare(vName, /\.(og?|mp4|webm|mp?g|3gp)$/i));
+            return compare(vType, 'video.*') && (compare(vType, /(ogg|mp4|mp?g|mov|webm|3gp)$/i) ||
+                compare(vName, /\.(og?|mp4|webm|mp?g|mov|3gp)$/i));
         },
         audio: function (vType, vName) {
             return compare(vType, 'audio.*') && (compare(vName, /(ogg|mp3|mp?g|wav)$/i) ||
@@ -2493,7 +2493,6 @@
                 self._raise('fileimageloaded', [previewId]);
                 self.loadedImages.push({ind: i, img: $img, thumb: $thumb, pid: previewId, typ: ftype});
                 self._validateAllImages();
-                objUrl.revokeObjectURL($img.attr('src'));
             });
         },
         _validateAllImages: function () {

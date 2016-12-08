@@ -19,10 +19,29 @@ class PublicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+//**************++Inicio*********************
     public function index()
     {
         return view('inicio');
     }
+
+    public function inicioB()
+    {
+        return view('inicioB');
+
+    }
+
+    public function inicioC()
+    {
+        return view('inicioC');
+    }
+
+    public function inicioQ()
+    {
+        return view('inicioQ');
+    }
+
+//***********Libro*************************************
 
     public function book()
     {
@@ -40,44 +59,37 @@ class PublicController extends Controller
         ->get();
         return view('user.libro',compact('libros'));
     }
-    public function inicioB()
-    {
-        return view('inicioB');
 
-    }
-    public function inicioC()
-    {
-
-        return view('inicioC');
-
-    }
+//******************Contenido web*********************
     public function editor()
     {
-
         return view('editor');
-
     }
 
     public function contenido()
     {
-
         return view('contenido');
-
     }
 
     public function mostrarC()
     {
-
         $contenidos = Contenido::all();
         return view('mostrarC', compact('contenidos'));
-
     }
+
     public function kontenido($id)
     {
-        $contenidos =Contenido::where('id',$id)
+        $contenidos = Contenido::where('id',$id)
             ->get();
         return view('user.kontenido',compact('contenidos'));
     }
+
+//**************Cuestionario********************************+
+    public function questionario()
+    {
+        return view('questionario');
+    }
+
     public function mostrarQ()
     {
         $preguntas = Pregunta::all();
@@ -86,21 +98,9 @@ class PublicController extends Controller
 
     public function cuestionario($id)
     {
-        $cuestionarios =Pregunta::where('id',$id)
+        $cuestionarios = Pregunta::where('id',$id)
             ->get();
         return view('user.cuestionario',compact('cuestionarios'));
     }
 
-    public function questionario()
-    {
-
-        return view('questionario');
-
-    }
-    public function inicioQ()
-    {
-
-        return view('inicioQ');
-
-    }
 }

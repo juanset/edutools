@@ -17,7 +17,7 @@
     <section class="principal">
         <div class="options">
             <h3>Tus libros</h3>
-           <h4 class="page-header">Estos son los libros que has creado :D</h4>
+           <h4 class="page-header">Estos son los libros que has creado:</h4>
 
             <table class="table table-hover table-striped">
                 <thead>
@@ -25,6 +25,7 @@
                         <th>id</th>
                         <th>Libro</th>
                         <th>Ver</th>
+                        <th>&nbsp;</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,6 +34,13 @@
                             <td>{{$libro->id}}</td>
                             <td>Libro{{$libro->id}}</td>
                             <td><a href="{{route("Public.libro",$libro->id)}}">VER</a></td>
+                            <td>
+                                {!!Form::open(['route'=>['Public.deleteBook', $libro->id],'method'=>'delete'])!!}
+                                   <button type="submit" title="Eliminar">
+                                       <i class="glyphicon glyphicon-trash"></i>
+                                   </button>
+                                {!! Form::close() !!}
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

@@ -74,6 +74,18 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'PublicController@kontenido',
         'as'	=> 'Public.kontenido'
     ]);
+    Route::delete('/deleteBook/{id}',[
+        'uses' 	=> 'PublicController@deleteBook',
+        'as'	=> 'Public.deleteBook'
+    ]);
+    Route::delete('/deleteContent/{id}',[
+        'uses' 	=> 'PublicController@deleteContent',
+        'as'	=> 'Public.deleteContent'
+    ]);
+    Route::delete('/deleteQuest/{id}',[
+        'uses' 	=> 'PublicController@deleteQuest',
+        'as'	=> 'Public.deleteQuest'
+    ]);
 });
 
 Route::get('/flogin', [

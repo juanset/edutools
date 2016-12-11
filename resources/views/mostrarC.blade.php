@@ -23,16 +23,24 @@
             <thead>
             <tr>
                 <th>id</th>
-                <th>contenido</th>
+                <th>Contenido</th>
                 <th>Ver</th>
+                <th>&nbsp;</th>
             </tr>
             </thead>
             <tbody>
             @foreach($contenidos as $contenido)
                 <tr>
                     <td>{{$contenido->id}}</td>
-                    <td>Question{{$contenido->id}}</td>
+                    <td>Contenido{{$contenido->id}}</td>
                     <td><a href="{{route("Public.kontenido",$contenido->id)}}">VER</a></td>
+                    <td>
+                        {!!Form::open(['route'=>['Public.deleteContent', $contenido->id],'method'=>'delete'])!!}
+                        <button type="submit" title="Eliminar">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </button>
+                        {!! Form::close() !!}
+                    </td>
                 </tr>
             @endforeach
             </tbody>

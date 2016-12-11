@@ -102,5 +102,28 @@ class PublicController extends Controller
             ->get();
         return view('user.cuestionario',compact('cuestionarios'));
     }
+/***********DELETE ******************/
+    public function deleteBook($id)
+    {
+        $object =Libro::find($id);
+        $object->delete();
+
+        return view('user.delete',compact('object'));
+    }
+
+    public function deleteContent($id)
+    {
+        $object = Contenido::find($id);
+        $object->delete();
+
+        return view('user.delete',compact('object'));
+    }
+    public function deleteQuest($id)
+    {
+        $object = Pregunta::find($id);
+        $object->delete();
+
+        return view('user.delete',compact('object'));
+    }
 
 }

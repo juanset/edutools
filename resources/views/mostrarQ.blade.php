@@ -17,7 +17,7 @@
 <section class="principal">
     <div class="options">
         <h3>Tus Questionarios</h3>
-        <h4 class="page-header">Estos son los Cuestionarios que has creado :D</h4>
+        <h4 class="page-header">Estos son los Cuestionarios que has creado:</h4>
 
         <table class="table table-hover table-striped">
             <thead>
@@ -25,6 +25,7 @@
                 <th>id</th>
                 <th>Cuestionario</th>
                 <th>Ver</th>
+                <th>&nbsp;</th>
             </tr>
             </thead>
             <tbody>
@@ -33,6 +34,13 @@
                     <td>{{$questionario->id}}</td>
                     <td>Question{{$questionario->id}}</td>
                     <td><a href="{{route("Public.cuestionario",$questionario->id)}}">VER</a></td>
+                    <td>
+                        {!!Form::open(['route'=>['Public.deleteQuest', $questionario->id],'method'=>'delete'])!!}
+                        <button type="submit" title="Eliminar">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </button>
+                        {!! Form::close() !!}
+                    </td>
                 </tr>
             @endforeach
             </tbody>

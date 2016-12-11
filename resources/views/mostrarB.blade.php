@@ -25,6 +25,7 @@
                         <th>id</th>
                         <th>Libro</th>
                         <th>Ver</th>
+                        <th>EXPORT</th>
                         <th>&nbsp;</th>
                     </tr>
                 </thead>
@@ -34,6 +35,9 @@
                             <td>{{$libro->id}}</td>
                             <td>Libro{{$libro->id}}</td>
                             <td><a href="{{route("Public.libro",$libro->id)}}">VER</a></td>
+                            <td>
+                                <a href="{{route("Public.exportBook",$libro->id)}}">Export</a>
+                            </td>
                             <td>
                                 {!!Form::open(['route'=>['Public.deleteBook', $libro->id],'method'=>'delete'])!!}
                                    <button type="submit" title="Eliminar">

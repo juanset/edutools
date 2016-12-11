@@ -86,6 +86,10 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'PublicController@deleteQuest',
         'as'	=> 'Public.deleteQuest'
     ]);
+    Route::get('/exportBook/{id}',[
+        'uses' 	=> 'ExportController@book',
+        'as'	=> 'Public.exportBook'
+    ]);
 });
 
 Route::get('/flogin', [

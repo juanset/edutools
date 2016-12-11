@@ -10,7 +10,8 @@
         "barryvdh/laravel-ide-helper": "^2.2",
         "laravelcollective/html": "5.2.*",
         "kartik-v/bootstrap-fileinput": "@dev",
-        "laracasts/flash": "^2.0"
+        "laracasts/flash": "^2.0",
+        "chumper/zipper": "0.6.x"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

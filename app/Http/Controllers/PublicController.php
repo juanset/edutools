@@ -55,7 +55,7 @@ class PublicController extends Controller
     }
     public function libro($id)
     {
-        $libros =Libro::where('id',$id)
+        $libros = Libro::where('id',$id)
         ->get();
         return view('user.libro',compact('libros'));
     }

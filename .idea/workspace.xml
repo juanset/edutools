@@ -5,51 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e97d4de-ddb7-486b-9759-aa4e32712c5f" name="Default" comment="Delete contents">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/tests/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExportController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/exports/estilos/stiles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/exports/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/exports/scripts/turn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/phpunit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/src/Chumper/Zipper/Facades/Zipper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/src/Chumper/Zipper/Repositories/RepositoryInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/src/Chumper/Zipper/Repositories/ZipRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/src/Chumper/Zipper/Zipper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/src/Chumper/Zipper/ZipperServiceProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/tests/ArrayArchive.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/tests/Repositories/ZipRepositoryTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/chumper/zipper/tests/ZipperTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Exception/ClosureSerializationException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/edutools.iml" afterPath="$PROJECT_DIR$/.idea/edutools.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PublicController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mostrarB.blade.php" afterPath="$PROJECT_DIR$/resources/views/mostrarB.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/config/ide-helper.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/config/ide-helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/readme.md" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/resources/views/helper.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/resources/views/helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/src/Console/ModelsCommand.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/src/Console/ModelsCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/src/Generator.php" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper/src/Generator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/phpunit" afterPath="$PROJECT_DIR$/vendor/bin/phpunit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/composer.json" afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Serializer.php" afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure/src/Serializer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.8.md" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.8.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ExportController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExportController.php" />
     </list>
     <ignored path="book.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,8 +66,8 @@
       <file leaf-file-name="ExportController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ExportController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+            <state relative-caret-position="648">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="e#41#59#0#PHP" expanded="true" />
               </folding>
@@ -708,12 +665,12 @@
       <workItem from="1481168817718" duration="1893000" />
       <workItem from="1481177911297" duration="221000" />
       <workItem from="1481410246899" duration="59000" />
-      <workItem from="1481471366827" duration="13399000" />
+      <workItem from="1481471366827" duration="15967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295932000" />
+    <option name="totallyTimeSpent" value="298500000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -725,16 +682,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08955224" sideWeight="0.7596639" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08955224" sideWeight="0.7596639" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745314" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.27731094" sideWeight="0.50832075" order="7" side_tool="true" content_ui="tabs" x="-1016" y="395" width="665" height="165" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16792738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2734289" sideWeight="0.49167928" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33109245" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745314" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49411765" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31201765" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17246597" sideWeight="0.24033614" order="3" side_tool="true" content_ui="tabs" />
@@ -1175,7 +1132,7 @@
         <state relative-caret-position="-174">
           <caret line="89" column="15" lean-forward="false" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
+            <element signature="e#40#58#0#PHP" expanded="false" />
             <element signature="e#1192#1259#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -1215,8 +1172,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ExportController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        <state relative-caret-position="648">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
             <element signature="e#41#59#0#PHP" expanded="true" />
           </folding>

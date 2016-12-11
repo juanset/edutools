@@ -22,10 +22,17 @@ class ExportController extends Controller
         $archivo_salida = "exports/index.html";
         $fp=fopen($archivo_salida,'w');
         fwrite($fp,$content);
-       // fclose($fp);
-
+        fclose($fp);
+        $archivoZip = "test.zip";
+        $rutaFinal = "public";
         $files = 'exports/';
         $zipper = new Zipper;
         $zipper->make('test.zip')->add($files);
+        if (file_exists($archivoZip)) {
+            echo "Proceso Finalizado!! <br/><br/>
+                Descargar: <a href='/$archivoZip'>$archivoZip</a>";
+        } else {
+            echo "Error, archivo zip no ha sido creado!!";
+        }
     }
 }

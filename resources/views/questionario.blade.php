@@ -87,7 +87,7 @@
                     pregunta = "pre" + p;
                     var contenido = $('textarea[id=textoVF]').val();
                     console.log("Esta pregunta es: " + contenido);
-                    $("#cuestionario").append('<section id="' + pregunta + '" style="border-style: dashed; border-color: #985f0d"><p class="q" >' + contenido + pregunta + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero!' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
+                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q" >' + contenido + pregunta + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero!' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
                     $("#textoVF").val("");
                 }else { //se establece un limite para añadir elementos, 10 es el limite
                     $("#cuestionario").append('<label id="limit">Limite Alcanzado</label>');
@@ -108,7 +108,7 @@
                     pregunta = "pre" + p;
                     var contenido2 = $('textarea[id=textoSM]').val();
                     console.log("Esta pregunta es: " + contenido2);
-                    $("#cuestionario").append('<section id="' + pregunta + '" style="border-style: solid; border-color: limegreen"><p class="q">' + contenido2 + pregunta + '</p></section>');
+                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q">' + contenido2 + pregunta + '</p></section>');
                     $("#textoSM").val("");
                     $("#questionOpciones").clone().appendTo("#" + pregunta);
                     $("#questionOpciones").empty();

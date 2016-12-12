@@ -25,21 +25,20 @@ class ExportController extends Controller
         fwrite($fp,$content);
         fclose($fp);
 
-        $archivoZip = "test.zip";
         $public_dir=public_path();
         $files = 'exports/';
 
         $zipper = new Zipper;
-        $zipper -> make('test.zip') -> add($files);
+        $zipper -> make('objeto.zip') -> add($files);
 
         $headers = array(
             'Content-Type' => 'application/octet-stream',
         );
 
-        $filetopath=$public_dir.'/'.$archivoZip;
+        $filetopath=$public_dir.'/'."objeto.zip";
 
         if(file_exists($filetopath)){
-            return response()->download($filetopath,$archivoZip,$headers);
+            return response()->download($filetopath,"objeto.zip",$headers);
         }
         return ['status'=>'file does not exist'];
     }
@@ -54,21 +53,20 @@ class ExportController extends Controller
         fwrite($fp,$content);
         fclose($fp);
 
-        $archivoZip = "objeto.zip";
         $public_dir=public_path();
         $files = 'exports/';
 
         $zipper = new Zipper;
-        $zipper -> make($archivoZip) -> add($files);
+        $zipper -> make("objeto.zip") -> add($files);
 
         $headers = array(
             'Content-Type' => 'application/octet-stream',
         );
 
-        $filetopath=$public_dir.'/'.$archivoZip;
+        $filetopath=$public_dir.'/'."objeto.zip";
 
         if(file_exists($filetopath)){
-            return response()->download($filetopath,$archivoZip,$headers);
+            return response()->download($filetopath,"objeto.zip",$headers);
         }
         return ['status'=>'file does not exist'];
     }
@@ -83,21 +81,20 @@ class ExportController extends Controller
         fwrite($fp,$content);
         fclose($fp);
 
-        $archivoZip = "objeto.zip";
         $public_dir=public_path();
         $files = 'exports/';
 
         $zipper = new Zipper;
-        $zipper -> make($archivoZip) -> add($files);
+        $zipper -> make("objeto.zip") -> add($files);
 
         $headers = array(
             'Content-Type' => 'application/octet-stream',
         );
 
-        $filetopath=$public_dir.'/'.$archivoZip;
+        $filetopath=$public_dir.'/'."objeto.zip";
 
         if(file_exists($filetopath)){
-            return response()->download($filetopath,$archivoZip,$headers);
+            return response()->download($filetopath,"objeto.zip",$headers);
         }
         return ['status'=>'file does not exist'];
     }

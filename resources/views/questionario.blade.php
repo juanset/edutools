@@ -17,6 +17,9 @@
             <h3>Seleccione el tipo de pregunta a agregar</h3>
             <input type="button" id="vf" value="Verdadero/Falso">
             <input type="button" id="selmul" value="Selección Multiple">
+            <input type="button" id="btRemove" value="Eliminar Elemento" class="bt" />
+            <input type="button" id="btRemoveAll" value="Eliminar Todo" class="bt" /><br />
+
         </div>
         <br>
         <div id="qvf"  style="display: none;border: double">
@@ -79,23 +82,47 @@
             });
             //Guarda pregunta Verdadero Falso
             $("#guardarVF").click(function(){
-                p++;
-                pregunta =  "pre"+p;
-                var contenido = $('textarea[id=textoVF]').val();
-                console.log("Esta pregunta es: "+contenido);
-                $("#cuestionario").append('<section id="'+pregunta+'" style="border-style: dashed; border-color: #985f0d"><p class="q" >' + contenido + '</p>'+'<input type="radio" id="true'+p+'" name="ft'+p+'" value="true">'+'<label for="true'+p+'">'+'Verdadero!'+'</label>'+'<br>'+'<input type="radio" id="false'+p+'" name="ft'+p+'" value="false">'+'<label for="false'+p+'">'+'Falso'+'</label></section>'+'<br>');
-                $("#textoVF").val("");
+                if(p <= 9) {
+                    p++;
+                    pregunta = "pre" + p;
+                    var contenido = $('textarea[id=textoVF]').val();
+                    console.log("Esta pregunta es: " + contenido);
+                    $("#cuestionario").append('<section id="' + pregunta + '" style="border-style: dashed; border-color: #985f0d"><p class="q" >' + contenido + pregunta + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero!' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
+                    $("#textoVF").val("");
+                }else { //se establece un limite para añadir elementos, 10 es el limite
+                    $("#cuestionario").append('<label id="limit">Limite Alcanzado</label>');
+                    $('#vf').attr('class', 'btn bt-disable');
+                    $('#vf').attr('disabled', 'disabled');
+                    $('#selmul').attr('class', 'btn bt-disable');
+                    $('#selmul').attr('disabled', 'disabled');
+                    $('#guardarVF').attr('class', 'btn bt-disable');
+                    $('#guardarVF').attr('disabled', 'disabled');
+                    $('#guardarSM').attr('class', 'btn bt-disable');
+                    $('#guardarSM').attr('disabled', 'disabled');
+                }
             });
             //Guarda pregunta seleccion multiple
             $("#guardarSM").click(function(){
-                p++;
-                pregunta =  "pre"+p;
-                var contenido2 = $('textarea[id=textoSM]').val();
-                console.log("Esta pregunta es: "+contenido2);
-                $("#cuestionario").append('<section id="'+pregunta+'" style="border-style: solid; border-color: limegreen"><p class="q">' + contenido2 + '</p></section>');
-                $("#textoSM").val("");
-                $("#questionOpciones").clone().appendTo("#"+pregunta);
-                $("#questionOpciones").empty();
+                if(p <= 9) {
+                    p++;
+                    pregunta = "pre" + p;
+                    var contenido2 = $('textarea[id=textoSM]').val();
+                    console.log("Esta pregunta es: " + contenido2);
+                    $("#cuestionario").append('<section id="' + pregunta + '" style="border-style: solid; border-color: limegreen"><p class="q">' + contenido2 + pregunta + '</p></section>');
+                    $("#textoSM").val("");
+                    $("#questionOpciones").clone().appendTo("#" + pregunta);
+                    $("#questionOpciones").empty();
+                }else { //se establece un limite para añadir elementos, 10 es el limite
+                    $("#cuestionario").append('<label id="limit">Limite Alcanzado</labelid>');
+                    $('#vf').attr('class', 'btn bt-disable');
+                    $('#vf').attr('disabled', 'disabled');
+                    $('#selmul').attr('class', 'btn bt-disable');
+                    $('#selmul').attr('disabled', 'disabled');
+                    $('#guardarVF').attr('class', 'btn bt-disable');
+                    $('#guardarVF').attr('disabled', 'disabled');
+                    $('#guardarSM').attr('class', 'btn bt-disable');
+                    $('#guardarSM').attr('disabled', 'disabled');
+                }
             });
             //Guarda opcion de seleccion multiple
             $("#opc").click(function(){
@@ -105,6 +132,49 @@
                 $("#textoOptSM").val("");
 
             });
+            $('#btRemove').click(function() { // Elimina un elemento por click
+                if (p != 0 ) { $('#pre' + p).remove(); p = p - 1; }
+                if (p <10) {
+                    $("#limit").remove();
+                    $('#vf').removeAttr('disabled');
+                    $('#vf').attr('class', 'bt');
+                    $('#selmul').removeAttr('disabled');
+                    $('#selmul').attr('class', 'bt');
+                    $('#guardarSM').removeAttr('disabled');
+                    $('#guardarSM').attr('class', 'bt');
+                    $('#guardarVF').removeAttr('disabled');
+                    $('#guardarVF').attr('class', 'bt');
+
+                }
+                if (p == 0) {
+                    $("#cuestionario").empty();
+                    $('#vf').removeAttr('disabled');
+                    $('#vf').attr('class', 'bt');
+                    $('#selmul').removeAttr('disabled');
+                    $('#selmul').attr('class', 'bt');
+                    $('#guardarSM').removeAttr('disabled');
+                    $('#guardarSM').attr('class', 'bt');
+                    $('#guardarVF').removeAttr('disabled');
+                    $('#guardarVF').attr('class', 'bt');
+
+                }
+            });
+
+            $('#btRemoveAll').click(function() { // Elimina todos los elementos del contenedor
+
+                $("#cuestionario").empty();
+                $('#vf').removeAttr('disabled');
+                $('#vf').attr('class', 'bt');
+                $('#selmul').removeAttr('disabled');
+                $('#selmul').attr('class', 'bt');
+                $('#guardarSM').removeAttr('disabled');
+                $('#guardarSM').attr('class', 'bt');
+                $('#guardarVF').removeAttr('disabled');
+                $('#guardarVF').attr('class', 'bt');
+
+            });
+
+
             //Guardar el contenido AJAX post
             $("#boton01").click(function () {
                 var contenido = $("#cuestionario").html();

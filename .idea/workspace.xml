@@ -4,19 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/resources/views/questionario.blade.php" line="29" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e97d4de-ddb7-486b-9759-aa4e32712c5f" name="Default" comment="Delete contents">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Html.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2016_12_12_193352_create_html.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/exports/estilos/stiles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/exports/scripts/turn.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/objeto.zip" afterPath="$PROJECT_DIR$/public/objeto.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ExportController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExportController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/exports/index.html" afterPath="$PROJECT_DIR$/public/exports/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/book.blade.php" afterPath="$PROJECT_DIR$/resources/views/book.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-    </list>
+    <list default="true" id="7e97d4de-ddb7-486b-9759-aa4e32712c5f" name="Default" comment="Delete contents" />
     <ignored path="book.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -754,12 +742,12 @@
       <workItem from="1481471366827" duration="16088000" />
       <workItem from="1481500059325" duration="7915000" />
       <workItem from="1481510350002" duration="2613000" />
-      <workItem from="1481549909639" duration="9381000" />
+      <workItem from="1481549909639" duration="9437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318530000" />
+    <option name="totallyTimeSpent" value="318586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -771,7 +759,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1311054" sideWeight="0.7596639" order="0" side_tool="false" content_ui="combo" />

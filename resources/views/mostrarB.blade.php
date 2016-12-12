@@ -25,8 +25,8 @@
                         <th>id</th>
                         <th>Libro</th>
                         <th>Ver</th>
-                        <th>EXPORT</th>
-                        <th>&nbsp;</th>
+                        <th>Exportar</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,9 +34,9 @@
                         <tr>
                             <td>{{$libro->id}}</td>
                             <td>Libro{{$libro->id}}</td>
-                            <td><a href="{{route("Public.libro",$libro->id)}}">VER</a></td>
+                            <td><a href="{{route("Public.libro",$libro->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a></td>
                             <td>
-                                <a href="{{route("Public.exportBook",$libro->id)}}">Export</a>
+                                <a href="{{route("Public.exportBook",$libro->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
                             </td>
                             <td>
                                 {!!Form::open(['route'=>['Public.deleteBook', $libro->id],'method'=>'delete'])!!}

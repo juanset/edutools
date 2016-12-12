@@ -90,6 +90,14 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'ExportController@book',
         'as'	=> 'Public.exportBook'
     ]);
+    Route::get('/exportContent/{id}',[
+        'uses' 	=> 'ExportController@contenido',
+        'as'	=> 'Public.exportContent'
+    ]);
+    Route::get('/exportQuest/{id}',[
+        'uses' 	=> 'ExportController@questionario',
+        'as'	=> 'Public.exportQuest'
+    ]);
 });
 
 Route::get('/flogin', [

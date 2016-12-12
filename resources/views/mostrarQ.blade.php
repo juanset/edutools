@@ -25,7 +25,8 @@
                 <th>id</th>
                 <th>Cuestionario</th>
                 <th>Ver</th>
-                <th>&nbsp;</th>
+                <th>Exportar</th>
+                <th>Eliminar</th>
             </tr>
             </thead>
             <tbody>
@@ -33,7 +34,10 @@
                 <tr>
                     <td>{{$questionario->id}}</td>
                     <td>Question{{$questionario->id}}</td>
-                    <td><a href="{{route("Public.cuestionario",$questionario->id)}}">VER</a></td>
+                    <td><a href="{{route("Public.cuestionario",$questionario->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a></td>
+                    <td>
+                        <a href="{{route("Public.exportQuest",$questionario->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                    </td>
                     <td>
                         {!!Form::open(['route'=>['Public.deleteQuest', $questionario->id],'method'=>'delete'])!!}
                         <button type="submit" title="Eliminar">

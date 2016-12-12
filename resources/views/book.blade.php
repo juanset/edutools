@@ -155,10 +155,15 @@
 
 //Guardar el contenido AJAX post
             $("#boton01").click(function(){
-                $("#flipbook").removeAttr('style');
+                $("#flipbook, #flipbook div").removeAttr('style');
                 $(".shadow").removeAttr('style');
                 $(".page-wrapper").removeAttr('style');
-                $("div").removeAttr('style');
+                $("div").each(function () {
+                    if($(this).html().trim()==="") {
+                        $(this).remove();
+                       }
+                });
+
                 var contenido = $("#librote").html();
                 var form = $("#form_libro");
                 var url = form.attr('action');

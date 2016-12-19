@@ -130,7 +130,7 @@ Route::get('/logout', [
     'as'	=> 'logout'
 ]);
 
-// Rutas necesarias para el traspaso de usuarios 
+// Rutas necesarias para el traspaso de usuarios
 
   Route::group(['prefix' => 'raim'],function(){
 

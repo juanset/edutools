@@ -129,3 +129,24 @@ Route::get('/logout', [
     'uses' => 'UsersController@logout',
     'as'	=> 'logout'
 ]);
+
+// Rutas necesarias para el traspaso de usuarios 
+
+  Route::group(['prefix' => 'raim'],function(){
+
+    Route::post('/session_create',[
+      'uses' 	=> 'raimController@session_create',
+      'as'	=> 'raim.session_create'
+    ]);
+
+    Route::post('/session_update',[
+      'uses' 	=> 'raimController@session_update',
+      'as'	=> 'raim.session_update'
+    ]);
+
+    Route::post('/session_delete',[
+      'uses' 	=> 'raimController@session_delete',
+      'as'	=> 'raim.session_delete'
+    ]);
+
+  });

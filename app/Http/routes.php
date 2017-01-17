@@ -132,7 +132,7 @@ Route::get('/logout', [
 
 // Rutas necesarias para el traspaso de usuarios
 
-  Route::group(['prefix' => 'raim'],function(){
+  Route::group(['prefix' => 'raim', 'middleware' => 'api'],function(){
 
     Route::post('/session_create',[
       'uses' 	=> 'raimController@session_create',

@@ -1,9 +1,31 @@
 Change Log: `bootstrap-fileinput`
 =================================
 
+## version 4.3.7
+
+**Date:** 16-Jan-2017
+
+1. (enh #812): Update Greek Translations.
+2. (enh #815): Enhance parsing of thumbnails that are visible in preview (will allow plugin to be 
+    initialized in hidden containers like tabs).
+3. (enh #816): New property `msgFileTypes` to control descriptions/localizations of file types displayed.
+4. (bug #819): Correct init preview auto replace post `uploadSingle` action in thumbnails.
+5. (enh #820): Prevent resize if image is smaller than allowed dimensions.
+6. (enh #822): Enhancement for preventing upload when data is empty. New property `msgUploadEmpty` has been incorporated.
+7. (enh #823): Correct file indices assignment during validation of images.
+8. (enh #824): Add Korean Translations.
+9. (bug #825): Correct `fileimagesresized` event triggering.
+10. (bug #826): Extend language configuration to consider defaults.
+11. (enh #828): Allow drag sort of single uploaded thumbnails with `initialPreview` config set (post upload).
+12. (enh #831): Update Finnish Translations.
+13. (bug #833): Correct validation and defaults init for `allowedPreviewTypes`.
+14. (enh #835): Update Polish Translations.
+15. (enh #837): Update Czech Translations.
+16. (bug #839): Correct `initialPreview` generation and sortable behavior for async uploads.
+
 ## version 4.3.6
 
-**Date:** 15-Nov-2016
+**Date:** 17-Dec-2016
 
 1. (enh #696): Better default preview zoom settings.
 2. (enh #764): Update Russian Translations.
@@ -24,6 +46,11 @@ Change Log: `bootstrap-fileinput`
 11. (enh #802): Allow MOV files preview for supported devices and browsers.
 12. (enh #803): Update Hungarian Translations.
 13. (enh #804): Add Slovenian Translations.
+14. (enh #809): Various enhancements for preview control and iconic thumbnails.
+    - add ability to control and render different previews for file thumbnails and zoomed preview content
+    - new property `preferIconicPreview` will try to parse the `previewFileIconSettings` and `previewFileExtSettings` to automatically force iconic previews for file thumbnails.
+    - new property `preferIconicZoomPreview` will try to parse the `previewFileIconSettings` and `previewFileExtSettings` to automatically force iconic previews in the zoomed content.
+    - the above properties will be applied and parsed for `initialPreview` content as well.
 
 ## version 4.3.5
 

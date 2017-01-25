@@ -16,10 +16,22 @@
 <section class="principal">
 <h3>Bienvenido a la herramienta de autor HTML: EduTools</h3>
     <h4 style="text-align:left">La herramienta EduTools permite a los usuarios crear objetos de aprendizaje con tres diferentes tipos de actividades o contenidos: libros, contenidos web (paginas HTML), cuestionarios de verdadero/falso y cuestionarios de selección múltiple con única respuesta. La herramienta permitira almacenar los objetos creados para ser consultados posteriormente y también permitira que estos sean exportados en formato HTML sin la necesidad de que el usuario posea conocimientos en programación, el usuario solamente debe tener claro el objetivo educativo de su objeto de aprendizaje y el contenido que desea incluir en el mismo.</h4>
-    <h4>Para iniciar selecciona el tipo de contenido a crear, puede ser un libro, un contenido web o un cuestionario, solo necesitas tener lo que deseas utilizar en la creación de estos recursos</h4>
-    <h5 >Para crear un libro dale en <a class="hvr-pulse" href="{{ route('Public.inicioB') }}">libro</a></h5>
-    <h5 >Para crear un contenido web dale en <a class="hvr-pulse"href="{{ route('Public.inicioC') }}">contenido</a></h5>
-    <h5 >Para crear un cuestionario web dale en <a class="hvr-pulse"href="{{ route('Public.inicioQ') }}">cuestionario</a></h5>
+    <h4>Para iniciar selecciona el tipo de contenido a crear, puede ser un <a class="hvr-pulse" href="{{ route('Public.inicioB') }}">libro</a>, un <a class="hvr-pulse"href="{{ route('Public.inicioC') }}">contenido web</a> o un <a class="hvr-pulse"href="{{ route('Public.inicioQ') }}">cuestionario</a>, solo necesitas tener lo que deseas utilizar en la creación de estos recursos</h4>
+    <div>
+        <center>
+            <a style="margin: 20px" class="hvr-bounce-in hvr-underline-from-center" href="{{ route('Public.book') }}">
+                <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo book"><br>Crea tu libro
+            </a>
+            <a style="margin: 20px" class="hvr-bounce-in hvr-underline-from-center" href="{{ route('Public.contenido') }}">
+                <img src="{{ asset('img/editor2.png') }}" width="auto" height="89px" alt="Logo editor" title="Logo editor"><br>Crea tu contenido web
+            </a>
+            <a style="margin: 20px" class="hvr-bounce-in hvr-underline-from-center" href="{{ route('Public.questionario') }}">
+                <img src="{{ asset('img/questionario.png') }}" width="auto" height="89px" alt="Logo Cuestionario" title="Logo Q"><br>Crea tu Cuestionario
+            </a>
+        </center>
+
+
+    </div>
 </section>
 </body>
 <footer>

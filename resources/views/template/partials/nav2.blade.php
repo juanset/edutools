@@ -167,7 +167,7 @@
 
                         </ul>
                     </li>
-                    <li><a href="#">Ver Recursos educativos</a></li>
+                    <li><a href="{{ route('Public.mostrarT') }}">Ver Recursos educativos</a></li>
                 </ul>
             </div>
             <!-- /.sidebar-collapse -->

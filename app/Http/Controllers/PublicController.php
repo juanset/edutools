@@ -96,6 +96,14 @@ class PublicController extends Controller
         return view('mostrarQ', compact('preguntas'));
     }
 
+    public function mostrarT()
+    {
+        $libros = Libro::all();
+        $contenidos = Contenido::all();
+        $preguntas = Pregunta::all();
+        return view('mostrarT', compact('preguntas','contenidos','libros'));
+    }
+
     public function cuestionario($id)
     {
         $cuestionarios = Pregunta::where('id',$id)

@@ -53,6 +53,11 @@ Route::group(['prefix' => 'Public'],function(){
         'as'	=> 'Public.mostrarQ'
     ]);
 
+    Route::get('/mostrarT',[
+        'uses' 	=> 'PublicController@mostrarT',
+        'as'	=> 'Public.mostrarT'
+    ]);
+
     Route::get('/questionario',[
         'uses' 	=> 'PublicController@questionario',
         'as'	=> 'Public.questionario'

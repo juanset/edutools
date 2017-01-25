@@ -19,18 +19,16 @@
     <h4>Para iniciar selecciona el tipo de contenido a crear, puede ser un <a class="hvr-pulse" href="{{ route('Public.inicioB') }}">libro</a>, un <a class="hvr-pulse"href="{{ route('Public.inicioC') }}">contenido web</a> o un <a class="hvr-pulse"href="{{ route('Public.inicioQ') }}">cuestionario</a>, solo necesitas tener lo que deseas utilizar en la creación de estos recursos</h4>
     <div>
         <center>
-            <a style="margin: 20px" class="hvr-bounce-in hvr-underline-from-center" href="{{ route('Public.book') }}">
+            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.book') }}">
                 <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo book"><br>Crea tu libro
             </a>
-            <a style="margin: 20px" class="hvr-bounce-in hvr-underline-from-center" href="{{ route('Public.contenido') }}">
+            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.contenido') }}">
                 <img src="{{ asset('img/editor2.png') }}" width="auto" height="89px" alt="Logo editor" title="Logo editor"><br>Crea tu contenido web
             </a>
-            <a style="margin: 20px" class="hvr-bounce-in hvr-underline-from-center" href="{{ route('Public.questionario') }}">
+            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.questionario') }}">
                 <img src="{{ asset('img/questionario.png') }}" width="auto" height="89px" alt="Logo Cuestionario" title="Logo Q"><br>Crea tu Cuestionario
             </a>
         </center>
-
-
     </div>
 </section>
 </body>

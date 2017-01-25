@@ -18,6 +18,7 @@
         <div class="options">
             <h3>Bienvenido</h3>
             <h4>Acá puedes crear tus recursos educativos en forma de libro, para iniciar es recomendable que tengas definido el tema que quieres poner en el libro, como el contenido que va a tener el libro</h4>
+            <h4>Debes seleccionar el tipo de contenido, la página e insertar el contenido.</h4>
             <br><br>
             <center>
                 <a class="hvr-bounce-in" href="{{ route('Public.book') }}">

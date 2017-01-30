@@ -16,6 +16,11 @@
         <div class="options">
             <h3>Bienvenido</h3>
            <h4>Acá puedes crear tus recursos educativos en forma de Questionarios, para iniciar es recomendable que tengas definido el tema que quieres poner en el cuestionario al igual que una idea del contenido de las preguntas</h4>
+            <div class="contenedor">
+                <center>
+                    {!! Embed::make('https://www.youtube.com/watch?v=nZORENQiIsU')->parseUrl()->getIframe()!!}
+                </center>
+            </div>
             <center>
                 <a class="hvr-bounce-in" href="{{ route('Public.questionario') }}">
                     <img src="{{ asset('img/questionario.png') }}" width="auto" height="89px" alt="Logo Cuestionario" title="Logo Q"><br>Crea tu Cuestionario

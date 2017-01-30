@@ -11,6 +11,7 @@
         "laravelcollective/html": "5.2.*",
         "kartik-v/bootstrap-fileinput": "@dev",
         "laracasts/flash": "^2.0",
+        "cohensive/embed": "dev-master",
         "chumper/zipper": "0.6.x"
     },
     "require-dev": {

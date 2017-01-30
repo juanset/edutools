@@ -163,6 +163,8 @@ return [
 
         Chumper\Zipper\ZipperServiceProvider::class,
 
+        Cohensive\Embed\EmbedServiceProvider::class,
+
 
     ],
 
@@ -212,6 +214,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Zipper' => Chumper\Zipper\Zipper::class,
+        'Embed' => Cohensive\Embed\Facades\Embed::class,
 
     ],
 

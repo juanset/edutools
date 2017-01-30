@@ -3,7 +3,7 @@ Change Log: `bootstrap-fileinput`
 
 ## version 4.3.7
 
-**Date:** 16-Jan-2017
+**Date:** 17-Jan-2017
 
 1. (enh #812): Update Greek Translations.
 2. (enh #815): Enhance parsing of thumbnails that are visible in preview (will allow plugin to be 
@@ -19,9 +19,11 @@ Change Log: `bootstrap-fileinput`
 11. (enh #828): Allow drag sort of single uploaded thumbnails with `initialPreview` config set (post upload).
 12. (enh #831): Update Finnish Translations.
 13. (bug #833): Correct validation and defaults init for `allowedPreviewTypes`.
-14. (enh #835): Update Polish Translations.
-15. (enh #837): Update Czech Translations.
-16. (bug #839): Correct `initialPreview` generation and sortable behavior for async uploads.
+14. (bug #834): Correct clearing of file preview including zoom cache.
+15. (enh #835): Update Polish Translations.
+16. (enh #837): Update Czech Translations.
+17. (bug #839): Correct `initialPreview` generation and sortable behavior for async uploads.
+18. (enh #844): Display zoom preview navigation buttons only when multiple files exist.
 
 ## version 4.3.6
 

@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/vendor/barryvdh/laravel-ide-helper" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/chumper/zipper" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/classpreloader/classpreloader" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/cohensive/embed" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
@@ -76,6 +77,7 @@
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/chumper/zipper" />
           <root url="file://$MODULE_DIR$/vendor/classpreloader/classpreloader" />
+          <root url="file://$MODULE_DIR$/vendor/cohensive/embed" />
           <root url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
@@ -143,6 +145,7 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/chumper/zipper" />
           <root url="file://$MODULE_DIR$/vendor/classpreloader/classpreloader" />
+          <root url="file://$MODULE_DIR$/vendor/cohensive/embed" />
           <root url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />

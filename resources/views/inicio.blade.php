@@ -19,7 +19,7 @@
     <h4>Para iniciar selecciona el tipo de contenido a crear, puede ser un <a class="hvr-pulse" href="{{ route('Public.inicioB') }}">libro</a>, un <a class="hvr-pulse"href="{{ route('Public.inicioC') }}">contenido web</a> o un <a class="hvr-pulse"href="{{ route('Public.inicioQ') }}">cuestionario</a>, solo necesitas tener lo que deseas utilizar en la creación de estos recursos</h4>
     <div>
         <center>
-            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.book') }}">
+            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.inicioB') }}">
                 <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo book"><br>Crea tu libro
             </a>
             <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.contenido') }}">

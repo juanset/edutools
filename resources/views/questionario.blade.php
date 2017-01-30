@@ -16,7 +16,7 @@
         <div class="options">
             <h3>Seleccione el tipo de pregunta a agregar</h3>
             <input type="button" id="vf" value="Verdadero/Falso">
-            <input type="button" id="selmul" value="Selección Multiple">
+            <input type="button" id="selmul" value="Selección Múltiple">
             <input type="button" id="btRemove" value="Eliminar Elemento" class="bt" />
             <input type="button" id="btRemoveAll" value="Eliminar Todo" class="bt" /><br />
 
@@ -87,7 +87,7 @@
                     pregunta = "pre" + p;
                     var contenido = $('textarea[id=textoVF]').val();
                     console.log("Esta pregunta es: " + contenido);
-                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q" >' + contenido + pregunta + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero!' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
+                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero!' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
                     $("#textoVF").val("");
                 }else { //se establece un limite para añadir elementos, 10 es el limite
                     $("#cuestionario").append('<label id="limit">Limite Alcanzado</label>');
@@ -108,7 +108,7 @@
                     pregunta = "pre" + p;
                     var contenido2 = $('textarea[id=textoSM]').val();
                     console.log("Esta pregunta es: " + contenido2);
-                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q">' + contenido2 + pregunta + '</p></section>');
+                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q">' + contenido2 + '</p></section>');
                     $("#textoSM").val("");
                     $("#questionOpciones").clone().appendTo("#" + pregunta);
                     $("#questionOpciones").empty();

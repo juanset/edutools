@@ -15,60 +15,69 @@
     <section class="principal">
         <div class="options">
             <h3>Seleccione el tipo de pregunta a agregar</h3>
-            <input type="button" id="vf" value="Verdadero/Falso">
-            <input type="button" id="selmul" value="Selección Múltiple">
-            <input type="button" id="btRemove" value="Eliminar Elemento" class="bt" />
-            <input type="button" id="btRemoveAll" value="Eliminar Todo" class="bt" /><br />
+            <input type="button" class="btn btn-primary" id="vf" value="Verdadero/Falso">
+            <input type="button" class="btn btn-primary" id="selmul" value="Selección Múltiple">
+            <input type="button" class="btn btn-warning" id="btRemove" value="Eliminar Elemento" class="bt" />
+            <input type="button" class="btn btn-danger" id="btRemoveAll" value="Eliminar Todo" class="bt" />
+            <br />
 
         </div>
         <br>
-        <div id="qvf"  style="display: none;border: double">
+        <div id="qvf" style="display: none;border: solid; border-color: #a3bde3">
             <form name="form_vf">
-            Esta es una pregunta de verdadero falso, escribe la pregunta e indica la respuesta correcta <br>
+                Crearas una pregunta de verdadero falso, escribe la pregunta y selecciona la respuesta correcta
+                <br>
                 <section id="questionVF">
                     <form action="">
-                    <textarea class="con_pre" id="textoVF" type="text" rows="2" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea><br>
-                    <input type="radio" id="true" name="tf" value="true"><label for="true">Verdadero</label> <br>
-                    <input type="radio" id="false" name="tf" value="false"><label for="false">Falso</label> <br>
-                    <input class="guardar" id="guardarVF" type="button" value="Guardar">
+                        <textarea class="con_pre" id="textoVF" type="text" rows="2" cols="50" style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea>
+                        <br>
+                        <input type="radio" id="true" name="tf" value="true">
+                        <label for="true">Verdadero</label>
+                        <br>
+                        <input type="radio" id="false" name="tf" value="false">
+                        <label for="false">Falso</label>
+                        <br>
+                        <input class="guardar btn btn-info" id="guardarVF" type="button" value="Guardar">
                     </form>
                 </section>
             </form>
         </div>
-        <div id="qsm" style="display: none; border: double" >
-            Esta es una pregunta de de selección múltiple <br>
+        <div id="qsm" style="display: none; border: double">
+            Esta es una pregunta de de selección múltiple
+            <br>
             <form name="form_SM">
                 <section id="artisanquestionSM">
-                    <textarea class="con_pre" id="textoSM" type="text" rows="2" cols="50"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea><br>
-                    <textarea class="con_pre" id="textoOptSM" type="text" rows="1" cols="25"  style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la opción a agregar!"></textarea><br>
+                    <textarea class="con_pre" id="textoSM" type="text" rows="2" cols="50" style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea>
+                    <br>
+                    <textarea class="con_pre" id="textoOptSM" type="text" rows="1" cols="25" style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la opción a agregar!"></textarea>
+                    <br>
                 </section>
             </form>
             <form id="questionOpciones">
 
             </form>
-            <input type="button" id="opc" value="Opción"> <br>
+            <input type="button" class="btn btn-default" id="opc" value="Opción">
+            <br>
             <!--<input type="button" value="elim"> <br>-->
-            <input class="guardar" id="guardarSM" type="button" value="Guardar">
+            <input class="guardar btn btn-info" id="guardarSM" type="button" value="Guardar">
+            <input class="prueba btn btn-danger" id="pruebav" type="button" value="prueba">
         </div>
     </section>
     <section id="cuestionario" style="border-style: groove; border-color: grey;">
 
     </section>
 
-    {!! Form::open(['route' => 'store.pregunta', 'method' => 'POST', 'id' => 'form_pregunta']) !!}
+    {!! Form::open(['route' => 'store.pregunta', 'method' => 'POST', 'id' => 'form_pregunta', 'class'=>'form-horizontal']) !!}
     <div class="form-group">
-        <input type="hidden" name="_method" value="POST">
-        {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
+        <input type="hidden" name="_method" value="POST">{!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
         <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
     </div>
-    <button type="submit" class="btn btn-primary" value="Guardar" id="boton01">Guardar</button>
+    <button type="submit" class="btn btn-success" value="Guardar" id="boton01">Guardar</button>
     {!! Form::close() !!}
     </body>
-@endsection
-
-@section('javascript')
+@endsection @section('javascript')
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function() {
             var p = 0;
             $('#vf').on('click', function(event) {
                 $('#qvf').toggle('show');
@@ -81,15 +90,15 @@
                 $('#qop').hide();
             });
             //Guarda pregunta Verdadero Falso
-            $("#guardarVF").click(function(){
-                if(p <= 9) {
+            $("#guardarVF").click(function() {
+                if (p <= 9) {
                     p++;
                     pregunta = "pre" + p;
                     var contenido = $('textarea[id=textoVF]').val();
                     console.log("Esta pregunta es: " + contenido);
-                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero!' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
+                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
                     $("#textoVF").val("");
-                }else { //se establece un limite para añadir elementos, 10 es el limite
+                } else { //se establece un limite para añadir elementos, 10 es el limite
                     $("#cuestionario").append('<label id="limit">Limite Alcanzado</label>');
                     $('#vf').attr('class', 'btn bt-disable');
                     $('#vf').attr('disabled', 'disabled');
@@ -102,8 +111,8 @@
                 }
             });
             //Guarda pregunta seleccion multiple
-            $("#guardarSM").click(function(){
-                if(p <= 9) {
+            $("#guardarSM").click(function() {
+                if (p <= 9) {
                     p++;
                     pregunta = "pre" + p;
                     var contenido2 = $('textarea[id=textoSM]').val();
@@ -112,7 +121,7 @@
                     $("#textoSM").val("");
                     $("#questionOpciones").clone().appendTo("#" + pregunta);
                     $("#questionOpciones").empty();
-                }else { //se establece un limite para añadir elementos, 10 es el limite
+                } else { //se establece un limite para añadir elementos, 10 es el limite
                     $("#cuestionario").append('<label id="limit">Limite Alcanzado</labelid>');
                     $('#vf').attr('class', 'btn bt-disable');
                     $('#vf').attr('disabled', 'disabled');
@@ -125,37 +134,40 @@
                 }
             });
             //Guarda opcion de seleccion multiple
-            $("#opc").click(function(){
+            $("#opc").click(function() {
                 var contenido3 = $('textarea[id=textoOptSM]').val();
-                console.log("Esta opcion es: "+contenido3);
-                $("#questionOpciones").append('<input type="radio" name="opSm">'+contenido3+'<br>');
+                console.log("Esta opcion es: " + contenido3);
+                $("#questionOpciones").append('<input type="radio" name="opSm" value="' + contenido3 + '">' + contenido3 + '<br>');
                 $("#textoOptSM").val("");
 
             });
             $('#btRemove').click(function() { // Elimina un elemento por click
-                if (p != 0 ) { $('#pre' + p).remove(); p = p - 1; }
-                if (p <10) {
+                if (p != 0) {
+                    $('#pre' + p).remove();
+                    p = p - 1;
+                }
+                if (p < 10) {
                     $("#limit").remove();
                     $('#vf').removeAttr('disabled');
-                    $('#vf').attr('class', 'bt');
+                    $('#vf').attr('class', 'btn btn-primary');
                     $('#selmul').removeAttr('disabled');
-                    $('#selmul').attr('class', 'bt');
+                    $('#selmul').attr('class', 'btn btn-primary');
                     $('#guardarSM').removeAttr('disabled');
-                    $('#guardarSM').attr('class', 'bt');
+                    $('#guardarSM').attr('class', 'btn btn-info');
                     $('#guardarVF').removeAttr('disabled');
-                    $('#guardarVF').attr('class', 'bt');
+                    $('#guardarVF').attr('class', 'btn btn-info');
 
                 }
                 if (p == 0) {
                     $("#cuestionario").empty();
                     $('#vf').removeAttr('disabled');
-                    $('#vf').attr('class', 'bt');
+                    $('#vf').attr('class', 'btn btn-primary');
                     $('#selmul').removeAttr('disabled');
-                    $('#selmul').attr('class', 'bt');
+                    $('#selmul').attr('class', 'btn btn-primary');
                     $('#guardarSM').removeAttr('disabled');
-                    $('#guardarSM').attr('class', 'bt');
+                    $('#guardarSM').attr('class', 'btn btn-info');
                     $('#guardarVF').removeAttr('disabled');
-                    $('#guardarVF').attr('class', 'bt');
+                    $('#guardarVF').attr('class', 'btn btn-info');
 
                 }
             });
@@ -164,32 +176,47 @@
 
                 $("#cuestionario").empty();
                 $('#vf').removeAttr('disabled');
-                $('#vf').attr('class', 'bt');
+                $('#vf').attr('class', 'btn btn-primary');
                 $('#selmul').removeAttr('disabled');
-                $('#selmul').attr('class', 'bt');
+                $('#selmul').attr('class', 'btn btn-primary');
                 $('#guardarSM').removeAttr('disabled');
-                $('#guardarSM').attr('class', 'bt');
+                $('#guardarSM').attr('class', 'btn btn-info');
                 $('#guardarVF').removeAttr('disabled');
-                $('#guardarVF').attr('class', 'bt');
+                $('#guardarVF').attr('class', 'btn btn-info');
 
             });
 
 
             //Guardar el contenido AJAX post
-            $("#boton01").click(function () {
+            $("#boton01").click(function() {
                 var contenido = $("#cuestionario").html();
                 var form = $("#form_contenido");
                 var url = form.attr('action');
                 var token = $("#token").val();
                 $("#kontenido").val(contenido);
                 var contenido2 = $("#kontenido").val();
-                $.post(url, contenido2, function (result) {
+                $.post(url, contenido2, function(result) {
                     alert(result);
                 });
 
             });
 
-        });
+            function obtenerRadioSeleccionado(formulario, nombre) {
+                elementos = document.getElementById(formulario).elements;
+                longitud = document.getElementById(formulario).length;
+                for (var i = 0; i < longitud; i++) {
+                    if (elementos[i].name == nombre && elementos[i].type == "radio" && elementos[i].checked == true) {
+                        return elementos[i].value;
+                    }
+                }
+                return false;
+            }
+            $("#pruebav").click(function() {
+                var radio = obtenerRadioSeleccionado("questionOpciones", "opSm");
+                alert(radio);
+                console.log(radio);
+            });
 
+        });
     </script>
 @endsection

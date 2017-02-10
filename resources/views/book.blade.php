@@ -22,59 +22,60 @@
 
             <div style="border:solid; border-color:#d3d3d3;">
                 <h4>En página: </h4>
-            <select name="pagina" id="pagina">
-                <option value="1" id="p1">1</option>
-                <option value="2" id="p2">2</option>
-            </select>
-            <textarea id="texto" style="height: 260px; width: 237px; position:relative; z-index:1;" placeholder="Digite el contenido a agregar!"></textarea>
+                <select name="pagina" id="pagina">
+                    <option value="1" id="p1">1</option>
+                    <option value="2" id="p2">2</option>
+                </select>
+                <textarea id="texto" style="height: 260px; width: 237px; position:relative; z-index:1;" placeholder="Digite el contenido a agregar!"></textarea>
 
-            <input type="file" id="uploadImage" style="display: none"/>
-            <h5>Seleccione el tipo de contenido a agregar:</h5>
-            <select style="position:relative; z-index:1;"name="contenido" id="contenido">
-                <option value="titulo">Título</option>
-                <option value="subtitulo">Subtítulo</option>
-                <option value="parrafo">Párrafo</option>
-                <option value="imagen">Imagen</option>
-            </select>
-            <button id="agregar" class= "btn btn-primary" style="position:relative; z-index:1;">Agregar</button>
+                <input type="file" id="uploadImage" style="display: none" />
+                <h5>Seleccione el tipo de contenido a agregar:</h5>
+                <select style="position:relative; z-index:1;" name="contenido" id="contenido">
+                    <option value="titulo">Título</option>
+                    <option value="subtitulo">Subtítulo</option>
+                    <option value="parrafo">Párrafo</option>
+                    <option value="imagen">Imagen</option>
+                </select>
+                <button id="agregar" class="btn btn-primary" style="position:relative; z-index:1;">Agregar</button>
             </div>
             <br>
             <div style="border:solid; border-color:#d3d3d3;">
-            <p>Crear página después de </p> <input id="add_p" type="number" min="2" placeholder="#" style="width: 50px;"><button class= "btn btn-primary" style="position:relative; z-index:1;" id="addpage">Crear</button>
-            <p>Eliminar la página:</p> <input id="rem_p" type="number" min="1" placeholder="#" style="width: 50px;"><button class= "btn btn-danger" style="position:relative; z-index:1;" id="rempage">Eliminar</button>
+                <p>Crear página después de</p>
+                <input id="add_p" type="number" min="2" placeholder="#" style="width: 50px;">
+                <button class="btn btn-primary" style="position:relative; z-index:1;" id="addpage">Crear</button>
+                <p>Eliminar la página:</p>
+                <input id="rem_p" type="number" min="1" placeholder="#" style="width: 50px;">
+                <button class="btn btn-danger" style="position:relative; z-index:1;" id="rempage">Eliminar</button>
             </div>
         </div>
 
-<div id="librote" class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="float: left;">
-        <div id="flipbook">
-            <div class="hard">
-                <div id="content1"></div>
-            </div>
-            <div class="hard">
-                <div id="content2"></div>
+        <div id="librote" class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="float: left;">
+            <div id="flipbook">
+                <div class="hard">
+                    <div id="content1"></div>
+                </div>
+                <div class="hard">
+                    <div id="content2"></div>
+                </div>
             </div>
         </div>
-</div>
 
-<div>
-        {!! Form::open(['route' => 'store.libro', 'method' => 'POST', 'id' => 'form_libro', 'class'=>'form-horizontal' ]) !!}
-        <div class="form-group">
+        <div>
+            {!! Form::open(['route' => 'store.libro', 'method' => 'POST', 'id' => 'form_libro', 'class'=>'form-horizontal' ]) !!}
+            <div class="form-group">
 
-            <input type="hidden" name="_method" value="POST">
-            {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
-            <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
+                <input type="hidden" name="_method" value="POST">{!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
+                <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-success" value="Guardar" id="boton01">Guardar</button>
+            </div>
+            {!! Form::close() !!}
         </div>
-    <div  class="btn-group">
-        <button type="submit" class="btn btn-success" value="Guardar" id="boton01">Guardar</button>
-    </div>
-        {!! Form::close() !!}
-</div>
     </section>
 
     </body>
-@endsection
-
-@section('javascript')
+@endsection @section('javascript')
     <script type="text/javascript">
         $("#flipbook").turn({
             width: 800,
@@ -82,67 +83,66 @@
             autoCenter: true
         });
 
-        $(document).ready(function(){
+        $(document).ready(function() {
             var paginas = $("#flipbook").turn("pages");
 
             $("#contenido").change(function() {
-                if($(this).find("option:selected").val() == "imagen") {
+                if ($(this).find("option:selected").val() == "imagen") {
                     $("#uploadImage").show();
                     $("#texto").hide();
-                    }
-                else {
+                } else {
                     $("#texto").show();
                     $("#uploadImage").hide();
-                    }
-                });
+                }
+            });
 
-            $("#agregar").click(function(){
+            $("#agregar").click(function() {
 
                 var contenido = $('select[id=contenido]').val();
                 var Agregar = $('textarea[id=texto]').val();
-                console.log("Esta página es: "+$("#flipbook").turn("page"));
-                var pagina =$("#flipbook").turn("page");
-                var c = "content"+pagina;
+                console.log("Esta página es: " + $("#flipbook").turn("page"));
+                var pagina = $("#flipbook").turn("page");
+                var c = "content" + pagina;
                 var addPag = $("#pagina").val();
-                c = "content"+addPag;
+                c = "content" + addPag;
                 addPag = parseInt(addPag);
-                console.log("El contenido sera insertado en: "+c);
+                console.log("El contenido sera insertado en: " + c);
                 $("#flipbook").turn("page", addPag);
-                console.log("Estamos en la página "+ $("#flipbook").turn("page"));
+                console.log("Estamos en la página " + $("#flipbook").turn("page"));
 
                 /*if($('#' + c).length>0){
-                    console.log("Ese ContentId ya existe");
-                }else
-                {
-                    $(".page").append('<div id="'+c+'"></div>');
-                    console.log("El ContentId fue creado")
-                }*/
+                 console.log("Ese ContentId ya existe");
+                 }else
+                 {
+                 $(".page").append('<div id="'+c+'"></div>');
+                 console.log("El ContentId fue creado")
+                 }*/
 
-                switch (contenido){
+                switch (contenido) {
 
                     case "parrafo":
-                        $("#"+ c).append('<p class="parr">' + Agregar + '</p>');
+                        $("#" + c).append('<p class="parr">' + Agregar + '</p>');
                         break;
                     case "titulo":
-                        $("#"+ c).append('<h1 class="title">' + Agregar + '</h1>');
+                        $("#" + c).append('<h1 class="title">' + Agregar + '</h1>');
                         break;
                     case "subtitulo":
-                        $("#"+ c).append('<h3 class="subt">' + Agregar + '</h3>');
+                        $("#" + c).append('<h3 class="subt">' + Agregar + '</h3>');
                         break;
                     case "imagen":
-                        $("#"+ c).append('<img src="" id="uploadPreview" class="image"/>');
+                        $("#" + c).append('<img src="" id="uploadPreview" class="image"/>');
                         var oFReader = new FileReader();
                         oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
-                        oFReader.onload = function (oFREvent) {
-                        document.getElementById("uploadPreview").src = oFREvent.target.result;
+                        oFReader.onload = function(oFREvent) {
+                            document.getElementById("uploadPreview").src = oFREvent.target.result;
                         };
                         break;
-                        }
+                }
                 $("#texto").val("");
 
             });
 
-            $("#addpage").click(function () {
+            $("#addpage").click(function() {
                 n_pag = $('input[id=add_p]').val();
                 n_pag = parseInt(n_pag) + 1;
                 c2 = "content" + n_pag;
@@ -155,22 +155,22 @@
                 if ($("#portada").prop('checked')) $(".page").prepend('<div class="hard">');
             });
 
-            $("#rempage").click(function () {
+            $("#rempage").click(function() {
                 n_pag = $('input[id=rem_p]').val();
                 $("#flipbook").turn("removePage", n_pag);
                 //Falta remover el option del selector de páginas para contenido
             });
 
-//Guardar el contenido AJAX post
-            $("#boton01").click(function(){
+            //Guardar el contenido AJAX post
+            $("#boton01").click(function() {
                 $("#flipbook, #flipbook div").removeAttr('style');
                 $(".shadow").removeAttr('style');
                 $(".page-wrapper").removeAttr('style');
                 $(".page-wrapper").removeClass("page-wrapper");
-                $("div").each(function () {
-                    if($(this).html().trim()==="") {
+                $("div").each(function() {
+                    if ($(this).html().trim() === "") {
                         $(this).remove();
-                       }
+                    }
                 });
 
                 var contenido = $("#librote").html();
@@ -178,13 +178,12 @@
                 var url = form.attr('action');
                 var token = $("#token").val();
                 $("#kontenido").val(contenido);
-                var contenido2 =$("#kontenido").val();
-                $.post(url, contenido2, function (result) {
+                var contenido2 = $("#kontenido").val();
+                $.post(url, contenido2, function(result) {
                     alert(result);
                 });
             });
 
         });
-
     </script>
 @endsection

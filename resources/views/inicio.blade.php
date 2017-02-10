@@ -22,10 +22,10 @@
             <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.inicioB') }}">
                 <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo book"><br>Crea tu libro
             </a>
-            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.contenido') }}">
+            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.inicioC') }}">
                 <img src="{{ asset('img/editor2.png') }}" width="auto" height="89px" alt="Logo editor" title="Logo editor"><br>Crea tu contenido web
             </a>
-            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.questionario') }}">
+            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.inicioQ') }}">
                 <img src="{{ asset('img/questionario.png') }}" width="auto" height="89px" alt="Logo Cuestionario" title="Logo Q"><br>Crea tu Cuestionario
             </a>
         </center>

@@ -25,10 +25,12 @@
                     {!! Embed::make('https://www.youtube.com/watch?v=66XHEccbJ9s')->parseUrl()->getIframe()!!}
                 </center>
             </div>
-            <br><br>
+            <br>
+            <br>
             <center>
                 <a class="hvr-bounce-in" href="{{ route('Public.book') }}">
-                    <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo book"><br>Crea tu libro
+                    <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo book">
+                    <br>Crea tu libro
                 </a>
             </center>
 
@@ -38,9 +40,7 @@
     </section>
     </body>
 @endsection
-
 @section('javascript')
     <script type="text/javascript">
-
     </script>
 @endsection

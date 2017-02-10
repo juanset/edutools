@@ -18,12 +18,11 @@
     </header>
     <section class="principal">
         <div class="flipbook">
-        @foreach($libros as $libro)
-                {!!$libro->contenido!!}
-        @endforeach
+            @foreach($libros as $libro)
+                    {!!$libro->contenido!!}
+            @endforeach
         </div>
     </section>
-
     </body>
 @endsection
 

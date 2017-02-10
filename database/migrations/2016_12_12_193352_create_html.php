@@ -27,6 +27,6 @@ class CreateHtml extends Migration
      */
     public function down()
     {
-        Schema::connection('pgsql')->drop('html');
+        Schema::connection('pgsql')->drop('htmls');
     }
 }

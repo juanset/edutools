@@ -14,118 +14,121 @@
 </head>
 
 <body class="cuerpo">
-<section class="principal">
-    <div class="options">
-        <h3>Tus libros</h3>
-        <h4 class="page-header">Estos son los libros que has creado:</h4>
+    <section class="principal">
+        <div class="options">
+            <h3>Tus libros</h3>
+            <h4 class="page-header">Estos son los libros que has creado:</h4>
 
-        <table class="table table-hover table-striped">
-            <thead>
-            <tr>
-                <th>id</th>
-                <th>Libro</th>
-                <th>Ver</th>
-                <th>Exportar</th>
-                <th>Eliminar</th>
-            </tr>
-            </thead>
-            <tbody>
-            @foreach($libros as $libro)
+            <table class="table table-hover table-striped">
+                <thead>
                 <tr>
-                    <td>{{$libro->id}}</td>
-                    <td>Libro{{$libro->id}}</td>
-                    <td><a href="{{route("Public.libro",$libro->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a></td>
-                    <td>
-                        <a href="{{route("Public.exportBook",$libro->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
-                    </td>
-                    <td>
-                        {!!Form::open(['route'=>['Public.deleteBook', $libro->id],'method'=>'delete'])!!}
-                        <button type="submit" title="Eliminar">
-                            <i class="glyphicon glyphicon-trash"></i>
-                        </button>
-                        {!! Form::close() !!}
-                    </td>
+                    <th>id</th>
+                    <th>Libro</th>
+                    <th>Ver</th>
+                    <th>Exportar</th>
+                    <th>Eliminar</th>
                 </tr>
-            @endforeach
-            </tbody>
-        </table>
-    </div>
-    <br>
-    <div class="options">
-        <h3>Tus Contenidos Web</h3>
-        <h4 class="page-header">Estos son los Contenidos que has creado: </h4>
+                </thead>
+                <tbody>
+                @foreach($libros as $libro)
+                    <tr>
+                        <td>{{$libro->id}}</td>
+                        <td>Libro{{$libro->id}}</td>
+                        <td><a href="{{route(" Public.libro ",$libro->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                        </td>
+                        <td>
+                            <a href="{{route(" Public.exportBook ",$libro->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                        </td>
+                        <td>
+                            {!!Form::open(['route'=>['Public.deleteBook', $libro->id],'method'=>'delete'])!!}
+                            <button type="submit" title="Eliminar">
+                                <i class="glyphicon glyphicon-trash"></i>
+                            </button>
+                            {!! Form::close() !!}
+                        </td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="options">
+            <h3>Tus Contenidos Web</h3>
+            <h4 class="page-header">Estos son los Contenidos que has creado: </h4>
 
-        <table class="table table-hover table-striped">
-            <thead>
-            <tr>
-                <th>id</th>
-                <th>Contenido</th>
-                <th>Ver</th>
-                <th>Exportar</th>
-                <td>Eliminar</td>
-            </tr>
-            </thead>
-            <tbody>
-            @foreach($contenidos as $contenido)
+            <table class="table table-hover table-striped">
+                <thead>
                 <tr>
-                    <td>{{$contenido->id}}</td>
-                    <td>Contenido{{$contenido->id}}</td>
-                    <td><a href="{{route("Public.kontenido",$contenido->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a></td>
-                    <td>
-                        <a href="{{route("Public.exportContent",$contenido->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
-                    </td>
-                    <td>
-                        {!!Form::open(['route'=>['Public.deleteContent', $contenido->id],'method'=>'delete'])!!}
-                        <button type="submit" title="Eliminar">
-                            <i class="glyphicon glyphicon-trash"></i>
-                        </button>
-                        {!! Form::close() !!}
-                    </td>
+                    <th>id</th>
+                    <th>Contenido</th>
+                    <th>Ver</th>
+                    <th>Exportar</th>
+                    <td>Eliminar</td>
                 </tr>
-            @endforeach
-            </tbody>
-        </table>
-    </div>
-    <br>
-    <div class="options">
-        <h3>Tus Questionarios</h3>
-        <h4 class="page-header">Estos son los Cuestionarios que has creado:</h4>
+                </thead>
+                <tbody>
+                @foreach($contenidos as $contenido)
+                    <tr>
+                        <td>{{$contenido->id}}</td>
+                        <td>Contenido{{$contenido->id}}</td>
+                        <td><a href="{{route(" Public.kontenido ",$contenido->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                        </td>
+                        <td>
+                            <a href="{{route(" Public.exportContent ",$contenido->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                        </td>
+                        <td>
+                            {!!Form::open(['route'=>['Public.deleteContent', $contenido->id],'method'=>'delete'])!!}
+                            <button type="submit" title="Eliminar">
+                                <i class="glyphicon glyphicon-trash"></i>
+                            </button>
+                            {!! Form::close() !!}
+                        </td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="options">
+            <h3>Tus Questionarios</h3>
+            <h4 class="page-header">Estos son los Cuestionarios que has creado:</h4>
 
-        <table class="table table-hover table-striped">
-            <thead>
-            <tr>
-                <th>id</th>
-                <th>Cuestionario</th>
-                <th>Ver</th>
-                <th>Exportar</th>
-                <th>Eliminar</th>
-            </tr>
-            </thead>
-            <tbody>
-            @foreach($preguntas as $questionario)
+            <table class="table table-hover table-striped">
+                <thead>
                 <tr>
-                    <td>{{$questionario->id}}</td>
-                    <td>Question{{$questionario->id}}</td>
-                    <td><a href="{{route("Public.cuestionario",$questionario->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a></td>
-                    <td>
-                        <a href="{{route("Public.exportQuest",$questionario->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
-                    </td>
-                    <td>
-                        {!!Form::open(['route'=>['Public.deleteQuest', $questionario->id],'method'=>'delete'])!!}
-                        <button type="submit" title="Eliminar">
-                            <i class="glyphicon glyphicon-trash"></i>
-                        </button>
-                        {!! Form::close() !!}
-                    </td>
+                    <th>id</th>
+                    <th>Cuestionario</th>
+                    <th>Ver</th>
+                    <th>Exportar</th>
+                    <th>Eliminar</th>
                 </tr>
-            @endforeach
-            </tbody>
-        </table>
-    </div>
-    <br>
+                </thead>
+                <tbody>
+                @foreach($preguntas as $questionario)
+                    <tr>
+                        <td>{{$questionario->id}}</td>
+                        <td>Question{{$questionario->id}}</td>
+                        <td><a href="{{route(" Public.cuestionario ",$questionario->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                        </td>
+                        <td>
+                            <a href="{{route(" Public.exportQuest ",$questionario->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                        </td>
+                        <td>
+                            {!!Form::open(['route'=>['Public.deleteQuest', $questionario->id],'method'=>'delete'])!!}
+                            <button type="submit" title="Eliminar">
+                                <i class="glyphicon glyphicon-trash"></i>
+                            </button>
+                            {!! Form::close() !!}
+                        </td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
+        <br>
 
 
-</section>
+    </section>
 </body>
 @endsection
 

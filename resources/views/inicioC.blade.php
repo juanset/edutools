@@ -15,28 +15,27 @@
 </head>
 
 <body class="cuerpo">
-<section class="principal">
-<h2>Bienvenido al creador de contenido</h2>
-    <p>Para iniciar a crear tu página te recomendamos tener preparado el contenido que quieras insertar en ella</p>
-    <p>Recuerda que puedes utilizar imagenes y videos que muestren lo que quieres compartir.</p>
-    <br>
-    <div class="contenedor">
+    <section class="principal">
+        <h2>Bienvenido al creador de contenido</h2>
+        <p>Para iniciar a crear tu página te recomendamos tener preparado el contenido que quieras insertar en ella</p>
+        <p>Recuerda que puedes utilizar imagenes y videos que muestren lo que quieres compartir.</p>
+        <br>
+        <div class="contenedor">
+            <center>
+                {!! Embed::make('https://www.youtube.com/watch?v=eB5Fs1o5iJs')->parseUrl()->getIframe()!!}
+            </center>
+        </div>
         <center>
-            {!! Embed::make('https://www.youtube.com/watch?v=eB5Fs1o5iJs')->parseUrl()->getIframe()!!}
+            <a class="hvr-bounce-in" href="{{ route('Public.contenido') }}">
+                <img src="{{ asset('img/editor2.png') }}" width="auto" height="89px" alt="Logo editor" title="Logo editor">
+                <br>Crea tu contenido web
+            </a>
         </center>
-    </div>
-    <center>
-        <a class="hvr-bounce-in" href="{{ route('Public.contenido') }}">
-            <img src="{{ asset('img/editor2.png') }}" width="auto" height="89px" alt="Logo editor" title="Logo editor"><br>Crea tu contenido web
-        </a>
-    </center>
 
-</section>
+    </section>
 </body>
 @endsection
-
 @section('javascript')
     <script>
-
     </script>
 @endsection

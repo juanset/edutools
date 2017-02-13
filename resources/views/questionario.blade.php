@@ -24,23 +24,25 @@
         </div>
         <br>
         <div id="qvf" style="display: none;border: solid; border-color: #a3bde3">
-            <form name="form_vf">
+
                 Crearas una pregunta de verdadero falso, escribe la pregunta y selecciona la respuesta correcta
                 <br>
                 <section id="questionVF">
-                    <form action="">
+
                         <textarea class="con_pre" id="textoVF" type="text" rows="2" cols="50" style="max-height: 6.4em; max-width: 300px;" placeholder="Digite la pregunta a agregar!"></textarea>
                         <br>
-                        <input type="radio" id="true" name="tf" value="true">
-                        <label for="true">Verdadero</label>
-                        <br>
-                        <input type="radio" id="false" name="tf" value="false">
-                        <label for="false">Falso</label>
-                        <br>
+                        <form id="opcionVF" action="">
+                            <input type="radio" id="true" name="tf" value="true">
+                            <label for="true">Verdadero</label>
+                            <br>
+                            <input type="radio" id="false" name="tf" value="false">
+                            <label for="false">Falso</label>
+                            <br>
+                        </form>
                         <input class="guardar btn btn-info" id="guardarVF" type="button" value="Guardar">
-                    </form>
+
                 </section>
-            </form>
+
         </div>
         <div id="qsm" style="display: none; border: double">
             Esta es una pregunta de de selección múltiple
@@ -72,7 +74,7 @@
         <input type="hidden" name="_method" value="POST">{!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
         <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
     </div>
-    <button type="submit" class="btn btn-success" value="Guardar" id="boton01">Guardar</button>
+    <button type="submit" class="btn btn-success" value="Guardar" id="guardar">Guardar</button>
     {!! Form::close() !!}
     </body>
 @endsection @section('javascript')
@@ -96,7 +98,11 @@
                     pregunta = "pre" + p;
                     var contenido = $('textarea[id=textoVF]').val();
                     console.log("Esta pregunta es: " + contenido);
-                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
+                    var opt_vf = obtenerRadioSeleccionado("opcionVF", "tf");
+                    if(opt_vf=="true"){
+                        $("#cuestionario").append('<section class="pregunta" opcion="1" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');}
+                    else {$("#cuestionario").append('<section class="pregunta" opcion="0" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');}
+                    //$("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
                     $("#textoVF").val("");
                 } else { //se establece un limite para añadir elementos, 10 es el limite
                     $("#cuestionario").append('<label id="limit">Limite Alcanzado</label>');
@@ -141,6 +147,7 @@
                 $("#textoOptSM").val("");
 
             });
+
             $('#btRemove').click(function() { // Elimina un elemento por click
                 if (p != 0) {
                     $('#pre' + p).remove();
@@ -186,9 +193,8 @@
 
             });
 
-
             //Guardar el contenido AJAX post
-            $("#boton01").click(function() {
+            $("#guardar").click(function() {
                 var contenido = $("#cuestionario").html();
                 var form = $("#form_contenido");
                 var url = form.attr('action');

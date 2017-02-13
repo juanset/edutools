@@ -34,10 +34,10 @@
                     <tr>
                         <td>{{$contenido->id}}</td>
                         <td>Contenido{{$contenido->id}}</td>
-                        <td><a href="{{route(" Public.kontenido ",$contenido->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                        <td><a href="{{route("Public.kontenido",$contenido->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
                         </td>
                         <td>
-                            <a href="{{route(" Public.exportContent ",$contenido->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                            <a href="{{route("Public.exportContent",$contenido->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
                         </td>
                         <td>
                             {!!Form::open(['route'=>['Public.deleteContent', $contenido->id],'method'=>'delete'])!!}

@@ -58,6 +58,9 @@
             <form id="questionOpciones">
 
             </form>
+            <form id="questionOpcionesH" style="display: none;" type="hidden">
+
+            </form>
             <input type="button" class="btn btn-default" id="opc" value="Opción">
             <br>
             <!--<input type="button" value="elim"> <br>-->
@@ -123,7 +126,9 @@
                     pregunta = "pre" + p;
                     var contenido2 = $('textarea[id=textoSM]').val();
                     console.log("Esta pregunta es: " + contenido2);
-                    $("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q">' + contenido2 + '</p></section>');
+                    var opt_sm = obtenerRadioSeleccionado("questionOpciones", "opSm");
+                    alert("Esta es la opcion seleccionada: "+opt_sm);
+                    $("#cuestionario").append('<section class="pregunta" opcion="" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q">' + contenido2 + '</p></section>');
                     $("#textoSM").val("");
                     $("#questionOpciones").clone().appendTo("#" + pregunta);
                     $("#questionOpciones").empty();
@@ -144,6 +149,7 @@
                 var contenido3 = $('textarea[id=textoOptSM]').val();
                 console.log("Esta opcion es: " + contenido3);
                 $("#questionOpciones").append('<input type="radio" name="opSm" value="' + contenido3 + '">' + contenido3 + '<br>');
+                $("#questionOpcionesH").append('<input type="radio" name="opSm" value="' + contenido3 + '">' + contenido3 + '<br>');
                 $("#textoOptSM").val("");
 
             });

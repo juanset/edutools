@@ -1,3 +1,4 @@
+
 a {
 
    color: #dd4f24
@@ -215,9 +216,21 @@ nav .menu li a {
 
 }
 
+#flipbook .page .subt {
+
+   color: #08357b
+
+}
+
+#flipbook .page .title {
+
+   color: #05204a
+
+}
+
 #flipbook .subt {
 
-   color: #19db37
+   color: #e2f4ba
 
 }
 
@@ -239,7 +252,7 @@ nav .menu li a {
 
    align-items: center;
 
-   border-radius: 4%
+   border-radius: 5px;
 
 }
 
@@ -253,7 +266,7 @@ nav .menu li a {
 
 }
 
-#flipbook .title {
+#flipbook .hard .title {
 
    color: #e6dcdc;
 

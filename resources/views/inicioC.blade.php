@@ -22,7 +22,7 @@
         <br>
         <div class="contenedor">
             <center>
-                {!! Embed::make('https://www.youtube.com/watch?v=eB5Fs1o5iJs')->parseUrl()->getIframe()!!}
+                {!! Embed::make('https://youtu.be/h7nYXyQZkR0')->parseUrl()->getIframe()!!}
             </center>
         </div>
         <center>

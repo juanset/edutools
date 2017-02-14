@@ -1,4 +1,3 @@
-
 a {
 
    color: #dd4f24
@@ -218,7 +217,8 @@ nav .menu li a {
 
 #flipbook .page .subt {
 
-   color: #08357b
+   color: #08357b;
+   margin: .5em
 
 }
 
@@ -228,11 +228,6 @@ nav .menu li a {
 
 }
 
-#flipbook .subt {
-
-   color: #e2f4ba
-
-}
 
 #flipbook p {
 
@@ -263,6 +258,12 @@ nav .menu li a {
    color: #fff;
 
    text-align: center
+
+}
+#flipbook .hard .subt {
+
+   color: #e6dcdc;
+   margin: .5em;
 
 }
 

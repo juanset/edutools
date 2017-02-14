@@ -14,16 +14,17 @@ class HtmlTableSeeder extends Seeder
         $header = "<!DOCTYPE html>
                     <html>
                     <head>
-                        <meta charset=\'UTF-8\'>
+                        <meta charset='UTF-8'>
                         <title>Objeto</title>
                     </head>
-                            <link rel=\'stylesheet\' href=\'css/style.css\'>
-                            <script type=\'text/javascript\' src=\'plugin/jquery.js\'></script>
-                            <script type=\'text/javascript\' src=\'plugin/turn.js\'></script>
+                            <link rel='stylesheet' href='css/style.css'>
+                            <script type='text/javascript' src='plugin/jquery.js'></script>
+                            <script type='text/javascript' src='plugin/turn.js'></script>
+	          <script type='text/javascript' src='plugin/validaQuestionario.js'></script>
                     
-                    <body class=\'cuerpo\' >";
+                    <body class='cuerpo' >";
         $footer = "<script>
-                        $(\'#flipbook\').turn({
+                        $('#flipbook').turn({
                                 width: 800,
                                 height: 600,
                                 autoCenter: true

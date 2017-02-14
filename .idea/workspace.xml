@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e97d4de-ddb7-486b-9759-aa4e32712c5f" name="Default" comment="Delete contents">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/exports/css/style.css" afterPath="$PROJECT_DIR$/public/exports/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/book.blade.php" afterPath="$PROJECT_DIR$/resources/views/book.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/inicioB.blade.php" afterPath="$PROJECT_DIR$/resources/views/inicioB.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/inicioC.blade.php" afterPath="$PROJECT_DIR$/resources/views/inicioC.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/inicioQ.blade.php" afterPath="$PROJECT_DIR$/resources/views/inicioQ.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/libro.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/libro.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mostrarT.blade.php" afterPath="$PROJECT_DIR$/resources/views/mostrarT.blade.php" />
     </list>
     <ignored path="book.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,11 +107,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inicioQ.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inicioQ.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/inicioQ.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="17" column="70" lean-forward="false" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mostrarT.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/mostrarT.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1418">
+              <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -213,7 +219,6 @@
         <option value="$PROJECT_DIR$/public/plugins/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/resources/views/contenido.blade.php" />
         <option value="$PROJECT_DIR$/public/plugins/ckeditor/build-config.js" />
-        <option value="$PROJECT_DIR$/resources/views/mostrarT.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_12_12_193352_create_html.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/mostrarB.blade.php" />
@@ -229,6 +234,7 @@
         <option value="$PROJECT_DIR$/resources/views/inicioB.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/inicioC.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/inicioQ.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/mostrarT.blade.php" />
       </list>
     </option>
   </component>
@@ -970,12 +976,12 @@
       <workItem from="1486957063621" duration="2437000" />
       <workItem from="1487003588629" duration="16143000" />
       <workItem from="1487037100197" duration="13127000" />
-      <workItem from="1487050668529" duration="2487000" />
+      <workItem from="1487050668529" duration="2715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="439813000" />
+    <option name="totallyTimeSpent" value="440041000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1153,13 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1602">
           <caret line="89" column="18" lean-forward="true" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/mostrarT.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2106">
-          <caret line="117" column="13" lean-forward="false" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1469,6 +1468,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="70" lean-forward="false" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mostrarT.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1418">
+          <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
           <folding />
         </state>
       </provider>

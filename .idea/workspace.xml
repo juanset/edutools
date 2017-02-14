@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e97d4de-ddb7-486b-9759-aa4e32712c5f" name="Default" comment="Delete contents">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mostrarT.blade.php" afterPath="$PROJECT_DIR$/resources/views/mostrarT.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/objeto.zip" afterPath="$PROJECT_DIR$/public/objeto.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/exports/index.html" afterPath="$PROJECT_DIR$/public/exports/index.html" />
     </list>
     <ignored path="book.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,7 +120,7 @@
       <file leaf-file-name="mostrarT.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/mostrarT.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1418">
+            <state relative-caret-position="-284">
               <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
               <folding />
             </state>
@@ -976,12 +976,12 @@
       <workItem from="1486957063621" duration="2437000" />
       <workItem from="1487003588629" duration="16143000" />
       <workItem from="1487037100197" duration="13127000" />
-      <workItem from="1487050668529" duration="2715000" />
+      <workItem from="1487050668529" duration="2868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="440041000" />
+    <option name="totallyTimeSpent" value="440194000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -994,7 +994,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16792738" sideWeight="0.7596639" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1474,7 +1474,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/mostrarT.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1418">
+        <state relative-caret-position="-284">
           <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
           <folding />
         </state>

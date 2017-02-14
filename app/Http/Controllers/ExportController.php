@@ -32,6 +32,7 @@ class ExportController extends Controller
         fwrite($fp,$archivo);
         fclose($fp);
 
+        //$public_dir = '../../www/edutools';
         $public_dir = public_path();
         $files = 'exports/';
 
@@ -66,6 +67,7 @@ class ExportController extends Controller
         fwrite($fp,$archivo);
         fclose($fp);
 
+        //$public_dir = '../../www/edutools';
         $public_dir = public_path();
         $files = 'exports/';
 
@@ -100,6 +102,7 @@ class ExportController extends Controller
         fwrite($fp,$archivo);
         fclose($fp);
 
+        //$public_dir = '../../www/edutools';
         $public_dir = public_path();
         $files = 'exports/';
 

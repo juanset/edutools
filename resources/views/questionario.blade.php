@@ -58,7 +58,7 @@
             <form id="questionOpciones">
 
             </form>
-            <form id="questionOpcionesH" style="display: none;" type="hidden">
+
 
             </form>
             <input type="button" class="btn btn-default" id="opc" value="Opción">
@@ -68,7 +68,7 @@
             <input class="prueba btn btn-danger" id="pruebav" type="button" value="prueba">
         </div>
     </section>
-    <section id="cuestionario" style="border-style: groove; border-color: grey;">
+    <section id="cuestionario" style="border-style: groove; border-radius: 5px;">
 
     </section>
 
@@ -102,9 +102,10 @@
                     var contenido = $('textarea[id=textoVF]').val();
                     console.log("Esta pregunta es: " + contenido);
                     var opt_vf = obtenerRadioSeleccionado("opcionVF", "tf");
+                    //$("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6; border-radius: 10px;"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');//}
                     if(opt_vf=="true"){
-                        $("#cuestionario").append('<section class="pregunta" opcion="1" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');}
-                    else {$("#cuestionario").append('<section class="pregunta" opcion="0" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');}
+                        $("#cuestionario").append('<form class="pregunta" opcion="1" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6; border-radius: 10%;"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="pre' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="pre' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></form>' + '<br>');}
+                    else {$("#cuestionario").append('<form class="pregunta" opcion="0" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6; border-radius: 10%;"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="pre' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="pre' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></form>' + '<br>');}
                     //$("#cuestionario").append('<section class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6"><p class="q" >' + contenido + '</p>' + '<input type="radio" id="true' + p + '" name="ft' + p + '" value="true">' + '<label for="true' + p + '">' + 'Verdadero' + '</label>' + '<br>' + '<input type="radio" id="false' + p + '" name="ft' + p + '" value="false">' + '<label for="false' + p + '">' + 'Falso' + '</label></section>' + '<br>');
                     $("#textoVF").val("");
                 } else { //se establece un limite para añadir elementos, 10 es el limite
@@ -128,9 +129,13 @@
                     console.log("Esta pregunta es: " + contenido2);
                     var opt_sm = obtenerRadioSeleccionado("questionOpciones", "opSm");
                     alert("Esta es la opcion seleccionada: "+opt_sm);
-                    $("#cuestionario").append('<section class="pregunta" opcion="" id="' + pregunta + '" style="border-style: solid; border-color: #222d32"><p class="q">' + contenido2 + '</p></section>');
+                    $("#cuestionario").append('<form class="pregunta" id="' + pregunta + '" style="border-style: solid; border-color: #acb4b6; border-radius: 10px;"><p class="q">' + contenido2 + '</p></form>');
                     $("#textoSM").val("");
-                    $("#questionOpciones").clone().appendTo("#" + pregunta);
+                    //$("#questionOpciones").clone().appendTo("#" + pregunta);
+                    var questionSet = $("#questionOpciones").html();
+                    $("#" + pregunta).append(questionSet);
+
+
                     $("#questionOpciones").empty();
                 } else { //se establece un limite para añadir elementos, 10 es el limite
                     $("#cuestionario").append('<label id="limit">Limite Alcanzado</labelid>');
@@ -148,8 +153,8 @@
             $("#opc").click(function() {
                 var contenido3 = $('textarea[id=textoOptSM]').val();
                 console.log("Esta opcion es: " + contenido3);
-                $("#questionOpciones").append('<input type="radio" name="opSm" value="' + contenido3 + '">' + contenido3 + '<br>');
-                $("#questionOpcionesH").append('<input type="radio" name="opSm" value="' + contenido3 + '">' + contenido3 + '<br>');
+                var pp = p+1;
+                $("#questionOpciones").append('<input type="radio" name="pre'+pp+'" value="' + contenido3 + '">' + contenido3 + '<br>');
                 $("#textoOptSM").val("");
 
             });

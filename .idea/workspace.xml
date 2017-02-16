@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/resources/views/questionario.blade.php" line="31" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e97d4de-ddb7-486b-9759-aa4e32712c5f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/contenido.blade.php" afterPath="$PROJECT_DIR$/resources/views/contenido.blade.php" />
-    </list>
+    <list default="true" id="7e97d4de-ddb7-486b-9759-aa4e32712c5f" name="Default" comment="" />
     <ignored path="book.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -738,7 +736,7 @@
       <workItem from="1487058485889" duration="1393000" />
       <workItem from="1487090741434" duration="764000" />
       <workItem from="1487099881256" duration="3815000" />
-      <workItem from="1487188443542" duration="15743000" />
+      <workItem from="1487188443542" duration="16502000" />
     </task>
     <task id="LOCAL-00001" summary="Comentado el public path de los export en ExportController">
       <created>1487059833334</created>
@@ -751,7 +749,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="464651000" />
+    <option name="totallyTimeSpent" value="465410000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -763,7 +761,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15279879" sideWeight="0.7596639" order="0" side_tool="false" content_ui="combo" />

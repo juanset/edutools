@@ -31,7 +31,7 @@
             {!! Form::textarea('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
             <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
         </div>
-        <button type="submit" class="btn btn-primary" value="Guardar" id="boton01">Guardar</button>
+        <button type="submit" class="btn btn-primary" value="Guardar" id="btnGuardar">Guardar</button>
         {!! Form::close() !!}
     </section>
     </body>
@@ -44,7 +44,7 @@
         $(document).ready(function() {
             //Guardar el contenido AJAX post
 
-            $("#boton01").click(function () {
+            $("#btnGuardar").click(function () {
                 var editor_data = CKEDITOR.instances.texto.getData();
                 var contenido = editor_data;
                 var titulo = $("#titulo").val();
@@ -54,9 +54,9 @@
                 var token = $("#token").val();
                 $("#kontenido").val(contenido);
                 var contenido2 = $("#kontenido").val();
-                /*$.post(url, { contenido: contenido2, titulo: titulo }, function (result) {
+                $.post(url, { contenido: contenido2, titulo: titulo }, function (result) {
                      alert(result);
-                });*/
+                });
 
 
             });

@@ -8,5 +8,6 @@ class Contenido extends Model
 {
     protected $fillable = [
         'contenido',
+        'titulo',
     ];
 }

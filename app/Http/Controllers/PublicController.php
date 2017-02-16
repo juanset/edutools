@@ -84,6 +84,13 @@ class PublicController extends Controller
         return view('user.kontenido',compact('contenidos'));
     }
 
+    public function editContenido($id)
+    {
+        $contenidos = Contenido::where('id',$id)
+            ->get();
+        return view('user.editcontenido',compact('contenidos'));
+    }
+
 //**************Cuestionario********************************+
     public function questionario()
     {

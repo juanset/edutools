@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class ContenidoRequest extends Request
+class UpdateContenidoRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,8 +25,8 @@ class ContenidoRequest extends Request
     {
         return [
 
-                'contenido' => 'required',
-                'titulo'   => 'required',
+            'contenido' => 'required',
+            'titulo'   => 'required',
         ];
     }
 }

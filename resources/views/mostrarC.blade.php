@@ -25,6 +25,7 @@
                     <th>id</th>
                     <th>Contenido</th>
                     <th>Ver</th>
+                    <th>Editar</th>
                     <th>Exportar</th>
                     <td>Eliminar</td>
                 </tr>
@@ -33,8 +34,10 @@
                 @foreach($contenidos as $contenido)
                     <tr>
                         <td>{{$contenido->id}}</td>
-                        <td>Contenido{{$contenido->id}}</td>
+                        <td>{{$contenido->titulo}}</td>
                         <td><a href="{{route("Public.kontenido",$contenido->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                        </td>
+                        <td><a href="{{route("Public.editContenido",$contenido->id)}}"><i class="glyphicon glyphicon-edit"></i></a>
                         </td>
                         <td>
                             <a href="{{route("Public.exportContent",$contenido->id)}}"><i class=" glyphicon glyphicon-export"></i></a>

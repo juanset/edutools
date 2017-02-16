@@ -20,6 +20,11 @@
 
         {!! Form::open(['route' => 'store.contenido', 'method' => 'POST', 'id' => 'form_contenido', 'class'=>'form-horizontal']) !!}
         <div class="form-group">
+            <h4 style="margin-left: 19px">Título del contenido:</h4>
+            <input type="text" id="titulo" name="titulo">
+            <br><br>
+
+            <h4 style="margin-left: 10px">Inserta el contenido</h4>
             <textarea id="texto" name="texto" type="text" rows="40" cols="50"  style="max-height: 800px; max-width: 400px;" placeholder="Digite el contenido a agregar!"></textarea>
 
             <input type="hidden" name="_method" value="POST">
@@ -42,15 +47,18 @@
             $("#boton01").click(function () {
                 var editor_data = CKEDITOR.instances.texto.getData();
                 var contenido = editor_data;
+                var titulo = $("#titulo").val();
                 //alert("Error al guardar, no se pudo obtener el contenido completo."+ editor_data+contenido);
                 var form = $("#form_contenido");
                 var url = form.attr('action');
                 var token = $("#token").val();
                 $("#kontenido").val(contenido);
                 var contenido2 = $("#kontenido").val();
-                $.post(url, contenido2, function (result) {
+                /*$.post(url, { contenido: contenido2, titulo: titulo }, function (result) {
                      alert(result);
-                });
+                });*/
+
+
             });
         });
     </script>

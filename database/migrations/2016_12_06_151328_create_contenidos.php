@@ -14,6 +14,7 @@ class CreateContenidos extends Migration
     {
         Schema::connection('pgsql')->create('contenidos', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('titulo');
             $table->text('contenido');
             $table->timestamps();
 

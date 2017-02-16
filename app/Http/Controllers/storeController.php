@@ -29,6 +29,7 @@ class storeController extends Controller
     {
         Contenido::create([
             'contenido' => $request['contenido'],
+            'titulo' => $request['titulo'],
         ]);
         Session::flash('flash_message','Contenido web guardado de manera exitosa');
         return Redirect::to('Public/inicioC');

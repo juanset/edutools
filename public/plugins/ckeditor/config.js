@@ -24,5 +24,6 @@ config.toolbarGroups = [
 	];
 
 	config.removeButtons = 'IFrame,NewPage,Print,Templates,PasteText,PasteFromWord,Save,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Strike,Subscript,Superscript,CreateDiv,Blockquote,BidiLtr,BidiRtl,Language,Anchor,Flash';
-
+    config.height = 300;
+    config.width = '140%'; // CSS unit.
 };

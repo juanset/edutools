@@ -135,6 +135,17 @@ Route::get('/logout', [
     'as'	=> 'logout'
 ]);
 
+Route::post('/update.contenido/{id}', [
+    'uses' => 'updateController@contenido',
+    'as'	=> 'update.contenido'
+]);
+
+
+Route::get('/editContenido/{id}',[
+    'uses' 	=> 'PublicController@editContenido',
+    'as'	=> 'Public.editContenido'
+]);
+
 // Rutas necesarias para el traspaso de usuarios
 
   Route::group(['prefix' => 'raim', 'middleware' => 'api'],function(){

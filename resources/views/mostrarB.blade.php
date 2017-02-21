@@ -31,7 +31,7 @@
                 @foreach($libros as $libro)
                     <tr>
                         <td>{{$libro->id}}</td>
-                        <td>Libro{{$libro->id}}</td>
+                        <td>{{$libro->titulo}}</td>
                         <td><a href="{{route("Public.libro",$libro->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
                         </td>
                         <td>

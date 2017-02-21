@@ -26,6 +26,7 @@ class LibroRequest extends Request
         return [
 
                 'contenido' => 'required',
+                'titulo'   => 'required',
         ];
     }
 }

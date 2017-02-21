@@ -33,7 +33,7 @@
                 @foreach($preguntas as $questionario)
                     <tr>
                         <td>{{$questionario->id}}</td>
-                        <td>Question{{$questionario->id}}</td>
+                        <td>{{$questionario->titulo}}</td>
                         <td><a href="{{route("Public.cuestionario",$questionario->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
                         </td>
                         <td>

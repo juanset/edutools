@@ -33,7 +33,7 @@
                 @foreach($libros as $libro)
                     <tr>
                         <td>{{$libro->id}}</td>
-                        <td>Libro{{$libro->id}}</td>
+                        <td>{{$libro->titulo}}</td>
                         <td><a href="{{route("Public.libro",$libro->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
                         </td>
                         <td>
@@ -110,7 +110,7 @@
                 @foreach($preguntas as $questionario)
                     <tr>
                         <td>{{$questionario->id}}</td>
-                        <td>Question{{$questionario->id}}</td>
+                        <td>{{$questionario->titulo}}</td>
                         <td><a href="{{route("Public.cuestionario",$questionario->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
                         </td>
                         <td>

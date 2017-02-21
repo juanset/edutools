@@ -19,6 +19,7 @@ class storeController extends Controller
     {
         Libro::create([
             'contenido' => $request['contenido'],
+            'titulo' => $request['titulo'],
             ]);
         Session::flash('flash_message','Libro guardado de manera exitosa');
         return Redirect::to('Public/inicioB');
@@ -40,6 +41,7 @@ class storeController extends Controller
     {
         Pregunta::create([
             'contenido' => $request['contenido'],
+            'titulo' => $request['titulo'],
         ]);
         Session::flash('flash_message','Preguntas guardadas de manera exitosa');
         return Redirect::to('Public/inicioQ');

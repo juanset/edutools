@@ -64,11 +64,17 @@
             {!! Form::open(['route' => 'store.libro', 'method' => 'POST', 'id' => 'form_libro', 'class'=>'form-horizontal' ]) !!}
             <div class="form-group">
 
-                <input type="hidden" name="_method" value="POST">{!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
+                <!--<input type="hidden" name="_method" value="POST">
+                {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
+                 -->
                 <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
             </div>
             <div class="btn-group">
-                <button type="submit" class="btn btn-success" value="Guardar" id="boton01">Guardar</button>
+                <br><br>
+                <label for="titulo">Antes de guardar... Digita el Título del libro:</label>
+                <br><br>
+                <input type="text" id="titulo" name="titulo"><br><br>
+                <button type="submit" class="btn btn-success" value="Guardar" id="btnGuardar">Guardar</button>
 
             </div>
             {!! Form::close() !!}
@@ -163,7 +169,7 @@
             });
 
             //Guardar el contenido AJAX post
-            $("#boton01").click(function() {
+            $("#btnGuardar").click(function() {
                 $("#flipbook, #flipbook div").removeAttr('style');
                 $(".shadow").removeAttr('style');
                 $(".page-wrapper").removeAttr('style');
@@ -175,13 +181,14 @@
                 });
 
                 var contenido = $("#librote").html();
+                var titulo = $("#titulo").val();
                 var form = $("#form_libro");
                 var url = form.attr('action');
                 var token = $("#token").val();
-                $("#kontenido").val(contenido);
-                var contenido2 = $("#kontenido").val();
-                $.post(url, contenido2, function(result) {
-                    alert(result);
+                //$("#kontenido").val(contenidoX);
+                //var contenido2 = $("#kontenido").val();
+                $.post(url,  { contenido: contenido, titulo: titulo }, function(result) {
+                    alert("Libro guardado");
                 });
             });
 

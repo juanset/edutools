@@ -26,9 +26,10 @@
 
             <h4 style="margin-left: 10px">Inserta el contenido</h4>
             <textarea id="texto" name="texto" type="text" rows="40" cols="50"  style="max-height: 800px; max-width: 400px;" placeholder="Digite el contenido a agregar!"></textarea>
-
+        <!--
             <input type="hidden" name="_method" value="POST">
             {!! Form::textarea('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
+            -->
             <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
         </div>
         <button type="submit" class="btn btn-primary" value="Guardar" id="btnGuardar">Guardar</button>
@@ -48,13 +49,13 @@
                 var editor_data = CKEDITOR.instances.texto.getData();
                 var contenido = editor_data;
                 var titulo = $("#titulo").val();
-                //alert("Error al guardar, no se pudo obtener el contenido completo."+ editor_data+contenido);
                 var form = $("#form_contenido");
                 var url = form.attr('action');
                 var token = $("#token").val();
-                $("#kontenido").val(contenido);
-                var contenido2 = $("#kontenido").val();
-                $.post(url, { contenido: contenido2, titulo: titulo }, function (result) {
+                //$("#kontenido").val(contenido);
+                //var contenido2 = $("#kontenido").val();
+
+                $.post(url, { contenido: contenido, titulo: titulo }, function (result) {
                      alert(result);
                 });
 

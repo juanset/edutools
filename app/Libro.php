@@ -9,6 +9,7 @@ class Libro extends Model
 
     protected $fillable = [
         'contenido',
+        'titulo',
     ];
 
     /**

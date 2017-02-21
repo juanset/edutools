@@ -14,6 +14,7 @@ class CreateLibros extends Migration
     {
         Schema::connection('pgsql')->create('libros', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('titulo');
             $table->text('contenido');
             $table->timestamps();
 

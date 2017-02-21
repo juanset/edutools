@@ -25,6 +25,7 @@ class PreguntaRequest extends Request
     {
         return [
             'contenido' => 'required',
+            'titulo'   => 'required',
         ];
     }
 }

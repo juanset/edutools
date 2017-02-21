@@ -9,5 +9,6 @@ class Pregunta extends Model
 
     protected $fillable = [
         'contenido',
+        'titulo',
     ];
 }

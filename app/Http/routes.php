@@ -136,7 +136,7 @@ Route::get('/logout', [
 ]);
 
 Route::post('/update.contenido/{id}', [
-    'uses' => 'updateController@contenido',
+    'uses' => 'UpdateController@contenido',
     'as'	=> 'update.contenido'
 ]);
 

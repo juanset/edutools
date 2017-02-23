@@ -73,7 +73,7 @@
                 <br><br>
                 <label for="titulo">Antes de guardar... Digita el Título del libro:</label>
                 <br><br>
-                <input type="text" id="titulo" name="titulo"><br><br>
+                <input type="text" id="titulo" name="titulo" required><br><br>
                 <button type="submit" class="btn btn-success" value="Guardar" id="btnGuardar">Guardar</button>
 
             </div>

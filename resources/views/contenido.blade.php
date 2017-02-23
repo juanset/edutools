@@ -21,7 +21,7 @@
         {!! Form::open(['route' => 'store.contenido', 'method' => 'POST', 'id' => 'form_contenido', 'class'=>'form-horizontal']) !!}
         <div class="form-group">
             <h4 style="margin-left: 19px">Título del contenido:</h4>
-            <input type="text" id="titulo" name="titulo">
+            <input type="text" id="titulo" name="titulo" required>
             <br><br>
 
             <h4 style="margin-left: 10px">Inserta el contenido</h4>
@@ -56,7 +56,7 @@
                 //var contenido2 = $("#kontenido").val();
 
                 $.post(url, { contenido: contenido, titulo: titulo }, function (result) {
-                     alert(result);
+                     alert("Contenido almacenado");
                 });
 
 

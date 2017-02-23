@@ -77,7 +77,7 @@
     {!! Form::open(['route' => 'store.pregunta', 'method' => 'POST', 'id' => 'form_pregunta', 'class'=>'form-horizontal']) !!}
     <div class="form-group">
         <h4 style="margin-left: 19px">Título del cuestionario:</h4>
-        <input type="text" id="titulo" name="titulo">
+        <input type="text" id="titulo" name="titulo" required>
         <br><br>
         <input type="hidden" name="_method" value="POST">
         {!! Form::text('contenido',null,['class' => 'form-horizontal form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
@@ -221,14 +221,13 @@
                 $("#elcuestionario").append(' <input class="btn btn-success"  type="button" id="verificar" name="verifica" value="Verificar">');
                 var contenido = $("#cuestionario").html();
                 var titulo = $("#titulo").val();
-                alert(titulo);
                 var form = $("#form_contenido");
                 var url = form.attr('action');
                 var token = $("#token").val();
                 $("#kontenido").val(contenido);
                 var contenido2 = $("#kontenido").val();
                 $.post(url,  { contenido: contenido2, titulo: titulo }, function(result) {
-                    alert(result);
+                    alert("Cuestionario almacenado!");
                 });
 
             });

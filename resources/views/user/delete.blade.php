@@ -2,7 +2,7 @@
 
 @section('icon')
     <a class="navbar-brand" href="{{ url('/Public') }}">
-        <img src="{{ asset('img/Edutools.png') }}" width="auto" height="89px" alt="Logo book" title="Logo libro">
+        <img src="{{ asset('img/Edutools3.png') }}" width="auto" height="89px" alt="Logo book" title="Logo libro">
     </a>
 @endsection
 
@@ -14,7 +14,7 @@
     <body>
     <div class="container">
     <h3 class="alert alert-success">
-    El contenido se elimino correctamente
+    El contenido se eliminó correctamente
     <a href="{{route('Public.index')}}">Ir al inicio</a>
     </h3>
     </div>

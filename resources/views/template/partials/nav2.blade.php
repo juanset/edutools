@@ -78,10 +78,10 @@
                         <a href="">Accesibilidad<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a><label id="increase" for="">Aumentar</label></a>
+                                <a><label id="increase" for="">Aumentar Texto</label></a>
                             </li>
                             <li>
-                                <a><label id="decrease" for="">Disminuir</label></a>
+                                <a><label id="decrease" for="">Disminuir Texto</label></a>
                             </li>
                             <li>
                                 <a><label id="increaseInterline" for="">Aumentar Interlineado</label></a>
@@ -89,16 +89,16 @@
                             <li>
                                 <a><label id="decreaseInterline" for="">Disminuir Interlineado</label></a>
                             </li>
-                            <li>
-                                <a><label id="" for="contrast">Contraste</label>
-                                    <select class="form-control" id="contrast" disabled>
+                            <!--<li>
+                                <a><label id="" for="contrast" >Contraste</label>
+                                    <select class="form-control" id="contrast" >
                                         <option value="">Normal</option>
                                         <option value="highContrast1">Negro - Blanco</option>
                                         <option value="highContrast2">Amarillo - Negro</option>
                                         <option value="highContrast3">Azul - Naranja</option>
                                     </select>
                                 </a>
-                            </li>
+                            </li>-->
                             <li>
                                 <a><label id="" for="font">Fuente</label>
                                     <select class="form-control" id="font">

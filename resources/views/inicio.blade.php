@@ -16,7 +16,7 @@
 <section class="principal">
 <h3>Bienvenido a la herramienta de autor HTML: EduTools</h3>
     <h4 style="text-align:left">La herramienta EduTools permite a los usuarios crear objetos de aprendizaje con tres diferentes tipos de actividades o contenidos: libros, contenidos web (paginas HTML), cuestionarios de verdadero/falso y cuestionarios de selección múltiple con única respuesta. La herramienta permite almacenar los objetos creados para ser consultados posteriormente y también permite que estos sean exportados en formato HTML sin la necesidad de que el usuario posea conocimientos en programación, el usuario solamente debe tener claro el objetivo educativo de su objeto de aprendizaje y el contenido que desea incluir en el mismo.</h4>
-    <h4>Para iniciar selecciona el tipo de contenido a crear, puede ser un <a class="hvr-pulse" href="{{ route('Book.inicioB') }}">libro</a>, un <a class="hvr-pulse"href="{{ route('Contenido.inicioC') }}">contenido web</a> o un <a class="hvr-pulse"href="{{ route('Public.inicioQ') }}">cuestionario</a>, solo necesitas tener lo que deseas utilizar en la creación de estos recursos</h4>
+    <h4>Para iniciar selecciona el tipo de contenido a crear, puede ser un <a class="hvr-pulse" href="{{ route('Book.inicioB') }}">libro</a>, un <a class="hvr-pulse"href="{{ route('Contenido.inicioC') }}">contenido web</a> o un <a class="hvr-pulse"href="{{ route('Question.inicioQ') }}">cuestionario</a>, solo necesitas tener lo que deseas utilizar en la creación de estos recursos</h4>
     <div>
         <center>
             <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Book.inicioB') }}">
@@ -25,7 +25,7 @@
             <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Contenido.inicioC') }}">
                 <img src="{{ asset('img/editor2.png') }}" width="auto" height="89px" alt="Logo editor" title="Logo editor"><br>Crea tu contenido web
             </a>
-            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Public.inicioQ') }}">
+            <a style="margin: 20px" class="hvr-grow hvr-underline-from-center" href="{{ route('Question.inicioQ') }}">
                 <img src="{{ asset('img/questionario.png') }}" width="auto" height="89px" alt="Logo Cuestionario" title="Logo Q"><br>Crea tu Cuestionario
             </a>
         </center>

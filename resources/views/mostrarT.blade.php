@@ -111,13 +111,13 @@
                     <tr>
                         <td>{{$questionario->id}}</td>
                         <td>{{$questionario->titulo}}</td>
-                        <td><a href="{{route("Public.cuestionario",$questionario->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                        <td><a href="{{route("Question.cuestionario",$questionario->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
                         </td>
                         <td>
-                            <a href="{{route("Public.exportQuest",$questionario->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                            <a href="{{route("Question.exportQuest",$questionario->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
                         </td>
                         <td>
-                            {!!Form::open(['route'=>['Public.deleteQuest', $questionario->id],'method'=>'delete'])!!}
+                            {!!Form::open(['route'=>['Question.deleteQuest', $questionario->id],'method'=>'delete'])!!}
                             <button type="submit" title="Eliminar">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>

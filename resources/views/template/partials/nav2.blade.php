@@ -150,16 +150,16 @@
                             </li>
 
                             <li>
-                                <a href="{{ route('Public.inicioQ') }}">Questionarios</a>
+                                <a href="{{ route('Question.inicioQ') }}">Questionarios</a>
                                 <ul>
                                     <li>
-                                        <a href="{{ route('Public.inicioQ') }}">Instrucciones</a>
+                                        <a href="{{ route('Question.inicioQ') }}">Instrucciones</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.questionario') }}">Crear</a>
+                                        <a href="{{ route('Question.crear') }}">Crear</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.mostrarQ') }}">Mostrar</a>
+                                        <a href="{{ route('Question.mostrarQ') }}">Mostrar</a>
                                     </li>
                                 </ul>
 

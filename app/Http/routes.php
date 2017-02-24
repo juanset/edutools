@@ -14,41 +14,12 @@ Route::group(['prefix' => 'Public'],function(){
         'as'	=> 'Public.index'
     ]);
 
-    Route::get('/mostrarQ',[
-        'uses' 	=> 'PublicController@mostrarQ',
-        'as'	=> 'Public.mostrarQ'
-    ]);
 
     Route::get('/mostrarT',[
         'uses' 	=> 'PublicController@mostrarT',
         'as'	=> 'Public.mostrarT'
     ]);
 
-    Route::get('/questionario',[
-        'uses' 	=> 'PublicController@questionario',
-        'as'	=> 'Public.questionario'
-    ]);
-    Route::get('/inicioQ',[
-        'uses' 	=> 'PublicController@inicioQ',
-        'as'	=> 'Public.inicioQ'
-    ]);
-
-    Route::get('/cuestionario/{id}',[
-        'uses' 	=> 'PublicController@cuestionario',
-        'as'	=> 'Public.cuestionario'
-    ]);
-
-
-    Route::delete('/deleteQuest/{id}',[
-        'uses' 	=> 'PublicController@deleteQuest',
-        'as'	=> 'Public.deleteQuest'
-    ]);
-
-
-    Route::get('/exportQuest/{id}',[
-        'uses' 	=> 'ExportController@questionario',
-        'as'	=> 'Public.exportQuest'
-    ]);
 });
 
 Route::group(['prefix' => 'Libro'],function (){
@@ -131,6 +102,40 @@ Route::group(['prefix' => 'Contenido'],function (){
         'uses' => 'UpdateController@contenido',
         'as'	=> 'Update.contenido'
     ]);
+
+});
+
+Route::group(['prefix' => 'Cuestionario'],function (){
+
+    Route::get('/inicioQ',[
+        'uses' 	=> 'QuestionController@inicioQ',
+        'as'	=> 'Question.inicioQ'
+    ]);
+    Route::get('/crear',[
+        'uses' 	=> 'QuestionController@crear',
+        'as'	=> 'Question.crear'
+    ]);
+    Route::get('/mostrarQ',[
+        'uses' 	=> 'QuestionController@mostrarQ',
+        'as'	=> 'Question.mostrarQ'
+    ]);
+
+    Route::get('/cuestionario/{id}',[
+        'uses' 	=> 'QuestionController@cuestionario',
+        'as'	=> 'Question.cuestionario'
+    ]);
+
+
+    Route::delete('/deleteQuest/{id}',[
+        'uses' 	=> 'QuestionController@deleteQuest',
+        'as'	=> 'Question.deleteQuest'
+    ]);
+
+    Route::get('/exportQuest/{id}',[
+        'uses' 	=> 'ExportController@questionario',
+        'as'	=> 'Question.exportQuest'
+    ]);
+
 
 });
 

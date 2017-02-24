@@ -23,7 +23,7 @@
                 </center>
             </div>
             <center>
-                <a class="hvr-bounce-in" href="{{ route('Public.questionario') }}">
+                <a class="hvr-bounce-in" href="{{ route('Question.crear') }}">
                     <img src="{{ asset('img/questionario.png') }}" width="auto" height="89px" alt="Logo Cuestionario" title="Logo Q">
                     <br>Crea tu Cuestionario
                 </a>

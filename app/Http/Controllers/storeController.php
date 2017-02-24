@@ -44,7 +44,7 @@ class storeController extends Controller
             'titulo' => $request['titulo'],
         ]);
         Session::flash('flash_message','Preguntas guardadas de manera exitosa');
-        return Redirect::to('Public/inicioQ');
+        return Redirect::to('Cuestionario/mostrarQ');
 
     }
 }

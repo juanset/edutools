@@ -4,6 +4,7 @@ Route::get('/', function () {
 });
 
 Route::resource('log','LogController');
+
 Route::resource('store','UsersController');
 
 Route::group(['prefix' => 'Public'],function(){
@@ -11,41 +12,6 @@ Route::group(['prefix' => 'Public'],function(){
     Route::get('/',[
         'uses' 	=> 'PublicController@index',
         'as'	=> 'Public.index'
-    ]);
-
-    Route::get('/book',[
-        'uses' 	=> 'PublicController@book',
-        'as'	=> 'Public.book'
-    ]);
-
-    Route::get('/mostrarB',[
-        'uses' 	=> 'PublicController@mostrarB',
-        'as'	=> 'Public.mostrarB'
-    ]);
-
-    Route::get('/inicioB',[
-        'uses' 	=> 'PublicController@inicioB',
-        'as'	=> 'Public.inicioB'
-    ]);
-
-    Route::get('/contenido',[
-        'uses' 	=> 'PublicController@contenido',
-        'as'	=> 'Public.contenido'
-    ]);
-
-    Route::get('/editor',[
-        'uses' 	=> 'PublicController@editor',
-        'as'	=> 'Public.editor'
-    ]);
-
-    Route::get('/inicioC',[
-        'uses' 	=> 'PublicController@inicioC',
-        'as'	=> 'Public.inicioC'
-    ]);
-
-    Route::get('/mostrarC',[
-        'uses' 	=> 'PublicController@mostrarC',
-        'as'	=> 'Public.mostrarC'
     ]);
 
     Route::get('/mostrarQ',[
@@ -66,43 +32,106 @@ Route::group(['prefix' => 'Public'],function(){
         'uses' 	=> 'PublicController@inicioQ',
         'as'	=> 'Public.inicioQ'
     ]);
-    Route::get('/libro/{id}',[
-        'uses' 	=> 'PublicController@libro',
-        'as'	=> 'Public.libro'
-    ]);
+
     Route::get('/cuestionario/{id}',[
         'uses' 	=> 'PublicController@cuestionario',
         'as'	=> 'Public.cuestionario'
     ]);
 
-    Route::get('/kontenido/{id}',[
-        'uses' 	=> 'PublicController@kontenido',
-        'as'	=> 'Public.kontenido'
-    ]);
-    Route::delete('/deleteBook/{id}',[
-        'uses' 	=> 'PublicController@deleteBook',
-        'as'	=> 'Public.deleteBook'
-    ]);
-    Route::delete('/deleteContent/{id}',[
-        'uses' 	=> 'PublicController@deleteContent',
-        'as'	=> 'Public.deleteContent'
-    ]);
+
     Route::delete('/deleteQuest/{id}',[
         'uses' 	=> 'PublicController@deleteQuest',
         'as'	=> 'Public.deleteQuest'
     ]);
-    Route::get('/exportBook/{id}',[
-        'uses' 	=> 'ExportController@book',
-        'as'	=> 'Public.exportBook'
-    ]);
-    Route::get('/exportContent/{id}',[
-        'uses' 	=> 'ExportController@contenido',
-        'as'	=> 'Public.exportContent'
-    ]);
+
+
     Route::get('/exportQuest/{id}',[
         'uses' 	=> 'ExportController@questionario',
         'as'	=> 'Public.exportQuest'
     ]);
+});
+
+Route::group(['prefix' => 'Libro'],function (){
+
+    Route::get('/inicioB',[
+        'uses' 	=> 'BookController@inicioB',
+        'as'	=> 'Book.inicioB'
+    ]);
+    Route::get('/crear',[
+        'uses' 	=> 'BookController@crear',
+        'as'	=> 'Book.crear'
+    ]);
+
+    Route::get('/mostrarB',[
+        'uses' 	=> 'BookController@mostrarB',
+        'as'	=> 'Book.mostrarB'
+    ]);
+
+
+    Route::get('/libro/{id}',[
+        'uses' 	=> 'BookController@libro',
+        'as'	=> 'Book.libro'
+    ]);
+
+    Route::delete('/deleteBook/{id}',[
+        'uses' 	=> 'BookController@deleteBook',
+        'as'	=> 'Book.deleteBook'
+    ]);
+
+    Route::get('/exportBook/{id}',[
+        'uses' 	=> 'ExportController@book',
+        'as'	=> 'Book.exportBook'
+    ]);
+
+});
+
+Route::group(['prefix' => 'Contenido'],function (){
+
+    Route::get('/inicioC',[
+        'uses' 	=> 'ContentController@inicioC',
+        'as'	=> 'Contenido.inicioC'
+    ]);
+
+    Route::get('/creador',[
+        'uses' 	=> 'ContentController@creador',
+        'as'	=> 'Contenido.creador'
+    ]);
+
+    Route::get('/editor',[
+        'uses' 	=> 'ContentController@editor',
+        'as'	=> 'Contenido.editor'
+    ]);
+    //Muestra todos los contenidos
+    Route::get('/mostrarC',[
+        'uses' 	=> 'ContentController@mostrarC',
+        'as'	=> 'Contenido.mostrarC'
+    ]);
+    //Muestra un solo contenido creado
+    Route::get('/contenido/{id}',[
+        'uses' 	=> 'ContentController@contenido',
+        'as'	=> 'Contenido.contenido'
+    ]);
+
+    Route::delete('/deleteContent/{id}',[
+        'uses' 	=> 'ContentController@deleteContent',
+        'as'	=> 'Contenido.deleteContent'
+    ]);
+
+    Route::get('/exportContent/{id}',[
+        'uses' 	=> 'ExportController@contenido',
+        'as'	=> 'Contenido.exportContent'
+    ]);
+
+    Route::get('/editContenido/{id}',[
+        'uses' 	=> 'ContentController@editContenido',
+        'as'	=> 'Contenido.editContenido'
+    ]);
+
+    Route::post('/update.contenido/{id}', [
+        'uses' => 'UpdateController@contenido',
+        'as'	=> 'Update.contenido'
+    ]);
+
 });
 
 Route::get('/flogin', [
@@ -125,26 +154,16 @@ Route::post('/store.contenido', [
     'as'	=> 'store.contenido'
 ]);
 
-
 Route::post('/store.pregunta', [
     'uses' => 'storeController@pregunta',
     'as'	=> 'store.pregunta'
 ]);
+
 Route::get('/logout', [
     'uses' => 'UsersController@logout',
     'as'	=> 'logout'
 ]);
 
-Route::post('/update.contenido/{id}', [
-    'uses' => 'UpdateController@contenido',
-    'as'	=> 'update.contenido'
-]);
-
-
-Route::get('/editContenido/{id}',[
-    'uses' 	=> 'PublicController@editContenido',
-    'as'	=> 'Public.editContenido'
-]);
 
 // Rutas necesarias para el traspaso de usuarios
 

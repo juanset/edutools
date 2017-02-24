@@ -32,13 +32,13 @@
                     <tr>
                         <td>{{$libro->id}}</td>
                         <td>{{$libro->titulo}}</td>
-                        <td><a href="{{route("Public.libro",$libro->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                        <td><a href="{{route("Book.libro",$libro->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
                         </td>
                         <td>
-                            <a href="{{route("Public.exportBook",$libro->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                            <a href="{{route("Book.exportBook",$libro->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
                         </td>
                         <td>
-                            {!!Form::open(['route'=>['Public.deleteBook', $libro->id],'method'=>'delete'])!!}
+                            {!!Form::open(['route'=>['Book.deleteBook', $libro->id],'method'=>'delete'])!!}
                             <button type="submit" title="Eliminar">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>

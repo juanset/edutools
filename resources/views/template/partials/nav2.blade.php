@@ -120,31 +120,31 @@
                         <a href="{{ route('Public.index') }}">Inicio<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{{ route('Public.inicioB') }}">Libro</a>
+                                <a href="{{ route('Book.inicioB') }}">Libro</a>
                                 <ul>
                                     <li>
-                                        <a href="{{ route('Public.inicioB') }}">Instrucciones</a>
+                                        <a href="{{ route('Book.inicioB') }}">Instrucciones</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.book') }}">Crear</a>
+                                        <a href="{{ route('Book.crear') }}">Crear</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.mostrarB') }}">Mostrar</a>
+                                        <a href="{{ route('Book.mostrarB') }}">Mostrar</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li>
-                                <a href="{{ route('Public.inicioC') }}">Contenido</a>
+                                <a href="{{ route('Contenido.inicioC') }}">Contenido</a>
                                 <ul>
                                     <li>
-                                        <a href="{{ route('Public.inicioC') }}">Instrucciones</a>
+                                        <a href="{{ route('Contenido.inicioC') }}">Instrucciones</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.contenido') }}">Editor</a>
+                                        <a href="{{ route('Contenido.creador') }}">Editor</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('Public.mostrarC') }}">Mostrar</a>
+                                        <a href="{{ route('Contenido.mostrarC') }}">Mostrar</a>
                                     </li>
                                 </ul>
                             </li>

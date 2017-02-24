@@ -22,7 +22,7 @@ class storeController extends Controller
             'titulo' => $request['titulo'],
             ]);
         Session::flash('flash_message','Libro guardado de manera exitosa');
-        return Redirect::to('Public/inicioB');
+        return Redirect::to('libro/mostrarB');
 
     }
 
@@ -33,7 +33,7 @@ class storeController extends Controller
             'titulo' => $request['titulo'],
         ]);
         Session::flash('flash_message','Contenido web guardado de manera exitosa');
-        return Redirect::to('Public/inicioC');
+        return Redirect::to('Contenido/mostrarC');
 
     }
 

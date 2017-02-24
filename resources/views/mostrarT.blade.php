@@ -34,13 +34,13 @@
                     <tr>
                         <td>{{$libro->id}}</td>
                         <td>{{$libro->titulo}}</td>
-                        <td><a href="{{route("Public.libro",$libro->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                        <td><a href="{{route("Book.libro",$libro->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
                         </td>
                         <td>
-                            <a href="{{route("Public.exportBook",$libro->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                            <a href="{{route("Book.exportBook",$libro->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
                         </td>
                         <td>
-                            {!!Form::open(['route'=>['Public.deleteBook', $libro->id],'method'=>'delete'])!!}
+                            {!!Form::open(['route'=>['Book.deleteBook', $libro->id],'method'=>'delete'])!!}
                             <button type="submit" title="Eliminar">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>
@@ -72,15 +72,15 @@
                     <tr>
                         <td>{{$contenido->id}}</td>
                         <td>{{$contenido->titulo}}</td>
-                        <td><a href="{{route("Public.kontenido",$contenido->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                        <td><a href="{{route("Contenido.contenido",$contenido->id)}}"><i class="glyphicon glyphicon-eye-open"></i></a>
                         </td>
-                        <td><a href="{{route("Public.editContenido",$contenido->id)}}"><i class="glyphicon glyphicon-edit"></i></a>
-                        </td>
-                        <td>
-                            <a href="{{route("Public.exportContent",$contenido->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                        <td><a href="{{route("Contenido.editContenido",$contenido->id)}}"><i class="glyphicon glyphicon-edit"></i></a>
                         </td>
                         <td>
-                            {!!Form::open(['route'=>['Public.deleteContent', $contenido->id],'method'=>'delete'])!!}
+                            <a href="{{route("Contenido.exportContent",$contenido->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
+                        </td>
+                        <td>
+                            {!!Form::open(['route'=>['Contenido.deleteContent', $contenido->id],'method'=>'delete'])!!}
                             <button type="submit" title="Eliminar">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>

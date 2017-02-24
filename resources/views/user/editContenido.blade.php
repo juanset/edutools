@@ -18,7 +18,7 @@
     </header>
     <section class="principal">
         @foreach($contenidos as $contenido)
-        {!! Form::model($contenido->id,['route' => ['update.contenido',$contenido->id], 'method' => 'POST', 'id' => 'form_contenido', 'class'=>'form-horizontal']) !!}
+        {!! Form::model($contenido->id,['route' => ['Update.contenido',$contenido->id], 'method' => 'POST', 'id' => 'form_contenido', 'class'=>'form-horizontal']) !!}
         <div class="form-group">
             <h4 style="margin-left: 20px">Título del contenido:</h4>
 

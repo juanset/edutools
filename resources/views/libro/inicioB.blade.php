@@ -28,7 +28,7 @@
             <br>
             <br>
             <center>
-                <a class="hvr-bounce-in" href="{{ route('Public.book') }}">
+                <a class="hvr-bounce-in" href="{{ route('Book.crear') }}">
                     <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo book">
                     <br>Crea tu libro
                 </a>

@@ -29,7 +29,7 @@ class UpdateController extends Controller
         $contenido->save();
 
         Session::flash('flash_message','Contenido web actualizado de manera exitosa');
-        return Redirect::to('Public/inicioC');
+        return Redirect::to('Contenido/mostrarC');
 
     }
 }

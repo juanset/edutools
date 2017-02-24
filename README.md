@@ -3,7 +3,7 @@
 - modificar .env
 - php artisan migrate:reset
 - php artisan migrate
-- php artisan db:seed --class=HtmlTableSeeder
+- php artisan db:seed
 - cp -R edutools/public/* www/edutools/
 - nano www/edutools/index.php
   - require __DIR__.'/../../edutools/bootstrap/autoload.php';

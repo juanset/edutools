@@ -4,11 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Contenido;
 use App\Pregunta;
-use Illuminate\Http\Request;
 use App\Libro;
-use App\Http\Requests\LibroRequest;
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
 
 
 class PublicController extends Controller

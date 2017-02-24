@@ -2,16 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Libro;
-use App\Http\Requests\LibroRequest;
-use App\Http\Requests;
 
 class BookController extends Controller
 {
     public function inicioB()
     {
-        return view('Libro/inicioB');
+        return view('libro/inicioB');
 
     }
 
@@ -19,13 +16,13 @@ class BookController extends Controller
 
     public function crear()
     {
-        return view('Libro/crear');
+        return view('libro/crear');
     }
 
     public function mostrarB()
     {
         $libros = Libro::all();
-        return view('Libro/mostrarB', compact('libros'));
+        return view('libro/mostrarB', compact('libros'));
     }
 
     public function libro($id)

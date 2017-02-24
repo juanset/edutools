@@ -18,7 +18,7 @@
     <section class="principal">
         <h3>Agrega en el editor el contenido que quieras en la página</h3>
 
-        {!! Form::open(['route' => 'store.contenido', 'method' => 'POST', 'id' => 'form_contenido', 'class'=>'form-horizontal']) !!}
+        {!! Form::open(['route' => 'Store.contenido', 'method' => 'POST', 'id' => 'form_contenido', 'class'=>'form-horizontal']) !!}
         <div class="form-group">
             <h4 style="margin-left: 19px">Título del contenido:</h4>
             <input type="text" id="titulo" name="titulo" required>

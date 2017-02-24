@@ -3,15 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Contenido;
-use App\Pregunta;
-use App\User;
-use App\Libro;
 use Illuminate\Http\Request;
 use Redirect;
 use Session;
-use App\Http\Requests;
-use App\Http\Requests\UserCreateRequest;
-use Illuminate\Support\Facades\Input;
+
 
 class UpdateController extends Controller
 {

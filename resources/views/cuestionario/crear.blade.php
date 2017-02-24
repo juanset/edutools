@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    {!! Form::open(['route' => 'store.pregunta', 'method' => 'POST', 'id' => 'form_pregunta', 'class'=>'form-horizontal']) !!}
+    {!! Form::open(['route' => 'Store.pregunta', 'method' => 'POST', 'id' => 'form_pregunta', 'class'=>'form-horizontal']) !!}
     <div class="form-group">
         <h4 style="margin-left: 19px">Título del cuestionario:</h4>
         <input type="text" id="titulo" name="titulo" required>

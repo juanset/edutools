@@ -61,7 +61,7 @@
         </div>
 
         <div>
-            {!! Form::open(['route' => 'store.libro', 'method' => 'POST', 'id' => 'form_libro', 'class'=>'form-horizontal' ]) !!}
+            {!! Form::open(['route' => 'Store.libro', 'method' => 'POST', 'id' => 'form_libro', 'class'=>'form-horizontal' ]) !!}
             <div class="form-group">
 
                 <!--<input type="hidden" name="_method" value="POST">

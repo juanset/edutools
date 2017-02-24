@@ -6,13 +6,9 @@ namespace App\Http\Controllers;
 use App\Contenido;
 use App\Libro;
 use App\Pregunta;
-use Illuminate\Http\Request;
-//use Libros;
 use App\Html;
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
 use Chumper\Zipper\Zipper;
-use Response;
+
 
 class ExportController extends Controller
 {

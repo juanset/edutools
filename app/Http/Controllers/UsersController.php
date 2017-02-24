@@ -3,13 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\User;
-use Illuminate\Http\Request;
 use Redirect;
-use Session;
 use Auth;
-use App\Http\Requests;
 use App\Http\Requests\UserCreateRequest;
-use Illuminate\Support\Facades\Input;
 
 class UsersController extends Controller
 {
@@ -25,6 +21,7 @@ class UsersController extends Controller
                 'name' => $request['name'],
                 'email' => $request['email'],
                 'username' => $request['username'],
+                'role' => "user",
                 'password' => bcrypt($request['password1'])
             ]
         );

@@ -15,10 +15,11 @@ class UserTableSeeder extends Seeder
         factory(App\User::class)->create([
             'name'  => 'Juanset' ,
             'email' => 'jnset@hotmail.com' ,
+            'username' => 'juanset',
             'role'  => 'admin' ,
-            'password' => 'admin'
+            'password' => bcrypt('admin')
         ]);
-        factory(App\User::class, 29)->create();
+        factory(App\User::class, 19)->create();
 
     }
 }

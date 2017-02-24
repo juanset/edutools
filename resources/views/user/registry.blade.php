@@ -2,7 +2,7 @@
 
 @section('icon')
     <a class="navbar-brand" href="{{ url('/Public') }}">
-        <img src="{{ asset('img/eduTools3.png') }}" width="auto" height="89px" alt="Logo Editor" title="Logo Editor">
+        <img src="{{ asset('img/EduTools3.png') }}" width="auto" height="89px" alt="Logo Editor" title="Logo Editor">
     </a>
 @endsection
 
@@ -14,7 +14,7 @@
 
         <div class="well" style="margin-left: 10px">
             <div class="form-group">
-                {!! Form::open(['route' => 'store.store', 'class' => 'form-horizontal col-lg-offset-1','method' => 'POST']) !!}
+                {!! Form::open(['route' => 'Store.store', 'class' => 'form-horizontal col-lg-offset-1','method' => 'POST']) !!}
                 <legend>Registro</legend>
                 <div class="form-group">
 

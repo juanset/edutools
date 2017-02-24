@@ -37,16 +37,16 @@ class ExportController extends Controller
         $files = 'exports/';
 
         $zipper = new Zipper;
-        $zipper -> make('objeto.zip') -> add($files);
+        $zipper -> make('libro.zip') -> add($files);
 
         $headers = array(
             'Content-Type' => 'application/octet-stream',
         );
 
-        $filetopath = $public_dir.'/'."objeto.zip";
+        $filetopath = $public_dir.'/'."libro.zip";
 
         if(file_exists($filetopath)){
-            return response()->download($filetopath,"objeto.zip",$headers);
+            return response()->download($filetopath,"libro.zip",$headers);
         }
         return ['status'=>'file does not exist'];
     }
@@ -72,16 +72,16 @@ class ExportController extends Controller
         $files = 'exports/';
 
         $zipper = new Zipper;
-        $zipper -> make("objeto.zip") -> add($files);
+        $zipper -> make("contenido.zip") -> add($files);
 
         $headers = array(
             'Content-Type' => 'application/octet-stream',
         );
 
-        $filetopath = $public_dir.'/'."objeto.zip";
+        $filetopath = $public_dir.'/'."contenido.zip";
 
         if(file_exists($filetopath)){
-            return response()->download($filetopath,"objeto.zip",$headers);
+            return response()->download($filetopath,"contenido.zip",$headers);
         }
         return ['status'=>'file does not exist'];
     }
@@ -107,16 +107,16 @@ class ExportController extends Controller
         $files = 'exports/';
 
         $zipper = new Zipper;
-        $zipper -> make("objeto.zip") -> add($files);
+        $zipper -> make("cuestionario.zip") -> add($files);
 
         $headers = array(
             'Content-Type' => 'application/octet-stream',
         );
 
-        $filetopath = $public_dir.'/'."objeto.zip";
+        $filetopath = $public_dir.'/'."cuestionario.zip";
 
         if(file_exists($filetopath)){
-            return response()->download($filetopath,"objeto.zip",$headers);
+            return response()->download($filetopath,"cuestionario.zip",$headers);
         }
         return ['status'=>'file does not exist'];
     }

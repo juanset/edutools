@@ -2,7 +2,7 @@
 
 @extends('template.main')
 @section('icon')
-    <a class="navbar-brand" href="{{ url('/Public') }}">
+    <a href="{{ url('/Public') }}">
         <img src="{{ asset('img/EduTools3.png') }}" width="auto" height="89px" alt="Logo Editor" title="Logo Editor">
     </a>
 @endsection

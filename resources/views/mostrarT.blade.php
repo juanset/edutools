@@ -1,6 +1,6 @@
 @extends('template.main')
 @section('icon')
-    <a class="navbar-brand" href="{{ url('/Public') }}">
+    <a href="{{ url('/Public') }}">
         <img src="{{ asset('img/Edutools3.png') }}" width="auto" height="89px" alt="Logo Q" title="Logo Q">
     </a>
 @endsection

@@ -18,7 +18,7 @@ Route::resource('log','LogController');
 
 Route::resource('Store','UsersController');
 
-Route::group(['middleware' => ['web'],'prefix' => 'Public'],function(){
+Route::group(['prefix' => 'Public'],function(){
 
     Route::get('/',[
         'uses' 	=> 'PublicController@index',
@@ -32,7 +32,7 @@ Route::group(['middleware' => ['web'],'prefix' => 'Public'],function(){
 
 });
 
-Route::group(['middleware' => ['web','auth'],'prefix' => 'Libro'],function (){
+Route::group(['prefix' => 'Libro'],function (){
 
     Route::get('/inicioB',[
         'uses' 	=> 'BookController@inicioB',
@@ -66,7 +66,7 @@ Route::group(['middleware' => ['web','auth'],'prefix' => 'Libro'],function (){
 
 });
 
-Route::group(['middleware' => ['web','auth'],'prefix' => 'Contenido'],function (){
+Route::group(['prefix' => 'Contenido'],function (){
 
     Route::get('/inicioC',[
         'uses' 	=> 'ContentController@inicioC',
@@ -115,7 +115,7 @@ Route::group(['middleware' => ['web','auth'],'prefix' => 'Contenido'],function (
 
 });
 
-Route::group(['middleware' => ['web','auth'],'prefix' => 'Cuestionario'],function (){
+Route::group(['prefix' => 'Cuestionario'],function (){
 
     Route::get('/inicioQ',[
         'uses' 	=> 'QuestionController@inicioQ',
@@ -149,29 +149,26 @@ Route::group(['middleware' => ['web','auth'],'prefix' => 'Cuestionario'],functio
 
 });
 
-Route::group(['middleware' => ['web','auth'],'prefix' => ''],function (){
-
-    Route::post('/store.libro', [
+Route::post('/store.libro', [
         'uses' => 'StoreController@libro',
         'as'	=> 'Store.libro'
     ]);
 
-    Route::post('/store.contenido', [
+Route::post('/store.contenido', [
         'uses' => 'StoreController@contenido',
         'as'	=> 'Store.contenido'
     ]);
 
-    Route::post('/store.pregunta', [
+Route::post('/store.pregunta', [
         'uses' => 'StoreController@pregunta',
         'as'	=> 'Store.pregunta'
     ]);
 
-    Route::get('/logout', [
+Route::get('/logout', [
         'uses' => 'UsersController@logout',
         'as'	=> 'logout'
     ]);
 
-});
 Route::get('/flogin', [
     'uses' => 'UsersController@flogin',
     'as'	=> 'flogin'
@@ -203,10 +200,7 @@ Route::get('/fregistry', [
 
   });
 
-
-
 //Rutas de mao sama
-
 
 Route::group(['middleware' => ['web','auth','administrador'],'prefix' => 'Admin'],function(){
 

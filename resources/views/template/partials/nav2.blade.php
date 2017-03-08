@@ -11,7 +11,7 @@
         </button>
     </div>
     <!-- /.navbar-header -->
-    <ul class="nav navbar-nav navbar-right">
+<!-- <ul class="nav navbar-nav navbar-right">
         @if (Auth::guest())
             <li><a href="{{ route('flogin') }}">Login</a></li>
             <li><a href="{{ route('fregistry') }}">Register</a></li>
@@ -23,7 +23,7 @@
                 </ul>
             </li>
         @endif
-    </ul>
+    </ul> -->
     <ul class="nav navbar-top-links navbar-right">
         <!-- /.dropdown-user -->
         <li class="dropdown">

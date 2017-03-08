@@ -11,8 +11,21 @@
         </button>
     </div>
     <!-- /.navbar-header -->
-
+    <ul class="nav navbar-nav navbar-right">
+        @if (Auth::guest())
+            <li><a href="{{ route('flogin') }}">Login</a></li>
+            <li><a href="{{ route('fregistry') }}">Register</a></li>
+        @else
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="{{ url('/logout') }}">Logout</a></li>
+                </ul>
+            </li>
+        @endif
+    </ul>
     <ul class="nav navbar-top-links navbar-right">
+        <!-- /.dropdown-user -->
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <i class="fa fa-user fa-fw"></i>
@@ -25,29 +38,6 @@
             </a>
             @if(Auth::user())
                 <ul class="dropdown-menu dropdown-user">
-                    @if(Auth::user()->id_rol == 1)
-
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Opciones</a>
-                        </li>
-
-                    @elseif(Auth::user()->id_rol == 2)
-
-                        <li><a href="{{ route('Creador.show', Auth::user()->id)}}"><i class="fa fa-user fa-fw"></i> Perfil</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Opciones</a>
-                        </li>
-                        <li class="divider"></li>
-
-                    @elseif(Auth::user()->id_rol == 3)
-
-                        <li><a href="{{ route('Estudiante.show', Auth::user()->id)}}"><i class="fa fa-user fa-fw"></i> Perfil</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Opciones</a>
-                        </li>
-                    @endif
-                    <li class="divider"></li>
                     <li>
                         <a href="{{ url('/logout') }}">
                             <i class="fa fa-sign-out fa-fw"></i>
@@ -61,8 +51,7 @@
                     <li><a href="{{ route('fregistry')}}"><i class="fa fa-user fa-fw"></i> Registrar</a>
                     </li>
                 </ul>
-        @endif
-
+            @endif
         <!-- /.dropdown-user -->
         </li>
         <!-- /.dropdown -->

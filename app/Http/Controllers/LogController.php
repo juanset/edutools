@@ -10,6 +10,8 @@ use Redirect;
 
 class LogController extends Controller
 {
+
+
     //Función utilizada para el manejo de sesiones y autenticación de usuarios en la aplicación.
     public function store(LoginRequest $request)
     {

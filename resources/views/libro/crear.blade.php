@@ -119,6 +119,9 @@
                 console.log("El contenido sera insertado en: " + c);
                 $("#flipbook").turn("page", addPag);
                 console.log("Estamos en la página " + $("#flipbook").turn("page"));
+                $("#uploadImage").hide();
+                $("#contenido").val("titulo");
+                $("#texto").show();
 
                 /*if($('#' + c).length>0){
                  console.log("Ese ContentId ya existe");
@@ -140,11 +143,16 @@
                         $("#" + c).append('<h3 class="subt">' + Agregar + '</h3>');
                         break;
                     case "imagen":
-                        $("#" + c).append('<img src="" id="uploadPreview" class="image"/>');
+                        n_img = $("#flipbook").turn("page");
+                        //n_img = parseInt(n_img) + 1;
+                        alert(n_img);
+                        ide = "imagen" + n_img;
+                        $("#" + c).append('<img src="" id="'+ide+'" class="image"/>');
                         var oFReader = new FileReader();
                         oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
                         oFReader.onload = function(oFREvent) {
-                            document.getElementById("uploadPreview").src = oFREvent.target.result;
+                           // $("#"+ide).src(oFREvent.target.result);
+                           document.getElementById(ide).src = oFREvent.target.result;
                         };
                         break;
                 }
@@ -162,7 +170,7 @@
                 $("#flipbook").turn("addPage", element, n_pag);
                 $("#pagina").append('<option value"' + n_pag + ' "id="p' + n_pag + '">' + n_pag + '</option>');
                 $("#flipbook").turn("page", n_pag);
-                if ($("#portada").prop('checked')) $(".page").prepend('<div class="hard">');
+
             });
 
             $("#rempage").click(function() {
@@ -173,15 +181,16 @@
 
             //Guardar el contenido AJAX post
             $("#btnGuardar").click(function() {
-                $("#flipbook, #flipbook div").removeAttr('style');
+               $("#flipbook, #flipbook div").removeAttr('style');
                 $(".shadow").removeAttr('style');
                 $(".page-wrapper").removeAttr('style');
                 $(".page-wrapper").removeClass("page-wrapper");
-                $("div").each(function() {
+                /*$("div").each(function() {
                     if ($(this).html().trim() === "") {
                         $(this).remove();
                     }
                 });
+                */
 
                 var contenido = $("#librote").html();
                 var titulo = $("#titulo").val();

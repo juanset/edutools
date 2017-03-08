@@ -3,7 +3,7 @@
 @extends('template.main')
 @section('icon')
     <a href="{{ url('/Public') }}">
-        <img src="{{ asset('img/EduTools3.png') }}" width="auto" height="89px" alt="Logo Editor" title="Logo Editor">
+        <img src="{{ asset('img/Edutools3.png') }}" width="auto" height="89px" alt="Logo Editor" title="Logo Editor">
     </a>
 @endsection
 @section('title','Edutools')

@@ -26,7 +26,7 @@
                     <th>Libro</th>
                     <th>Ver</th>
                     <th>Exportar</th>
-                    <th>Eliminar</th>
+                    <!--<th>Eliminar</th>-->
                 </tr>
                 </thead>
                 <tbody>
@@ -39,13 +39,13 @@
                         <td>
                             <a href="{{route("Book.exportBook",$libro->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
                         </td>
-                        <td>
+                        <!--<td>
                             {!!Form::open(['route'=>['Book.deleteBook', $libro->id],'method'=>'delete'])!!}
                             <button type="submit" title="Eliminar">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>
                             {!! Form::close() !!}
-                        </td>
+                        </td>-->
                     </tr>
                 @endforeach
                 </tbody>
@@ -64,7 +64,7 @@
                     <th>Ver</th>
                     <th>Editar</th>
                     <th>Exportar</th>
-                    <td>Eliminar</td>
+                    <!--<th>Eliminar</th>-->
                 </tr>
                 </thead>
                 <tbody>
@@ -79,13 +79,13 @@
                         <td>
                             <a href="{{route("Contenido.exportContent",$contenido->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
                         </td>
-                        <td>
+                    <!--<td>
                             {!!Form::open(['route'=>['Contenido.deleteContent', $contenido->id],'method'=>'delete'])!!}
                             <button type="submit" title="Eliminar">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>
                             {!! Form::close() !!}
-                        </td>
+                        </td>-->
                     </tr>
                 @endforeach
                 </tbody>
@@ -103,7 +103,7 @@
                     <th>Cuestionario</th>
                     <th>Ver</th>
                     <th>Exportar</th>
-                    <th>Eliminar</th>
+                    <!--<th>Eliminar</th>-->
                 </tr>
                 </thead>
                 <tbody>
@@ -116,13 +116,13 @@
                         <td>
                             <a href="{{route("Question.exportQuest",$questionario->id)}}"><i class=" glyphicon glyphicon-export"></i></a>
                         </td>
-                        <td>
+                    <!--<td>
                             {!!Form::open(['route'=>['Question.deleteQuest', $questionario->id],'method'=>'delete'])!!}
                             <button type="submit" title="Eliminar">
                                 <i class="glyphicon glyphicon-trash"></i>
                             </button>
                             {!! Form::close() !!}
-                        </td>
+                        </td>-->
                     </tr>
                 @endforeach
                 </tbody>

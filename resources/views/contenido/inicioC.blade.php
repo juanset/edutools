@@ -1,7 +1,7 @@
 @extends('template.main')
 @section('icon')
     <a href="{{ url('/Public') }}">
-        <img src="{{ asset('img/editor2.png') }}" width="auto" height="89px" alt="Logo Editor" title="Logo editor">
+        <img src="{{ asset('img/editor2.png') }}" width="auto" height="89px" alt="Logo Editor" title="Logo editor"style="background-color: ghostwhite; border-radius: 10%">
     </a>
 @endsection
 @section('title','ContentCreator')

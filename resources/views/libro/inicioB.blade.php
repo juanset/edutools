@@ -1,7 +1,7 @@
 @extends('template.main')
 @section('icon')
     <a href="{{ url('/Public') }}">
-        <img src="{{ asset('img/libro2.png') }}" width="auto" height="89px" alt="Logo libro" title="Logo libro">
+        <img src="{{ asset('img/libro2.png') }}" width="auto" height="89px" alt="Logo libro" title="Logo libro"style="background-color: ghostwhite; border-radius: 10%">
     </a>
 @endsection
 @section('title','EditorBook')

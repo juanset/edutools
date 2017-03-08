@@ -2,7 +2,7 @@
 
 @section('icon')
     <a href="{{ url('/Public') }}">
-        <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo libro">
+        <img src="{{ asset('img/libro.png') }}" width="auto" height="89px" alt="Logo book" title="Logo libro"style="background-color: ghostwhite; border-radius: 10%">
     </a>
 @endsection
 
@@ -21,11 +21,15 @@
         <div class="options col-lg-3 col-md-4 col-sm-6 col-xs-12" style="float: left;">
 
             <div style="border:solid; border-color:#d3d3d3;">
-                <h4>En página: </h4>
-                <select name="pagina" id="pagina">
+               <div class="row">
+                   <div class="col-xs-6"><h4>En página: </h4></div>
+                <div class="col-xs-6">
+                    <select name="pagina" id="pagina" style="position:relative;z-index:10;">
                     <option value="1" id="p1">1</option>
                     <option value="2" id="p2">2</option>
                 </select>
+                </div>
+               </div>
                 <textarea id="texto" style="height: 260px; width: 237px; position:relative; z-index:1;" placeholder="Digite el contenido a agregar!"></textarea>
 
                 <input type="file" id="uploadImage" style="display: none; position:relative; z-index:1;" />
@@ -70,9 +74,8 @@
                 <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
             </div>
             <div class="btn-group">
-                <br><br>
                 <label for="titulo">Antes de guardar... Digita el Título del libro:</label>
-                <br><br>
+                <br>
                 <input type="text" id="titulo" name="titulo" required><br><br>
                 <button type="submit" class="btn btn-success" value="Guardar" id="btnGuardar">Guardar</button>
 

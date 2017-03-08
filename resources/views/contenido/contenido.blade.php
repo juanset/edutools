@@ -2,7 +2,7 @@
 
 @section('icon')
     <a href="{{ url('/Public') }}">
-        <img src="{{ asset('img/Edutools1.png') }}" width="auto" height="89px" alt="Logo Contenido" title="Logo Contenido"style="background-color: ghostwhite; border-radius: 10%">
+        <img src="{{ asset('img/Edutools1.png') }}" width="auto" height="89px" alt="Logo Contenido" title="Logo Contenido"style="border-radius: 10%">
     </a>
 @endsection
 

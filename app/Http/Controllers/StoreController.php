@@ -22,7 +22,7 @@ class storeController extends Controller
             'titulo' => $request['titulo'],
             ]);
         Session::flash('flash_message','Libro guardado de manera exitosa');
-        return Redirect::to('libro/mostrarB');
+        return Redirect::to('Libro/mostrarB');
 
     }
 

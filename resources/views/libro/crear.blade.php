@@ -184,24 +184,23 @@
 
             //Guardar el contenido AJAX post
             $("#btnGuardar").click(function() {
-                //var datos= [];
+                var datos= [];
                 var div_contenido = $("#kontenido");
                 $("#flipbook div .content-create").delay( 800 ).each(function (index)
                 { //Mostrando la consola y el alert guarda bien,  si no cambia el orden de la primer pagina con la 2da
                     //console.log($(this).html());
                     //alert(index+" "+$(this).html());
-
                     if(index == 0 || index == 1){
-                        //datos[index] = '<div class="pagina hard">' + $(this).html() + '</div>';
-                        div_contenido.append('<div class="pagina hard">' + $(this).html() + '</div>');
+                        datos[index] = '<div class="pagina hard">' + $(this).html() + '</div>';
+                        //div_contenido.append('<div class="pagina hard">' + $(this).html() + '</div>');
                     } else{
-                        div_contenido.append('<div class="pagina">' + $(this).html() + '</div>');
-                        //datos[index] = '<div class="pagina">' + $(this).html() + '</div>';
+                        //div_contenido.append('<div class="pagina">' + $(this).html() + '</div>');
+                        datos[index] = '<div class="pagina">' + $(this).html() + '</div>';
                     }
                 });
-                /*for(var i = 0; i < datos.length; i++){
+                for(var i = 0; i < datos.length; i++){
                     div_contenido.append(datos[i]);
-                }*/
+                }
 
                 var contenido = '<div id="flipbook">'+$("#kontenido").html()+'  <div class="hard pagina"> <div class="content-create" id="content1"></div></div><div class="hard pagina"> <div class="content-create" id="content2">Creado con: Edutoools</div></div></div>';
                 var titulo = $("#titulo").val();

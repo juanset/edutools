@@ -14,7 +14,7 @@
 
     <body class="cuerpo" >
     <header>
-        <style>a{color:#dd4f24}.contenedor{height:0;overflow:hidden;padding-bottom:56.25%;padding-top:30px;position:relative}.contenedor.iframe,nav:before{left:0;position:absolute;top:0}.contenedor.iframe{height:100%;width:100%}header,nav{position:relative}.cuerpo{background:#222d32;color:#444;font-family:tahoma;font-size:16px}header{background:#E8E8E8;box-shadow:0 5px rgba(0,0,0,.2);color:#222D32;overflow:hidden;padding:.5em;z-index:1}header .titular{margin:0 65px 0 70px}header .titular .titulo{font-size:22px;font-weight:400;margin:0;padding:0}nav{background:#22bce0;border-left:15px solid #fff}nav:before{border-bottom:20px solid transparent;border-left:7px solid #fff;border-top:20px solid transparent;content:""}nav .menu{height:40px;line-height:20px;margin:0;overflow-x:auto;padding:0;white-space:nowrap}nav .menu li{display:inline-block}nav .menu li:hover{background:#dd4f24}nav .menu li a{color:#fff;display:block;margin:.3em;padding:.2em;text-decoration:none}.principal{padding:.5em}#flipbook .page{background:#efebe9}#flipbook .page .subt{color:#08357b;margin:.5em}#flipbook .page .title{color:#05204a}#flipbook p{color:#000;text-align:justify;margin:.5em}#flipbook img{width:250px;height:250px;align-items:center;border-radius:5px}#flipbook .hard{background:#02204e;color:#fff;text-align:center}#flipbook .hard .subt{color:#e6dcdc;margin:.5em}#flipbook .hard .title{color:#e6dcdc}</style>
+        <style>a{color:#dd4f24}.contenedor{height:0;overflow:hidden;padding-bottom:56.25%;padding-top:30px;position:relative}.contenedor.iframe,nav:before{left:0;position:absolute;top:0}.contenedor.iframe{height:100%;width:100%}header,nav{position:relative}.cuerpo{background:#222d32;color:#444;font-family:tahoma;font-size:16px}header{background:#E8E8E8;box-shadow:0 5px rgba(0,0,0,.2);color:#222D32;overflow:hidden;padding:.5em;z-index:1}header .titular{margin:0 65px 0 70px}header .titular .titulo{font-size:22px;font-weight:400;margin:0;padding:0}nav{background:#22bce0;border-left:15px solid #fff}nav:before{border-bottom:20px solid transparent;border-left:7px solid #fff;border-top:20px solid transparent;content:""}nav .menu{height:40px;line-height:20px;margin:0;overflow-x:auto;padding:0;white-space:nowrap}#flipbook .hard img,#flipbook .page img,#flipbook img{width:250px;height:250px;border-radius:5px}nav .menu li{display:inline-block}nav .menu li:hover{background:#dd4f24}nav .menu li a{color:#fff;display:block;margin:.3em;padding:.2em;text-decoration:none}.principal{padding:.5em}#flipbook .page{background:#efebe9}#flipbook .page .subt{color:#08357b;margin:.5em;text-decoration:underline}#flipbook .page .title{color:#05204a;text-align:center}#flipbook .page img{margin-left:75px;margin-top:5px}#flipbook .page p{color:#000;text-align:justify;margin:.7em}#flipbook .hard{background:#02204e;color:#fff}#flipbook .hard img{margin-left:75px;margin-top:5px}#flipbook .hard .title{color:#e6dcdc;text-align:center}#flipbook .hard .subt{color:#e6dcdc;text-decoration:underline;margin:.5em}#flipbook .hard p{color:#e6dcdc;margin:.7em}#flipbook img{margin-left:75px;margin-top:5px}</style>
     </header>
     <section class="principal">
 
@@ -45,7 +45,7 @@
             <br>
             <div style="border:solid; border-color:#d3d3d3;">
                 <p>Crear página después de</p>
-                <input id="add_p" type="number" min="2" placeholder="#" style="width: 50px;">
+                <input id="add_p" type="number" min="2" max="2" placeholder="#" value="2" style="width: 50px;">
                 <button class="btn btn-primary" style="position:relative; z-index:1;" id="addpage">Crear</button>
                 <p>Eliminar la página:</p>
                 <input id="rem_p" type="number" min="1" placeholder="#" style="width: 50px;">
@@ -169,6 +169,10 @@
                 $("#flipbook").turn("addPage", element, n_pag);
                 $("#pagina").append('<option value"' + n_pag + ' "id="p' + n_pag + '">' + n_pag + '</option>');
                 $("#flipbook").turn("page", n_pag);
+                var max_actual = $('#add_p').attr('max');
+                $('#add_p').attr('max', parseInt(max_actual) + 1);
+                $('#add_p').attr('min', parseInt(max_actual) + 1);
+                $('#add_p').val(parseInt(max_actual) + 1);
 
             });
 
@@ -180,17 +184,25 @@
 
             //Guardar el contenido AJAX post
             $("#btnGuardar").click(function() {
-                $("#flipbook div .content-create").each(function (index)
+                //var datos= [];
+                var div_contenido = $("#kontenido");
+                $("#flipbook div .content-create").delay( 800 ).each(function (index)
                 { //Mostrando la consola y el alert guarda bien,  si no cambia el orden de la primer pagina con la 2da
-                    console.log($(this).html());
-                    //alert($(this).html());
-                    if(index == 0 || index == 1){
-                        $("#kontenido").append('<div class="pagina hard">' + $(this).html() + '</div>');
-                    } else{
-                        $("#kontenido").append('<div class="pagina">' + $(this).html() + '</div>');
-                    }
+                    //console.log($(this).html());
+                    //alert(index+" "+$(this).html());
 
+                    if(index == 0 || index == 1){
+                        //datos[index] = '<div class="pagina hard">' + $(this).html() + '</div>';
+                        div_contenido.append('<div class="pagina hard">' + $(this).html() + '</div>');
+                    } else{
+                        div_contenido.append('<div class="pagina">' + $(this).html() + '</div>');
+                        //datos[index] = '<div class="pagina">' + $(this).html() + '</div>';
+                    }
                 });
+                /*for(var i = 0; i < datos.length; i++){
+                    div_contenido.append(datos[i]);
+                }*/
+
                 var contenido = '<div id="flipbook">'+$("#kontenido").html()+'  <div class="hard pagina"> <div class="content-create" id="content1"></div></div><div class="hard pagina"> <div class="content-create" id="content2">Creado con: Edutoools</div></div></div>';
                 var titulo = $("#titulo").val();
                 var form = $("#form_libro");

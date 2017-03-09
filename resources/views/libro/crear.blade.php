@@ -55,11 +55,11 @@
 
         <div id="librote" class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="float: left;">
             <div id="flipbook">
-                <div class="hard">
-                    <div id="content1"></div>
+                <div class="hard pagina">
+                    <div class="content-create" id="content1"></div>
                 </div>
-                <div class="hard">
-                    <div id="content2"></div>
+                <div class="hard pagina">
+                    <div class="content-create" id="content2"></div>
                 </div>
             </div>
         </div>
@@ -67,10 +67,10 @@
         <div>
             {!! Form::open(['route' => 'Store.libro', 'method' => 'POST', 'id' => 'form_libro', 'class'=>'form-horizontal' ]) !!}
             <div class="form-group">
-
                 <!--<input type="hidden" name="_method" value="POST">
                 {!! Form::text('contenido',null,['class' => 'form-control col-lg-offset-1','id' => 'kontenido','style'=>'display:none;']) !!}
                  -->
+                <div id="kontenido" style="display: none"></div>
                 <input type="hidden" name="_token" value="{{csrf_token()}}" id="token">
             </div>
             <div class="btn-group">
@@ -145,7 +145,6 @@
                     case "imagen":
                         n_img = $("#flipbook").turn("page");
                         //n_img = parseInt(n_img) + 1;
-                        alert(n_img);
                         ide = "imagen" + n_img;
                         $("#" + c).append('<img src="" id="'+ide+'" class="image"/>');
                         var oFReader = new FileReader();
@@ -164,7 +163,7 @@
                 n_pag = $('input[id=add_p]').val();
                 n_pag = parseInt(n_pag) + 1;
                 c2 = "content" + n_pag;
-                element = $("<div />").append('<div id="' + c2 + '"></div>');
+                element = $("<div />").append('<div class="content-create" id="' + c2 + '"></div>');
                 console.log("La página a adicionar es: " + n_pag);
                 console.log("El ContentId fue creado en: " + c2 + " página: " + n_pag);
                 $("#flipbook").turn("addPage", element, n_pag);
@@ -181,27 +180,27 @@
 
             //Guardar el contenido AJAX post
             $("#btnGuardar").click(function() {
-               $("#flipbook, #flipbook div").removeAttr('style');
-                $(".shadow").removeAttr('style');
-                $(".page-wrapper").removeAttr('style');
-                $(".page-wrapper").removeClass("page-wrapper");
-                /*$("div").each(function() {
-                    if ($(this).html().trim() === "") {
-                        $(this).remove();
+                $("#flipbook div .content-create").each(function (index)
+                { //Mostrando la consola y el alert guarda bien,  si no cambia el orden de la primer pagina con la 2da
+                    console.log($(this).html());
+                    //alert($(this).html());
+                    if(index == 0 || index == 1){
+                        $("#kontenido").append('<div class="pagina hard">' + $(this).html() + '</div>');
+                    } else{
+                        $("#kontenido").append('<div class="pagina">' + $(this).html() + '</div>');
                     }
-                });
-                */
 
-                var contenido = $("#librote").html();
+                });
+                var contenido = '<div id="flipbook">'+$("#kontenido").html()+'  <div class="hard pagina"> <div class="content-create" id="content1"></div></div><div class="hard pagina"> <div class="content-create" id="content2">Creado con: Edutoools</div></div></div>';
                 var titulo = $("#titulo").val();
                 var form = $("#form_libro");
                 var url = form.attr('action');
                 var token = $("#token").val();
-                //$("#kontenido").val(contenidoX);
-                //var contenido2 = $("#kontenido").val();
+                console.log("Enviado: " + contenido);
                 $.post(url,  { contenido: contenido, titulo: titulo }, function(result) {
                     alert("Libro guardado");
                 });
+
             });
 
 
